@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>乱话三千</title>
-    <link>https://zanksc.github.io/</link>
-    <description>Recent content on 乱话三千</description>
+    <title>First on 乱话三千</title>
+    <link>https://zanksc.github.io/tags/first/</link>
+    <description>Recent content in First on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 09 Dec 2024 09:25:05 +0800</lastBuildDate>
-    <atom:link href="https://zanksc.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>https://zanksc.github.io/posts/test/</link>
-      <pubDate>Mon, 09 Dec 2024 09:25:05 +0800</pubDate>
-      <guid>https://zanksc.github.io/posts/test/</guid>
-      <description>&lt;p&gt;这是一篇测试文章&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://zanksc.github.io/tags/first/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://zanksc.github.io/about/</link>
