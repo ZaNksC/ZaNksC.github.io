@@ -15,5 +15,21 @@
       <guid>https://zanksc.github.io/posts/hugo-build-1/</guid>
       <description>本文将介绍利用Hugo和PaperMod主题进行个人建站，并通过Github进行静态页面自托管，实现源文件管理、自动构建、自动部署。本文介绍案例不需要自己的域名即可实现。</description>
     </item>
+    <item>
+      <title>关于Zanks</title>
+      <link>https://zanksc.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>https://zanksc.github.io/about/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;性别：男&lt;/li&gt;
+&lt;li&gt;年龄：保密&lt;/li&gt;
+&lt;li&gt;有一个博学多识且貌美如花的女朋友&lt;/li&gt;
+&lt;li&gt;养了一只叫“基金”的小猫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;从事大数据、Java后端相关工作。曾经在最该奋斗的年纪进入了最能奋斗的地方，并且全身而退。目前已经回老家摆烂，开始重新思考工作和生活的意义。&lt;/p&gt;
+&lt;p&gt;在学校时就折腾过博客，因为懒癌（主要）和大厂连轴转的工作磨掉了对于技术的热爱（借口），从大厂离职摆烂了一年多之后，终于重新捡起了对于技术的热爱。&lt;/p&gt;
+&lt;p&gt;喜欢折腾HomeLab和各种奇奇怪怪的东西，爱好颇多，但擅长的没有。&lt;/p&gt;
+&lt;p&gt;本博客在2025年1月1日重启，希望可以坚持得久一些。&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
