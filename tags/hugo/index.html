@@ -121,6 +121,11 @@
                 </a>
             </li>
             <li>
+                <a href="https://zanksc.github.io/archives/" title="时间轴">
+                    <span>时间轴</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://zanksc.github.io/tags/" title="标签">
                     <span>标签</span>
                 </a>
@@ -146,16 +151,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p> 虽然个人博客早已被时代淘汰，曾经用技术构建个性标签的个人博主们也年岁见长，忙于对线生活。移动互联网浪潮带来了技术普及，带来的社交平台给了人们无限的个性化标签。实质今日，甚至连“博客”这个词都显得有一些陌生，但不论在什么年代，总有那么一群人认为拥有一个属于自己的博客网站是一件很酷的事。那么希望，这一篇从实践中来的折腾笔记可以帮到你。
-前言 阅读前请审视整体方案
-建站工具： hugo 建站工具皮肤： PaperMod 源代码（原文档）托管平台： Github 站点部署： Github Pages CI/CD(持续集成/持续部署)： Github Actions 整体思路为，在Github中创建两个代码仓，一个用于管理源代码（博主的工作台，建议设置为Private），另一个用于部署静态站点（需要特殊命名，利用Github Pages托管），再利用Github Actions监听源代码仓变动后，自动更新Github Pages页面。
-Hugo安装及配置 以下命令均由GitBash终端执行，如使用CMD或PowerShell可以自行替换对应命令
-Hugo安装 Hugo的安装比较简单，go的编译产物基本都是一个二进制的可执行文件。从Github的Release页面下载对应操作系统的可执行文件即可。
-我常用的工作、开发机操作系统均为Windows，则以Windows为例，下载 hugo的windows版本文件，将.exe文件解压到任意位置，如D:\sdk\hugo。打开环境变量配置，才PATH变量中新增D:\sdk\hugo 目录，使得命令行可以直接使用hugo.exe而不需要CD到指定目录。
-下载及配置完之后，打开命令行，输入hugo version 或 hugo.exe version进行验证，如输出版本号则代表安装成功。例如我的输出为：
-$ hugo version hugo v0.139.3-2f6864387cd31b975914e8373d4bf38bddbd47bc&#43;extended&#43;withdeploy windows/amd64 BuildDate=2024-11-29T15:36:56Z VendorInfo=gohugoio 创建站点 使用hugo命令 hugo new site $YOUR_SITE_NAME 来创建站点。该站点后续会被作为原文档仓库托管到Github进行管理
-$ hugo new site zanks-blog Congratulations! Your new Hugo site was created in D:\03_code\personal\zanks-blog. Just a few more steps... 1. Change the current directory to D:\03_code\personal\zanks-blog. 2. Create or install a theme: - Create a new theme with the command &#34;hugo new theme &lt;THEMENAME&gt;&#34; - Or, install a theme from https://themes.gohugo.io/ 3. Edit hugo.toml, setting the &#34;theme&#34; property to the theme name. 4. Create new content with the command &#34;hugo new content &lt;SECTIONNAME&gt;\&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;. 5. Start the embedded web server with the command &#34;hugo server --buildDrafts&#34;. See documentation at https://gohugo.io/. 命令输入完成后，会在当前目录下创建zanks-blog文件夹，这个文件夹会作为原文档仓库。使用tree命令（没有的也可以直接用ll）看一下hugo生成的目录，内容不多。
-...</p>
+    <p>旧时代的船，想要载新世界的梦</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-01 00:00:00 +0800 +0800'>2024-01-01</span>&nbsp;·&nbsp;5 分钟&nbsp;·&nbsp;967 字&nbsp;·&nbsp;Zanks</footer>
   <a class="entry-link" aria-label="post link to Hugo搭建个人博客&Github自托管-基本配置" href="https://zanksc.github.io/posts/hugo-build-1/"></a>
