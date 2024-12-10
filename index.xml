@@ -6,14 +6,7 @@
     <description>Recent content on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Dec 2024 21:08:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Dec 2024 21:11:28 +0800</lastBuildDate>
     <atom:link href="https://zanksc.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo搭建个人博客&amp;Github自托管-基本配置</title>
-      <link>https://zanksc.github.io/posts/hugo-build-1/</link>
-      <pubDate>Mon, 09 Dec 2024 17:32:49 +0800</pubDate>
-      <guid>https://zanksc.github.io/posts/hugo-build-1/</guid>
-      <description>本文将介绍利用Hugo和PaperMod主题进行个人建站，并通过Github进行静态页面自托管，实现源文件管理、自动构建、自动部署。本文介绍案例不需要自己的域名即可实现。</description>
-    </item>
   </channel>
 </rss>
