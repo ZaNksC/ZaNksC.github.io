@@ -6,8 +6,31 @@
     <description>Recent content on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 13 Dec 2024 17:59:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 13 Dec 2024 23:15:13 +0800</lastBuildDate>
     <atom:link href="https://zanksc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>💬 留言板</title>
+      <link>https://zanksc.github.io/message/</link>
+      <pubDate>Fri, 13 Dec 2024 21:14:22 +0800</pubDate>
+      <guid>https://zanksc.github.io/message/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>😾 关于基金的铲屎官 😾 </title>
+      <link>https://zanksc.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>https://zanksc.github.io/about/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;性别：男&lt;/li&gt;
+&lt;li&gt;年龄：保密&lt;/li&gt;
+&lt;li&gt;有一个博学多识且貌美如花的女朋友&lt;/li&gt;
+&lt;li&gt;养了一只叫“基金”的小猫&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;从事大数据、Java后端相关工作。曾经在最该奋斗的年纪进入了最能奋斗的地方，并且全身而退。目前已经回老家摆烂，开始重新思考工作和生活的意义。&lt;/p&gt;
+&lt;p&gt;在学校时就折腾过博客，因为懒癌（主要）和大厂连轴转的工作磨掉了对于技术的热爱（借口），从大厂离职摆烂了一年多之后，终于重新捡起了对于技术的热爱。&lt;/p&gt;
+&lt;p&gt;喜欢折腾HomeLab和各种奇奇怪怪的东西，爱好颇多，但擅长的没有。&lt;/p&gt;
+&lt;p&gt;本博客在2025年1月1日重启，希望可以坚持得久一些。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hugo搭建个人博客&amp;Github自托管-基本配置</title>
       <link>https://zanksc.github.io/2024/01/01/hugo-papermod-1/</link>
