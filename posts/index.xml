@@ -8,10 +8,10 @@
     <language>zh-cn</language>
     <atom:link href="https://zanksc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo搭建个人博客&amp;Github自托管-基本配置</title>
-      <link>https://zanksc.github.io/2024/01/01/hugo-papermod-1/</link>
+      <title>【Hugo】基础篇：个人博客搭建</title>
+      <link>https://zanksc.github.io/2024/01/01/hugo-1/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
-      <guid>https://zanksc.github.io/2024/01/01/hugo-papermod-1/</guid>
+      <guid>https://zanksc.github.io/2024/01/01/hugo-1/</guid>
       <description>本文将介绍利用Hugo和PaperMod主题进行个人建站，并通过Github进行静态页面自托管，实现源文件管理、自动构建、自动部署。本文介绍案例不需要自己的域名即可实现。</description>
     </item>
   </channel>
