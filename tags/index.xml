@@ -10,8 +10,22 @@
     <item>
       <title>Hugo</title>
       <link>https://zanksc.github.io/tags/hugo/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
       <guid>https://zanksc.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>https://zanksc.github.io/tags/obsidian/</link>
+      <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
+      <guid>https://zanksc.github.io/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>建站</title>
+      <link>https://zanksc.github.io/tags/%E5%BB%BA%E7%AB%99/</link>
+      <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
+      <guid>https://zanksc.github.io/tags/%E5%BB%BA%E7%AB%99/</guid>
       <description></description>
     </item>
     <item>
@@ -19,13 +33,6 @@
       <link>https://zanksc.github.io/tags/papermod/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
       <guid>https://zanksc.github.io/tags/papermod/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>建站</title>
-      <link>https://zanksc.github.io/tags/%E5%BB%BA%E7%AB%99/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
-      <guid>https://zanksc.github.io/tags/%E5%BB%BA%E7%AB%99/</guid>
       <description></description>
     </item>
   </channel>

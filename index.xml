@@ -6,7 +6,7 @@
     <description>Recent content on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 17 Dec 2024 14:45:38 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2024 16:39:02 +0800</lastBuildDate>
     <atom:link href="https://zanksc.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>💬 留言板</title>
@@ -14,6 +14,13 @@
       <pubDate>Fri, 13 Dec 2024 21:14:22 +0800</pubDate>
       <guid>https://zanksc.github.io/message/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>【Hugo】体验篇：Obsidian写作</title>
+      <link>https://zanksc.github.io/2024/01/01/hugo-3/</link>
+      <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
+      <guid>https://zanksc.github.io/2024/01/01/hugo-3/</guid>
+      <description>Hugo与Obsidian融合打造优质的博客写作体验</description>
     </item>
     <item>
       <title>【Hugo】基础篇：个人博客搭建</title>
