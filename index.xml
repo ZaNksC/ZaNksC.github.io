@@ -6,7 +6,7 @@
     <description>Recent content on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 17 Dec 2024 16:43:37 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Dec 2024 17:39:04 +0800</lastBuildDate>
     <atom:link href="https://zanksc.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>💬 留言板</title>
@@ -21,6 +21,13 @@
       <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
       <guid>https://zanksc.github.io/2024/01/01/hugo-3/</guid>
       <description>Hugo与Obsidian融合打造优质的博客写作体验</description>
+    </item>
+    <item>
+      <title>【Hugo】进阶篇：PaperMod主题美化</title>
+      <link>https://zanksc.github.io/2024/01/01/hugo-2/</link>
+      <pubDate>Mon, 01 Jan 2024 02:00:00 +0800</pubDate>
+      <guid>https://zanksc.github.io/2024/01/01/hugo-2/</guid>
+      <description>Hugo基本功能扩展（访问量、评论等）&#43; PaperMod主题美化</description>
     </item>
     <item>
       <title>【Hugo】基础篇：个人博客搭建</title>
