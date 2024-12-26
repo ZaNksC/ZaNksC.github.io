@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on 乱话三千</title>
-    <link>https://blog.zanks.cn/tags/hugo/</link>
+    <link>https://www.zanks.link/tags/hugo/</link>
     <description>Recent content in Hugo on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Dec 2024 19:22:02 +0800</lastBuildDate>
-    <atom:link href="https://blog.zanks.cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Dec 2024 20:25:13 +0800</lastBuildDate>
+    <atom:link href="https://www.zanks.link/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【Hugo】体验篇：Obsidian写作</title>
-      <link>https://blog.zanks.cn/2024/01/01/hugo-3/</link>
+      <link>https://www.zanks.link/2024/01/01/hugo-3/</link>
       <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
-      <guid>https://blog.zanks.cn/2024/01/01/hugo-3/</guid>
+      <guid>https://www.zanks.link/2024/01/01/hugo-3/</guid>
       <description>Hugo与Obsidian融合打造优质的博客写作体验</description>
     </item>
     <item>
       <title>【Hugo】进阶篇：PaperMod主题美化</title>
-      <link>https://blog.zanks.cn/2024/01/01/hugo-2/</link>
+      <link>https://www.zanks.link/2024/01/01/hugo-2/</link>
       <pubDate>Mon, 01 Jan 2024 02:00:00 +0800</pubDate>
-      <guid>https://blog.zanks.cn/2024/01/01/hugo-2/</guid>
+      <guid>https://www.zanks.link/2024/01/01/hugo-2/</guid>
       <description>Hugo基本功能扩展（访问量、评论等）&#43; PaperMod主题美化</description>
     </item>
     <item>
       <title>【Hugo】基础篇：个人博客搭建</title>
-      <link>https://blog.zanks.cn/2024/01/01/hugo-1/</link>
+      <link>https://www.zanks.link/2024/01/01/hugo-1/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
-      <guid>https://blog.zanks.cn/2024/01/01/hugo-1/</guid>
+      <guid>https://www.zanks.link/2024/01/01/hugo-1/</guid>
       <description>Hugo&#43;PapaerMod&#43;Github打造全自动博客发布系统</description>
     </item>
   </channel>
