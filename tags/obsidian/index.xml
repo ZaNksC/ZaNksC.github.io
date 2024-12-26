@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Obsidian on 乱话三千</title>
-    <link>https://zanksc.github.io/tags/obsidian/</link>
+    <link>https://blog.zanks.cn/tags/obsidian/</link>
     <description>Recent content in Obsidian on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Dec 2024 18:47:31 +0800</lastBuildDate>
-    <atom:link href="https://zanksc.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Dec 2024 18:51:14 +0800</lastBuildDate>
+    <atom:link href="https://blog.zanks.cn/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【Hugo】体验篇：Obsidian写作</title>
-      <link>https://zanksc.github.io/2024/01/01/hugo-3/</link>
+      <link>https://blog.zanks.cn/2024/01/01/hugo-3/</link>
       <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
-      <guid>https://zanksc.github.io/2024/01/01/hugo-3/</guid>
+      <guid>https://blog.zanks.cn/2024/01/01/hugo-3/</guid>
       <description>Hugo与Obsidian融合打造优质的博客写作体验</description>
     </item>
   </channel>

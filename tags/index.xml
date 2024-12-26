@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>乱话三千</title>
-    <link>https://zanksc.github.io/tags/</link>
+    <link>https://blog.zanks.cn/tags/</link>
     <description>Recent content on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <atom:link href="https://zanksc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.zanks.cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo</title>
-      <link>https://zanksc.github.io/tags/hugo/</link>
+      <link>https://blog.zanks.cn/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
-      <guid>https://zanksc.github.io/tags/hugo/</guid>
+      <guid>https://blog.zanks.cn/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Obsidian</title>
-      <link>https://zanksc.github.io/tags/obsidian/</link>
+      <link>https://blog.zanks.cn/tags/obsidian/</link>
       <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
-      <guid>https://zanksc.github.io/tags/obsidian/</guid>
+      <guid>https://blog.zanks.cn/tags/obsidian/</guid>
       <description></description>
     </item>
     <item>
       <title>建站</title>
-      <link>https://zanksc.github.io/tags/%E5%BB%BA%E7%AB%99/</link>
+      <link>https://blog.zanks.cn/tags/%E5%BB%BA%E7%AB%99/</link>
       <pubDate>Mon, 01 Jan 2024 04:00:00 +0800</pubDate>
-      <guid>https://zanksc.github.io/tags/%E5%BB%BA%E7%AB%99/</guid>
+      <guid>https://blog.zanks.cn/tags/%E5%BB%BA%E7%AB%99/</guid>
       <description></description>
     </item>
     <item>
       <title>PaperMod</title>
-      <link>https://zanksc.github.io/tags/papermod/</link>
+      <link>https://blog.zanks.cn/tags/papermod/</link>
       <pubDate>Mon, 01 Jan 2024 02:00:00 +0800</pubDate>
-      <guid>https://zanksc.github.io/tags/papermod/</guid>
+      <guid>https://blog.zanks.cn/tags/papermod/</guid>
       <description></description>
     </item>
   </channel>
