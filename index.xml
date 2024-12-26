@@ -6,7 +6,7 @@
     <description>Recent content on 乱话三千</description>
     <generator>Hugo -- 0.139.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Dec 2024 18:51:14 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2024 19:22:02 +0800</lastBuildDate>
     <atom:link href="https://blog.zanks.cn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>💬 留言板</title>
@@ -37,6 +37,30 @@
       <description>Hugo&#43;PapaerMod&#43;Github打造全自动博客发布系统</description>
     </item>
     <item>
+      <title>🍳 Zanks的私人食谱 🍳</title>
+      <link>https://blog.zanks.cn/recipe/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
+      <guid>https://blog.zanks.cn/recipe/</guid>
+      <description>&lt;h1 id=&#34;小高姐三酱牛肉&#34;&gt;小高姐三酱牛肉&lt;/h1&gt;
+&lt;p&gt;来自： &lt;a href=&#34;https://www.bilibili.com/video/BV1VW41147Fh/?spm_id_from=333.337.search-card.all.click&#34;&gt;B站传送门&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;材料&#34;&gt;材料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;牛腱子 1000g&lt;/li&gt;
+&lt;li&gt;甜面酱 120g&lt;/li&gt;
+&lt;li&gt;酱油 180g&lt;/li&gt;
+&lt;li&gt;生姜 适量&lt;/li&gt;
+&lt;li&gt;腐乳 两块&lt;/li&gt;
+&lt;li&gt;八角、香叶等香料适量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;制作步骤&#34;&gt;制作步骤&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;牛腱子泡水（冬天可长一点，夏天3小时）&lt;/li&gt;
+&lt;li&gt;牛腱子用酱油腌制，放入冰箱12小时&lt;/li&gt;
+&lt;li&gt;冷水下锅，边煮边去血沫&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
       <title>😾 关于基金的铲屎官 😾 </title>
       <link>https://blog.zanks.cn/about/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
@@ -48,7 +72,7 @@
 &lt;li&gt;养了一只叫“基金”的小猫&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;从事大数据、Java后端相关工作。曾经在最该奋斗的年纪进入了最能奋斗的地方，并且全身而退。目前已经回老家摆烂，开始重新思考工作和生活的意义。&lt;/p&gt;
-&lt;p&gt;在学校时就折腾过博客，因为懒癌（主要）和大厂连轴转的工作磨掉了对于技术的热爱（借口），从大厂离职摆烂了一年多之后，终于重新捡起了对于技术的热爱。&lt;/p&gt;
+&lt;p&gt;在学校时就折腾过博客，因为懒癌（主要）和大厂连轴转的工作磨掉了对于技术的热爱（借口）后放弃了。现在从大厂离职摆烂了一年多之后，终于重新捡起了对于技术的热爱。&lt;/p&gt;
 &lt;p&gt;喜欢折腾HomeLab和各种奇奇怪怪的东西，爱好颇多，但擅长的没有。&lt;/p&gt;
 &lt;p&gt;本博客在2025年1月1日重启，希望可以坚持得久一些。&lt;/p&gt;</description>
     </item>
