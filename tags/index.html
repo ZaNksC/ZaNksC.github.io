@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>乱话三千</title>
+<title>Tags | 乱话三千</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -13,7 +13,7 @@
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <meta name="referrer" content="no-referrer-when-downgrade">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.4514445cf5861bfb1f942f9bcb325e8113877fde723c93f4d3a040ba7e84251a.css" integrity="sha256-RRREXPWGG/sflC&#43;byzJegROHf95yPJP006BAun6EJRo=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.474a02b3adeadba17a8c782fcdc3a09316b177c039f8a47146a4557104b13903.css" integrity="sha256-R0oCs63q26F6jHgvzcOgkxaxd8A5&#43;KRxRqRVcQSxOQM=" rel="preload stylesheet" as="style">
 <script src="https://kit.fontawesome.com/4f00e1f6e6.js" crossorigin="anonymous"></script>
 <link rel="icon" href="https://www.zanks.link/assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.zanks.link/assets/favicon-16x16.png">
@@ -72,11 +72,11 @@
   gtag('config', 'G-420MPRSEER');
 </script><meta property="og:url" content="https://www.zanks.link/tags/">
   <meta property="og:site_name" content="乱话三千">
-  <meta property="og:title" content="乱话三千">
+  <meta property="og:title" content="Tags">
   <meta property="og:locale" content="zh-cn">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="">
+<meta name="twitter:title" content="Tags">
 <meta name="twitter:description" content="">
 
 
@@ -153,79 +153,23 @@
     </nav>
 </header>
 <main class="main">
+<header class="page-header">
+    <h1>Tags</h1>
+</header>
 
 <ul class="terms-tags">
-    
-    
-    
-
-    <div id="sourrounding_div" style="width:100%;height:100%;min-height: 500px;">
-        <div id="tag-canvas"></div>
-    </div>
-
-    <script src="/js/wordcloud2.js"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <span id="tag-temp" style="display:none">[{"hugo":3},{"obsidian":1},{"papermod":2},{"建站":3}]</span>
-    
-
-    <script>
-        
-        var XISHU = 20;
-        
-        var div = document.querySelector("#sourrounding_div");
-        var canvas = document.querySelector("#tag-canvas");
-        canvas.style.width = div.offsetWidth + 'px';
-        canvas.style.height = div.offsetHeight + 'px';
-        var wordFreqData = document.querySelector("#tag-temp").innerHTML;
-        var jsonObj = JSON.parse(wordFreqData);
-        var arr = []
-        jsonObj.forEach(element => {
-            var key = Object.keys(element);
-            var itemArr = [key[0], element[key] * XISHU];
-            arr.push(itemArr);
-        });
-        
-        var isDark = document.body.className.includes("dark");
-        WordCloud(canvas, {
-            "list": arr,
-            "shape": "cardioid", 
-            "gridSize": 20, 
-            "weightFactor": 1, 
-            "fontWeight": 'normal', 
-            "fontFamily": 'Times, serif', 
-            "color": isDark ? 'random-light' : 'random-dark', 
-            "backgroundColor": 'none', 
-            "classes": "tag-cloud-item word-color", 
-        });
-        canvas.addEventListener('wordcloudstop', function (e) {
-            
-            setTimeout(() => {
-                var els = document.querySelectorAll(".word-color");
-                Array.from(els).forEach((el) => {
-                    console.log('动画', el)
-                    el.classList.add("word-animate")
-                })
-            }, 2000);
-            
-            document.querySelectorAll('.tag-cloud-item').forEach(function (element) {
-                const text = element.innerHTML;
-                element.innerHTML = `<a href="/tags/${text}" style="color: inherit;">${text}</a>`;
-            });
-        });
-
-    </script>
+    <li>
+        <a href="https://www.zanks.link/tags/hugo/">hugo <sup><strong><sup>3</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="https://www.zanks.link/tags/obsidian/">obsidian <sup><strong><sup>1</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="https://www.zanks.link/tags/papermod/">PaperMod <sup><strong><sup>2</sup></strong></sup> </a>
+    </li>
+    <li>
+        <a href="https://www.zanks.link/tags/%E5%BB%BA%E7%AB%99/">建站 <sup><strong><sup>3</sup></strong></sup> </a>
+    </li>
 </ul>
     </main>
     
