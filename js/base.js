@@ -1,13 +1,16 @@
-//  折叠
-let peDetails = document.getElementsByClassName('pe-details')
-for (let element of peDetails) {
-    const summary = element.getElementsByClassName('pe-details-summary')[0];
+// 折叠
+let details = document.getElementsByClassName('details')
+details = details || [];
+for (let i = 0; i < details.length; i++) {
+    let element = details[i]
+    const summary = element.getElementsByClassName('details-summary')[0];
     if (summary) {
         summary.addEventListener('click', () => {
             element.classList.toggle('open');
         }, false);
     }
 }
+
 
 // 链接跳转
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
