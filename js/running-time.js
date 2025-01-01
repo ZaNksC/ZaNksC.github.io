@@ -1,5 +1,5 @@
 const RunningTimerInterval = 1000;
-const StartTime = new Date("12/31/2023 00:00:00");
+const StartTime = new Date("01/01/2025 00:00:00");
 
 function prefixZero(num)
 {

@@ -9,11 +9,11 @@
 <meta name="keywords" content="hugo, 建站, obsidian">
 <meta name="description" content="装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。">
 <meta name="author" content="Zanks">
-<link rel="canonical" href="https://www.zanks.link/2024/01/01/hugo-3/">
+<link rel="canonical" href="https://www.zanks.link/2025/01/01/hugo-3/">
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <meta name="referrer" content="no-referrer-when-downgrade">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.acba4d16c6dc2b05b8227cf1b832c5a9c71a6aabde66086217eb9ce8720eca07.css" integrity="sha256-rLpNFsbcKwW4InzxuDLFqccaaqveZghiF&#43;uc6HIOygc=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a3f6d365f4ccdeda93238e659dd514622959bdd828b13fa9d6b5e54eb5118787.css" integrity="sha256-o/bTZfTM3tqTI45lndUUYilZvdgosT&#43;p1rXlTrURh4c=" rel="preload stylesheet" as="style">
 <script src="https://kit.fontawesome.com/4f00e1f6e6.js" crossorigin="anonymous"></script>
 <link rel="icon" href="https://www.zanks.link/assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.zanks.link/assets/favicon-16x16.png">
@@ -22,7 +22,7 @@
 <link rel="mask-icon" href="https://www.zanks.link/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://www.zanks.link/2024/01/01/hugo-3/">
+<link rel="alternate" hreflang="zh" href="https://www.zanks.link/2025/01/01/hugo-3/">
 <noscript>
     <style>
         #theme-toggle,
@@ -69,15 +69,15 @@
   gtag('js', new Date());
 
   gtag('config', 'G-420MPRSEER');
-</script><meta property="og:url" content="https://www.zanks.link/2024/01/01/hugo-3/">
+</script><meta property="og:url" content="https://www.zanks.link/2025/01/01/hugo-3/">
   <meta property="og:site_name" content="乱话三千">
   <meta property="og:title" content="【Hugo】体验篇：Obsidian写作">
   <meta property="og:description" content="装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。">
   <meta property="og:locale" content="zh-cn">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-01-01T04:00:00+08:00">
-    <meta property="article:modified_time" content="2024-12-31T22:33:14+08:00">
+    <meta property="article:published_time" content="2025-01-01T04:00:00+08:00">
+    <meta property="article:modified_time" content="2025-01-01T12:52:04+08:00">
     <meta property="article:tag" content="Hugo">
     <meta property="article:tag" content="建站">
     <meta property="article:tag" content="Obsidian">
@@ -101,7 +101,7 @@
       "@type": "ListItem",
       "position":  2 ,
       "name": "【Hugo】体验篇：Obsidian写作",
-      "item": "https://www.zanks.link/2024/01/01/hugo-3/"
+      "item": "https://www.zanks.link/2025/01/01/hugo-3/"
     }
   ]
 }
@@ -119,15 +119,15 @@
   "articleBody": " 装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。\n前言 Hugo作为建站博客工具的时候，博文的载体是 markdown ，而 markdown 本身是一个纯文本的标记语言，在Hugo工具提供的命令中，会转换成静态的网页文件来提供更加优质的阅读体验。所以，在理论上，选用任何的文本编辑器，其实都可以作为博客的写作工具。\n然而，在真实使用的情况下，我们需要先在命令行中，输入 hugo new posts/xxx.md 命令来创建一篇文章，然后打开对应的文本编辑器来编辑文章，还需要在命令中使用 hugo serve -D 来看一下显示效果，如果用到图片，还需要手动管理图片的地址来保证本地和发布之后保持一致，整个过程就会显得非常的繁琐。\n基于以上我博客的编写流程，提炼了几个痛点和几点期望\n创建文章需要输入命令，我希望可以通过图形化界面快速的创建文章 博客图片的管理，利用图床进行图片 本文将会围绕这两个痛点，对写作体验进行逐步的优化。我计划使用Obsidian作为我的写作工具。以下将是我计划中的写作及发布流程（配合自动发布）：\n如果你希望跟我拥有一样的配置，那么需要提前准备好以下软件或账号：\n一个基于Hugo构建的笔记目录 Obsidian : 一款舒适的Markdown编辑器 PicList: 一款基于PicGo二次开发的图床管理工具 腾讯云COS服务： 请自行前往腾讯云开启（有免费额度，超过之后需要付费） 插件\u0026软件 以下插件均指代Obsidian插件市场中的插件，软件为系统软件，均需要自己安装。 对于Obsidian插件需要关闭安全模式，来开启第三方插件，以下插件均可以通过插件市场下载，插件在Github中，如遇到网络问题请自行解决。 安装完OB插件记得重启\n功能插件 以下插件均为必须安装的插件，用于实现前文提到的功能。\nShell Command Shell Command是一款可以在Obsidian中运行操作系统命令的插件，由于hugo和Git的操作之前都是基于命令行手敲的，所以我选用了他作为实现层的插件，在Shell Command中包装好常用的命令，然后通过其他插件来进行更近一步的封装。\nCommander Shell Command是一款可以将命令设置为图标的插件，用于将Hugo创建博客的命令可视化\nGit 用于可视化Git操作\nHugo Preview 用于在本地进行Hugo网站预览，可以实时预览，非常好用，免去了打开命令行输入hugo server -D 命令的麻烦（实际上这个按钮代替你执行了这个命令），如果有双屏的话，可以一个屏幕预览一个屏幕书写，非常好用。\nImage Auto Upload 文件主动上传到图床的工具，需要配合PicGo来使用。\n美化\u0026操作效率插件 以下插件为选装插件，用于提升外观和使用效率。有很多图片相关的插件，因为Obsidian的图片管理实在令人感到很苦闷。\n主题：Board 单纯的记录以下我现在正在用的主题插件\nHide Folders Obsidian只是一个单纯的Mardown编辑器，很多代码相关的文件不会显示，所以目录下会有很多平时写作时完全不需要的目录，可以通过Hide Folders插件进行隐藏。\nClear Unused Image 后来我发现不需要安装，因为上传插件中可以开启图片上传后移除\n不推荐Git使用不熟练的同学安装，如果要安装，务必理解配置的含义，或者完全照抄我的。 这是一个删除未使用图片的插件，我按照我的使用习惯，进行编译时，会把图片放在本地，等上传图床后，进行删除。\nPaste Image Rename 一个用于将截图添加到文章中进行重命名的插件\nAttachment Manager OB的附件管理软件，可以将一个笔记下的附件（主要是图片）放到单独的文件夹下，我会将这个路径映射到图床上，图片的管理和会方便很多，可以配合 Paste Image Rename 使用，相当丝滑，强烈推荐。\nCode Styler 用于实现代码输出美化的插件，主要是用来折叠代码。\n软件 PicGO PicGo是一款图床管理软件，支持主流的多种云服务图像存储或图床服务。\nPicList PicList是基于PicGo二次开发的图床管理软件，我主要是为了方便进行文件的管理(带删除和管理相当的方便)。最终选用了PicList。\n需要在PicList中添加一个名为 rename-file 的插件，来配合OB附件管理插件来进行图片的分目录管理\n配置 非功能插件配置 Hide Folders 需要在Hide Folder的配置界面，进行隐藏文件夹进行配置。（没找到白名单模式，不知道后续作者会不会更新一个白名单模式）。在Folders to hide 中添加 。配置完成之后只有archetypes和content两个文件夹目录了，瞬间就变得很清爽，可以更加专注博客的编辑而不被hugo的项目文件影响。\ntext assets data i18n layouts public resources static themes Paste Image Rename 一个非常好用的插件，不需要配置，在截完图粘贴进Obsidian之后就会有一个对话框让你输入新的文件名，第一次会提示是否需要更新文章中的链接，直接点击以后一直更新就好了。\nAttachment Manager 附件管理插件，我没有进行其他配置，安装完启用即可，真正的开箱即用。\nCode Sytler 设置，选择 CodeBlock Styling后，选择 Codeblock Header，选择 Display Header Language Tags 为Always\n1. 实现图形化新建文章 Hugo的文章创建需要使用 Commander 命令来进行创建，为了让Hugo给文章进行初始化的设置（可能还有其他的配置文件修改，根据我自己的使用经验，在posts目录下创建的文章可以被编译，但对于新增的Layout直接新建文件会无法编译）。所以，我认为还是通过在图像界面上新增一个功能来代替我们输入命令会更合适一些。\n需要用到的插件\nShell Command：用于将 hugo new 命令封装成Obsidian的命令 Commander：用于将封装好的Obsidian命令添加到Obsidian的界面上 Shell Command 使用前确保hugo相关命令可以被命令行程序调用，即hugo.exe需要在环境变量中，可以通过打开cmd输入 hugo version 进行尝试。\n打开Shell Command的配置界面，新增一条Shell Command 在命令界面中输入 hugo new posts/{{_filename}}.md 这是我们需要执行的新增文档命令，其中 {{_filename}} 是一个变量，下一步中会配置接收变量的方式\n打开Shell Command的配置界面，新增一条Precations。点击new promt按钮，可以进入图片中的编辑页面，名称可以随意取，最关键是的需要绑定到{{_filename}} 变量，在Target Variable中新建这个变量即可 在Shell Command命令的配置面板，点击命令的小齿轮按钮，打开详细设置，连接 proactions和命令，可以在通用设置中添加一个别名方便寻找 配置完成后，可按 Ctrl + P 唤出Obsidian的操作面板进行尝试\nCommander 打开Commander的配置面板，在左侧栏目中，新增一个按钮 具体步骤为，点击添加命令，选中 Shell Command创建的命令，输入界面中按钮名称 配置完成后，可以在左侧看到一个新的按钮 2. 图床配置 博客的图片管理一直是让人头疼的事情，综合费用和便捷程度考虑，我选用腾讯云的是COS作为图床服务，免费的额度足够日常使用，因为我平时写文基本都是打开源码模式（当然，就算不用源码模式写文也用不完免费额度，主要还是在博客生产环境的浏览量），当然也可以选用其他的图床服务，配置的不同仅仅在于PicGo的目标端。\nPicList软件配置 软件下载安装完成之后，配置腾讯云COS的链接信息，并设置为默认图床。\n需要准备以下内容：\nSecretId：在腾讯云，头像Hover下的菜单-访问管理-API管理中创建 SecretKey: 在腾讯云，头像Hover下的菜单-访问管理-API管理中创建，只出现一次，下载下来记住了 Bucket：在腾讯云-控制台-对象存储-存储桶列表 AppId：在腾讯云，头像Hover下的菜单-访问管理-API管理中创建 存储区域：在腾讯云-控制台-对象存储-存储桶列表 将内容配置到PicList中，并设置为默认图床，可以上传一个图片进行测试。\n然后是可选的插件配置，在PicList的界面中，打开菜单插件，搜索 rename-file插件，安装并进行配置。配置文件格式路径为 /{localFolder:1}/{origin} ，在我实际的使用过程中，开启附件管理后，图床上的位置为 /${blogfile}/content/posts/xx.md_Attachements/xx.png 。完全符合我的预期，图片可以根据文档分类存放，在后期的管理和博客更新过程中也会非常方便。\nIamge Auto Upload插件配置 可选 可以开启可选项，上传后删除源文件。其他都不需要配置\nCommander新增一键上传 在页首栏新增一个按钮 最终会在编辑器的上方，一本阅读模式按钮（一本书） 边上出现一个新按钮，用于一件上传本文中的所有图片到图床。\n3. Hugo Preview 安装好Hugo Preview插件后。会在右下角出现一个Go的图标（蓝色），点击之后就会出现Hugo站点的预览。（双屏食用更佳）\nFAQ: 已知问题 记录本人在配置过程中遇到的问题及解决方案\n1. Git跟踪文件异常 现象：在Obsidian中，文件没有修改，Git跟踪的文件中却提示被修改哦，打开diff看发现也没有区别 原因：Windows系统下Git开启了换行符自动转换，Ob转换为LF，而Git转换为CRLF 解决方案：在仓库目录下输入命令 git config core.autocrlf input 所有换行符统一转换为LF 2. Git无法使用\u0026\u0026Hugo Preview无法使用 现象： Git使用时，提示报错obsidian cannot run git command，hugo preview 提示报错 原因： 无法调用到Git命令 解决方案： （推荐方案） Git命令未加入环境变量，编辑系统环境变量，将 Git的bin目录加入系统环境变量 在Obsidian的Git插件中配置Git的地址为git.exe的绝对路径 ",
   "wordCount" : "240",
   "inLanguage": "zh",
-  "datePublished": "2024-01-01T04:00:00+08:00",
-  "dateModified": "2024-12-31T22:33:14+08:00",
+  "datePublished": "2025-01-01T04:00:00+08:00",
+  "dateModified": "2025-01-01T12:52:04+08:00",
   "author":{
     "@type": "Person",
     "name": "Zanks"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.zanks.link/2024/01/01/hugo-3/"
+    "@id": "https://www.zanks.link/2025/01/01/hugo-3/"
   },
   "publisher": {
     "@type": "Organization",
@@ -217,7 +217,7 @@
     <h1 class="post-title entry-hint-parent" style="margin-top: 10px;">
       【Hugo】体验篇：Obsidian写作
     </h1>
-    <div class="post-meta" style="margin-top: 20px;">发布于: <no value> <span title='2024-01-01 04:00:00 +0800 +0800'>2024-01-01</span>&nbsp;·&nbsp;最后修改于: <no value> <span title='2024-12-31 22:33:14 +0800 +0800'>2024-12-31</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;240 字&nbsp;·&nbsp;Zanks
+    <div class="post-meta" style="margin-top: 20px;">发布于: <no value> <span title='2025-01-01 04:00:00 +0800 +0800'>2025-01-01</span>&nbsp;·&nbsp;最后修改于: <no value> <span title='2025-01-01 12:52:04 +0800 +0800'>2025-01-01</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;240 字&nbsp;·&nbsp;Zanks
 
 </div>
 
@@ -460,7 +460,7 @@
                 
                 
                 
-                <a class="last-mod-item" href="/2024/01/01/hugo-3/">
+                <a class="last-mod-item" href="/2025/01/01/hugo-3/">
                     <div class="last-mod-item-tile">【Hugo】体验篇：Obsidian写作 </div>
                     <div class="last-mod-item-time">
                         
@@ -471,7 +471,7 @@
                                 fill="var(--text-color)" p-id="5270"></path>
                         </svg>
                         <div>
-                            2024-12-31
+                            2025-01-01
                         </div>
                         <svg t="1735544175558" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" p-id="6749" width="200" height="200" fill="var(--text-color)">
@@ -483,7 +483,7 @@
                     </div>
                 </a>
                 
-                <a class="last-mod-item" href="/2024/01/01/hugo-2/">
+                <a class="last-mod-item" href="/2025/01/01/hugo-2/">
                     <div class="last-mod-item-tile">【Hugo】进阶篇：PaperMod主题美化 </div>
                     <div class="last-mod-item-time">
                         
@@ -494,7 +494,7 @@
                                 fill="var(--text-color)" p-id="5270"></path>
                         </svg>
                         <div>
-                            2024-12-31
+                            2025-01-01
                         </div>
                         <svg t="1735544175558" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" p-id="6749" width="200" height="200" fill="var(--text-color)">
@@ -506,7 +506,7 @@
                     </div>
                 </a>
                 
-                <a class="last-mod-item" href="/2024/01/01/hugo-1/">
+                <a class="last-mod-item" href="/2025/01/01/hugo-1/">
                     <div class="last-mod-item-tile">【Hugo】基础篇：个人博客搭建 </div>
                     <div class="last-mod-item-time">
                         
@@ -517,7 +517,7 @@
                                 fill="var(--text-color)" p-id="5270"></path>
                         </svg>
                         <div>
-                            2024-12-31
+                            2025-01-01
                         </div>
                         <svg t="1735544175558" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" p-id="6749" width="200" height="200" fill="var(--text-color)">
@@ -782,7 +782,7 @@
     <blockquote>
         <p>本文为原创内容，版权归作者所有。如需转载，请在文章中声明本文标题及链接。</p>
         <p>文章标题：【Hugo】体验篇：Obsidian写作 —— Zanks</p>
-        <p>文章链接：<a href="https://www.zanks.link/2024/01/01/hugo-3/" target="_blank">https://www.zanks.link/2024/01/01/hugo-3/</a></p>
+        <p>文章链接：<a href="https://www.zanks.link/2025/01/01/hugo-3/" target="_blank">https://www.zanks.link/2025/01/01/hugo-3/</a></p>
         <p>许可协议：<a href="" target="_blank"></a></p>
     </blockquote>
 </div><footer class="post-footer">
@@ -792,7 +792,7 @@
       <li><a href="https://www.zanks.link/tags/obsidian/">Obsidian</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="https://www.zanks.link/2024/01/01/hugo-2/">
+  <a class="next" href="https://www.zanks.link/2025/01/01/hugo-2/">
     <span class="title">下一页 »</span>
     <br>
     <span>【Hugo】进阶篇：PaperMod主题美化</span>
@@ -823,7 +823,7 @@
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 - 2024 · <a href="https://www.zanks.link/">乱话三千</a></span> · 
+    <span>&copy; 2025 - 2025 · <a href="https://www.zanks.link/">乱话三千</a></span> · 
     
     <span>
         Powered by
