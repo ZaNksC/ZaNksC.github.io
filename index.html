@@ -15,7 +15,6 @@
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <meta name="referrer" content="no-referrer-when-downgrade">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.32f58c32b7729edd7cdbc9c1e592c9b1b41f9a225fac6316974caaffc38f7075.css" integrity="sha256-MvWMMrdynt1828nB5ZLJsbQfmiJfrGMWl0yq/8OPcHU=" rel="preload stylesheet" as="style">
-<script src="https://kit.fontawesome.com/4f00e1f6e6.js" crossorigin="anonymous"></script>
 <link rel="icon" href="https://www.zanks.link/assets/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.zanks.link/assets/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.zanks.link/assets/favicon-32x32.png">
@@ -65,6 +64,10 @@
 </noscript>
 
 <link rel="stylesheet" href="/assets/css/shortcode.min.9e17e62f02d1dbb55dcc8b77e422943523653c9ece5678a98f2129104427ab57.css" integrity="sha256-nhfmLwLR27VdzIt35CKUNSNlPJ7OVnipjyEpEEQnq1c=" crossorigin="anonymous">
+
+<script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
+
+<script src="https://kit.fontawesome.com/4f00e1f6e6.js" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-420MPRSEER"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -111,7 +114,16 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.zanks.link/" accesskey="h" title="乱话三千 (Alt + H)">乱话三千</a>
+            <a href="https://www.zanks.link/" accesskey="h" title="乱话三千 (Alt + H)">
+                <img src="https://www.zanks.link/assets/favicon.ico" alt="" aria-label="logo"
+                    height="30">乱话三千<span id="typeit-on-logo"></span>
+                <script>
+                    new TypeIt("#typeit-on-logo", {
+                        speed: 1,
+                        waitUntilVisible: true,
+                    }).go();
+                </script>
+            </a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -169,7 +181,13 @@
         <img draggable="false" src="https://www.zanks.link/homepage.jpg" alt="profile image" title=""
             height="256" width="256" />
         <h1>乱话三千</h1>
-        <span>记载着某个人的胡言乱语</span><div class="social-icons" >
+        <span id="subtitle">欢迎来到《乱话三千》，小猫黄基金祝您万事如意！可以到处看看铲屎官的胡言乱语哦~~~</span>
+        <script>
+            new TypeIt("#subtitle", {
+                speed: 70,
+                waitUntilVisible: true,
+            }).go();
+        </script><div class="social-icons" >
     <a href="https://github.com/ZaNksC" target="_blank" rel="noopener noreferrer me"
         title="Github">
         <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
