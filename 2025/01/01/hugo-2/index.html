@@ -825,7 +825,7 @@
 </span></span><span class="line"><span class="ln">86</span><span class="cl"><span class="p">}</span></span></span></code></pre></div>
     </div>
 </div><ol start="3">
-<li>同时在<code>archetypes\default.yml</code>中添加参数</li>
+<li>同时在<code>archetypes/default.yml</code>中添加参数</li>
 </ol>
 
 
@@ -841,7 +841,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            archetypes\default.yml
+            archetypes/default.yml
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -864,7 +864,7 @@
 <p>使用不蒜子Busuanzi进行站点访问统计。
 参考链接： <a href="https://blog.kanikig.xyz/hugo-busuanzi/">https://blog.kanikig.xyz/hugo-busuanzi/</a></p>
 <ol>
-<li>添加文件 <code>layouts\parials\head.html</code> 从主题文件夹 <code>themes\layouts\parials\head.html</code> 中拷贝内容并修改，在Styles上方添加一个if块</li>
+<li>添加文件 <code>layouts/parials/head.html</code> 从主题文件夹 <code>themes/layouts/parials/head.html</code> 中拷贝内容并修改，在Styles上方添加一个if块</li>
 </ol>
 
 
@@ -880,7 +880,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\parials\head.html
+            layouts/parials/head.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -910,7 +910,7 @@
 </span></span><span class="line"><span class="ln">13</span><span class="cl">...</span></span></code></pre></div>
     </div>
 </div><ol start="2">
-<li>添加文件 <code>layouts\parials\footer.html</code> 从主题文件夹 <code>themes\layouts\parials\footer.html</code> 中拷贝内容并修改，在footer标签内添加一个if块</li>
+<li>添加文件 <code>layouts/parials/footer.html</code> 从主题文件夹 <code>themes/layouts/parials/footer.html</code> 中拷贝内容并修改，在footer标签内添加一个if块</li>
 </ol>
 
 
@@ -926,7 +926,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\parialsooter.html
+            layouts/parials/footer.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -981,7 +981,7 @@
 </span></span><span class="line"><span class="ln">38</span><span class="cl">{{- end }}</span></span></code></pre></div>
     </div>
 </div><ol start="3">
-<li>添加文件 <code>layouts\_defaults\single.html</code> 从主题文件夹 <code>themes\layouts\_defaults\single.html</code> 中拷贝内容并修改，在post-meta内添加一个if块</li>
+<li>添加文件 <code>layouts/_defaults/single.html</code> 从主题文件夹 <code>themes/layouts/_defaults/single.html</code> 中拷贝内容并修改，在post-meta内添加一个if块</li>
 </ol>
 
 
@@ -997,7 +997,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\_defaults\single.html
+            layouts/_defaults/single.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1103,7 +1103,7 @@
 </div><h2 id="时间线">时间线</h2>
 <p>添加一个根据时间线排列的归档页面，写的多写的久才有质感。多写写吧！</p>
 <ol>
-<li>添加 <code>content\archive.md</code> 文件，输入以下内容</li>
+<li>添加 <code>content/archive.md</code> 文件，输入以下内容</li>
 </ol>
 
 
@@ -1119,7 +1119,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            content\archive.md
+            content/archive.md
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1181,7 +1181,7 @@
 </div><h2 id="留言板">留言板</h2>
 <p>利用评论系统，新增一个Layout来构建一个留言板页面。</p>
 <ol>
-<li>创建 <code>layouts\message.html</code> 文件输入一下代码（代码从 <code>single.html</code> 中删除了很多东西，简化得到，顺便做了一下标题居中，这回是自己写的了）：</li>
+<li>创建 <code>layouts/message.html</code> 文件输入一下代码（代码从 <code>single.html</code> 中删除了很多东西，简化得到，顺便做了一下标题居中，这回是自己写的了）：</li>
 </ol>
 
 
@@ -1197,7 +1197,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\message.html
+            layouts/message.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1258,7 +1258,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            content\message.md
+            content/message.md
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1392,7 +1392,7 @@
 </ol>
 <h2 id="自定义域名">自定义域名</h2>
 <p>首先需要有一个域名，在对应的域名服务商添加一条解析记录，解析类型：CNAME，解析值为 xxx.github.io (xxx替换为自己的Github用户名)</p>
-<p>再添加文件 <code>static\CNAME</code> ,文件的内容为自定义的域名。没有这个文件，访问域名会出现404。</p>
+<p>再添加文件 <code>static/CNAME</code> ,文件的内容为自定义的域名。没有这个文件，访问域名会出现404。</p>
 <h2 id="友链">友链</h2>
 <p>参考： <a href="https://aimerneige.com/zh/post/web/add-friend-link-in-papermod-blog/">https://aimerneige.com/zh/post/web/add-friend-link-in-papermod-blog/</a></p>
 <p>这个是没有脑子直接抄的</p>
@@ -1724,7 +1724,7 @@
 <p>参考了一个个性化的PaperMod主题 <a href="https://github.com/tofuwine/PaperMod-PE">https://github.com/tofuwine/PaperMod-PE</a>
 实现的效果是在页面的右侧添加了一个前往评论区的按钮，重写了官方回到顶部的按钮（添加了阅读进度）</p>
 <ol>
-<li>在 <code>static\js</code> 目录下引入两个文件分别用于实现按钮的动态样式，实现逻辑来自PaperMod-PE源码。</li>
+<li>在 <code>static/js</code> 目录下引入两个文件分别用于实现按钮的动态样式，实现逻辑来自PaperMod-PE源码。</li>
 </ol>
 
 
@@ -1740,7 +1740,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            static\js\go-comment.js
+            static/js/go-comment.js
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1786,7 +1786,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            static\js\go-top.js
+            static/js/go-top.js
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1849,7 +1849,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\partialsight_aside.html
+            layouts/partials/right_aside.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1888,7 +1888,7 @@
 </span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="p">&lt;/</span><span class="nt">aside</span><span class="p">&gt;</span></span></span></code></pre></div>
     </div>
 </div><ol start="4">
-<li>添加CSS <code>asset\css\extended\right_side.css</code> 实现样式</li>
+<li>添加CSS <code>asset/css/extended/right_side.css</code> 实现样式</li>
 </ol>
 
 
@@ -1904,7 +1904,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            asset\css\extendedight_side.css
+            asset/css/extended/right_side.css
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -1978,7 +1978,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\partialsight_aside.html
+            layouts/partials/right_aside.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -2027,7 +2027,7 @@
 </span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span></code></pre></div>
     </div>
 </div><ol start="2">
-<li>在<code>asset\css\extended\right_side.css</code> 添加样式</li>
+<li>在<code>asset/css/extended/right_side.css</code> 添加样式</li>
 </ol>
 
 
@@ -2043,7 +2043,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            asset\css\extendedight_side.css
+            asset/css/extended/right_side.css
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -2185,7 +2185,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\_default\_markupender-codeblock.html
+            layouts/_default/_markup/render-codeblock.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -2262,7 +2262,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\_default\_markupender-codeblock-mermaid.html
+            layouts/_default/_markup/render-codeblock-mermaid.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -2296,7 +2296,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            assets\css\extended\code.css
+            assets/css/extended/code.css
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -2743,7 +2743,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\shortcodes\admonition.html
+            layoutsshortcodes/admonition.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -2814,7 +2814,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            assets\css\extended\shortcode\admonition.css
+            assets/css/extended/shortcode/admonition.css
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -3274,7 +3274,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\partials\head.html
+            layouts/partials/head.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
@@ -3291,7 +3291,7 @@
     <div class="fund-code-content">
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln">1</span><span class="cl">{{- if eq .Section &#34;tags&#34;}}
 </span></span><span class="line"><span class="ln">2</span><span class="cl">{{/* 标签云 */}}
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/word-cloud.css&#34;</span><span class="err">\</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css/word-cloud.css&#34;</span><span class="p">/&gt;</span>
 </span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/js/wordcloud2.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="ln">5</span><span class="cl">{{- end }}</span></span></code></pre></div>
     </div>
@@ -3527,7 +3527,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            layouts\_default\single.html
+            layouts/_default/single.html
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn ">
