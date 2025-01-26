@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 乱话三千</title>
+    <link>https://www.zanks.link/tags/</link>
+    <description>Recent content in Tags on 乱话三千</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 26 Jan 2025 15:15:30 +0800</lastBuildDate>
+    <atom:link href="https://www.zanks.link/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://www.zanks.link/tags/hugo/</link>
+      <pubDate>Wed, 01 Jan 2025 04:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>https://www.zanks.link/tags/obsidian/</link>
+      <pubDate>Wed, 01 Jan 2025 04:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>建站</title>
+      <link>https://www.zanks.link/tags/%E5%BB%BA%E7%AB%99/</link>
+      <pubDate>Wed, 01 Jan 2025 04:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/tags/%E5%BB%BA%E7%AB%99/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PaperMod</title>
+      <link>https://www.zanks.link/tags/papermod/</link>
+      <pubDate>Wed, 01 Jan 2025 02:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/tags/papermod/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
