@@ -1,577 +1,204 @@
 <!DOCTYPE html>
-<html lang="zh" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 <title>【Hugo】体验篇：Obsidian写作 | 乱话三千</title>
-<meta name="keywords" content="hugo, 建站, obsidian">
-<meta name="description" content="装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。">
-<meta name="author" content="Zanks">
-<link rel="canonical" href="https://www.zanks.link/2025/01/01/hugo-3/">
+<meta name="start-time" content="2025-01-01 00:00:00"><meta name="twikoo-env-id" content="https://zanks-twikoo.netlify.app/.netlify/functions/twikoo">
+
+<link rel="stylesheet" href="/css/about.min.2e74082a8019a34e210da65762d79d8950155eb3ba845dfb3de7880ba7227b75.css" integrity="sha256-LnQIKoAZo04hDaZXYtediVAVXrO6hF37PeeIC6cie3U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/announcement.min.82f8cdbe509ade8c64ab660e447ff104c8b7b57702fdafc2d4d5131fb59b8f11.css" integrity="sha256-gvjNvlCa3oxkq2YORH/xBMi3tXcC/a/C1NUTH7WbjxE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/author-info.min.dc87bcd3f028c2dde3ea16d085e5717eeafcd00682a5fcfcc21169e64afe527a.css" integrity="sha256-3Ie80/Aowt3j6hbQheVxfur80AaCpfz8whFp5kr&#43;Uno=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/authors.min.ea4efdff1158f97241ec30e87f98e5c8772e40d1f596ac9c2b9203ad6848ef2c.css" integrity="sha256-6k79/xFY&#43;XJB7DDof5jlyHcuQNH1lqycK5IDrWhI7yw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/basic.min.277d6a7464200b9f4e1f28aaf47a316d2cba09bdd73247a52ca33eb834b373c9.css" integrity="sha256-J31qdGQgC59OHyiq9HoxbSy6Cb3XMkelLKM&#43;uDSzc8k=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/chirp.min.ca5885bfce51f047e97eae90b850419926d33331c9f46b84cfd03258b85a3c97.css" integrity="sha256-yliFv85R8Efpfq6QuFBBmSbTMzHJ9GuEz9AyWLhaPJc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/comments.min.90a41b01d26325770d0fbe040cb858d4251979de5b2a406670c62de8269ccdb5.css" integrity="sha256-kKQbAdJjJXcND74EDLhY1CUZed5bKkBmcMYt6CaczbU=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/copyright.min.cc055a71e31b212da911bb0f8acdcab692717a022a831e57e3027a2736425459.css" integrity="sha256-zAVaceMbIS2pEbsPis3KtpJxegIqgx5X4wJ6JzZCVFk=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/friends.min.d42b645af3ff2959256adac07a4aa4b41269a965612ad7f88f4f94b0e0122196.css" integrity="sha256-1CtkWvP/KVklatrAekqktBJpqWVhKtf4j0&#43;UsOASIZY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/header.min.1fac3cf3d16315d8c61d7114547017ad390f3ce72e959c7fdc838809270992e8.css" integrity="sha256-H6w889FjFdjGHXEUVHAXrTkPPOculZx/3IOICScJkug=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/home.min.199221816490e0948ddacd2bb28fd264331abc8fc80781ed3855a80b781f6cfc.css" integrity="sha256-GZIhgWSQ4JSN2s0rso/SZDMavI/IB4HtOFWoC3gfbPw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/last-update.min.223a3e4bce8382358f1983191a9a6e1ed7579458fb6e9952327b335e5da8fb4a.css" integrity="sha256-Ijo&#43;S86DgjWPGYMZGppuHtdXlFj7bplSMnszXl2o&#43;0o=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/list-post.min.e493d4d7744f64d196758d442cbda85e8ed84b1c5f099843aaef5fc8f4fb9211.css" integrity="sha256-5JPU13RPZNGWdY1ELL2oXo7YSxxfCZhDqu9fyPT7khE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/list.min.ba6eece6ea29ba755d3d4989c14ff1c730c9a68122468f841675efd689ad72f7.css" integrity="sha256-um7s5uopunVdPUmJwU/xxzDJpoEiRo&#43;EFnXv1omtcvc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/main.min.ef19000e1069a29970fa28ac6ece8d379ccd2cc01cfd080e3aa01eb93ad98143.css" integrity="sha256-7xkADhBpoplw&#43;iisbs6NN5zNLMAc/QgOOqAeuTrZgUM=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/md.min.a18532bcbe0bd9de39d715b91c62c341808c84bc786cea655fd0b40aecbbf47d.css" integrity="sha256-oYUyvL4L2d451xW5HGLDQYCMhLx4bOplX9C0Cuy79H0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/menu.min.f38cd69111b7a83bdbca2c301f67c54bc7847378e4f524d091025ff147f29146.css" integrity="sha256-84zWkRG3qDvbyiwwH2fFS8eEc3jk9STQkQJf8UfykUY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/page.min.327faf4b56f53f360d59c9ec4ebc3e459780d6081f93e8d2632a521705b75684.css" integrity="sha256-Mn&#43;vS1b1PzYNWcnsTrw&#43;RZeA1ggfk&#43;jSYypSFwW3VoQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post-meta.min.dec6e55761a93b5cb004630e45bf1f35f3cbd5bf1be9627f2300be018b79d7f2.css" integrity="sha256-3sblV2GpO1ywBGMORb8fNfPL1b8b6WJ/IwC&#43;AYt51/I=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/single.min.eeaa54b8cbbaf978c50fc703e82d13e3eb8ea83b23836a8019491b23e66b00e2.css" integrity="sha256-7qpUuMu6&#43;XjFD8cD6C0T4&#43;uOqDsjg2qAGUkbI&#43;ZrAOI=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/site-info.min.99f7ea72487d21367994413cf28009c799038172b9fa27de1e78d6bc025a1baa.css" integrity="sha256-mffqckh9ITZ5lEE88oAJx5kDgXK5&#43;ifeHnjWvAJaG6o=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/tags.min.01948be497fb7f68e7327070ba65a644286938095ca3199e4079a649e96f87f4.css" integrity="sha256-AZSL5Jf7f2jnMnBwumWmRChpOAlcoxmeQHmmSelvh/Q=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/terms-tags.min.1a79156c3d468a99582ed38b45993f2077357ffd9745fe573dc9478c4afd427a.css" integrity="sha256-GnkVbD1GiplYLtOLRZk/IHc1f/2XRf5XPclHjEr9Qno=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/theme-default.min.c9cfb78cd7c2e24661e89cb825e5ff60ca5487d85c32786d3aeaca467aa1f1bb.css" integrity="sha256-yc&#43;3jNfC4kZh6Jy4JeX/YMpUh9hcMnhtOurKRnqh8bs=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/toc.min.97935001d1c901f611b9a21cb1e0b103af62ffd1c8dca20518900dacb2af7968.css" integrity="sha256-l5NQAdHJAfYRuaIcseCxA69i/9HI3KIFGJANrLKveWg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/third-party/swiper-bundle.min.min.5983c13a687fefa51ed8c90899af9d232c7cf661ce4b8227d98b68044c7b43d5.css" integrity="sha256-WYPBOmh/76Ue2MkIma&#43;dIyx89mHOS4In2YtoBEx7Q9U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/shortcode/admonition.min.2a42de5374e28cad4d33f9381b26947b93a6fe37801c8ec996777009ae171907.css" integrity="sha256-KkLeU3TijK1NM/k4GyaUe5Om/jeAHI7JlndwCa4XGQc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/shortcode/git.min.250fa59fcc440a058ca2862e8d3e4eebfdcb7e7de571b796d8d87b6b7637d992.css" integrity="sha256-JQ&#43;ln8xECgWMooYujT5O6/3Lfn3lcbeW2Nh7a3Y32ZI=" crossorigin="anonymous"><link rel="preload" href="/css/theme/github.min.1bebd3859a97fa10cb230aa9eba85751895a0c2221711d299dd7d9807c546d65.css" as="style">
+<link rel="preload" href="/css/theme/github-dark.min.a2843de5d40c4736eecaaad3cc67aa464147149e3051f1fb8328d98364348a33.css" as="style">
+
+<link rel="stylesheet" href="/css/theme/github.min.1bebd3859a97fa10cb230aa9eba85751895a0c2221711d299dd7d9807c546d65.css" id="hl-github-css" media="all">
+<link rel="stylesheet" href="/css/theme/github-dark.min.a2843de5d40c4736eecaaad3cc67aa464147149e3051f1fb8328d98364348a33.css" id="hl-github-dark-css" media="all" disabled>
+
+
+
+
+<script src="/js/bundle.568603ade7daee5b1a514da7e9fd5fa26de05de92171dbf81cfe6a5d96e5a4c7.js" integrity="sha256-VoYDrefa7lsaUU2n6f1fom3gXekhcdv4HP5qXZblpMc=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/third-party/swiper-bundle.min.css" />
+<script src="/js/third-party/swiper-bundle.min.js"></script>
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/cal-heatmap/dist/cal-heatmap.css" />
+
+
+
+
+
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <meta name="referrer" content="no-referrer-when-downgrade">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.195344c9df3999702cb0989be5120503a4d039c25c48d1f0d6829779076eb97a.css" integrity="sha256-GVNEyd85mXAssJib5RIFA6TQOcJcSNHw1oKXeQduuXo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.zanks.link/assets/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.zanks.link/assets/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.zanks.link/assets/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://www.zanks.link/assets/apple-touch-icon.png">
-<link rel="mask-icon" href="https://www.zanks.link/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://www.zanks.link/2025/01/01/hugo-3/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
 
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript>
-
-<link rel="stylesheet" href="/assets/css/shortcode.min.9e17e62f02d1dbb55dcc8b77e422943523653c9ece5678a98f2129104427ab57.css" integrity="sha256-nhfmLwLR27VdzIt35CKUNSNlPJ7OVnipjyEpEEQnq1c=" crossorigin="anonymous">
-
-<script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
-
-<script src="https://kit.fontawesome.com/4f00e1f6e6.js" crossorigin="anonymous"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-420MPRSEER"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-420MPRSEER');
-</script><meta property="og:url" content="https://www.zanks.link/2025/01/01/hugo-3/">
-  <meta property="og:site_name" content="乱话三千">
-  <meta property="og:title" content="【Hugo】体验篇：Obsidian写作">
-  <meta property="og:description" content="装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。">
-  <meta property="og:locale" content="zh-cn">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-01-01T04:00:00+08:00">
-    <meta property="article:modified_time" content="2025-01-10T16:33:19+08:00">
-    <meta property="article:tag" content="Hugo">
-    <meta property="article:tag" content="建站">
-    <meta property="article:tag" content="Obsidian">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Hugo】体验篇：Obsidian写作">
-<meta name="twitter:description" content="装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "📖 文章",
-      "item": "https://www.zanks.link/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "【Hugo】体验篇：Obsidian写作",
-      "item": "https://www.zanks.link/2025/01/01/hugo-3/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "【Hugo】体验篇：Obsidian写作",
-  "name": "【Hugo】体验篇：Obsidian写作",
-  "description": "装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。",
-  "keywords": [
-    "hugo", "建站", "obsidian"
-  ],
-  "articleBody": " 装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。\n前言 Hugo作为建站博客工具的时候，博文的载体是 markdown ，而 markdown 本身是一个纯文本的标记语言，在Hugo工具提供的命令中，会转换成静态的网页文件来提供更加优质的阅读体验。所以，在理论上，选用任何的文本编辑器，其实都可以作为博客的写作工具。\n然而，在真实使用的情况下，我们需要先在命令行中，输入 hugo new posts/xxx.md 命令来创建一篇文章，然后打开对应的文本编辑器来编辑文章，还需要在命令中使用 hugo serve -D 来看一下显示效果，如果用到图片，还需要手动管理图片的地址来保证本地和发布之后保持一致，整个过程就会显得非常的繁琐。\n基于以上我博客的编写流程，提炼了几个痛点和几点期望\n创建文章需要输入命令，我希望可以通过图形化界面快速的创建文章 博客图片的管理，利用图床进行图片 本文将会围绕这两个痛点，对写作体验进行逐步的优化。我计划使用Obsidian作为我的写作工具。以下将是我计划中的写作及发布流程（配合自动发布）：\n如果你希望跟我拥有一样的配置，那么需要提前准备好以下软件或账号：\n一个基于Hugo构建的笔记目录 Obsidian : 一款舒适的Markdown编辑器 PicList: 一款基于PicGo二次开发的图床管理工具 腾讯云COS服务： 请自行前往腾讯云开启（有免费额度，超过之后需要付费） 插件\u0026软件 以下插件均指代Obsidian插件市场中的插件，软件为系统软件，均需要自己安装。 对于Obsidian插件需要关闭安全模式，来开启第三方插件，以下插件均可以通过插件市场下载，插件在Github中，如遇到网络问题请自行解决。 安装完OB插件记得重启\n功能插件 以下插件均为必须安装的插件，用于实现前文提到的功能。\nShell Command Shell Command是一款可以在Obsidian中运行操作系统命令的插件，由于hugo和Git的操作之前都是基于命令行手敲的，所以我选用了他作为实现层的插件，在Shell Command中包装好常用的命令，然后通过其他插件来进行更近一步的封装。\nCommander Shell Command是一款可以将命令设置为图标的插件，用于将Hugo创建博客的命令可视化\nGit 用于可视化Git操作\nHugo Preview 用于在本地进行Hugo网站预览，可以实时预览，非常好用，免去了打开命令行输入hugo server -D 命令的麻烦（实际上这个按钮代替你执行了这个命令），如果有双屏的话，可以一个屏幕预览一个屏幕书写，非常好用。\nImage Auto Upload 文件主动上传到图床的工具，需要配合PicGo来使用。\n美化\u0026操作效率插件 以下插件为选装插件，用于提升外观和使用效率。有很多图片相关的插件，因为Obsidian的图片管理实在令人感到很苦闷。\n主题：Board 单纯的记录以下我现在正在用的主题插件\nHide Folders Obsidian只是一个单纯的Mardown编辑器，很多代码相关的文件不会显示，所以目录下会有很多平时写作时完全不需要的目录，可以通过Hide Folders插件进行隐藏。\nClear Unused Image 后来我发现不需要安装，因为上传插件中可以开启图片上传后移除\n不推荐Git使用不熟练的同学安装，如果要安装，务必理解配置的含义，或者完全照抄我的。 这是一个删除未使用图片的插件，我按照我的使用习惯，进行编译时，会把图片放在本地，等上传图床后，进行删除。\nPaste Image Rename 一个用于将截图添加到文章中进行重命名的插件\nAttachment Manager OB的附件管理软件，可以将一个笔记下的附件（主要是图片）放到单独的文件夹下，我会将这个路径映射到图床上，图片的管理和会方便很多，可以配合 Paste Image Rename 使用，相当丝滑，强烈推荐。\nCode Styler 用于实现代码输出美化的插件，主要是用来折叠代码。\n软件 PicGO PicGo是一款图床管理软件，支持主流的多种云服务图像存储或图床服务。\nPicList PicList是基于PicGo二次开发的图床管理软件，我主要是为了方便进行文件的管理(带删除和管理相当的方便)。最终选用了PicList。\n需要在PicList中添加一个名为 rename-file 的插件，来配合OB附件管理插件来进行图片的分目录管理\n配置 非功能插件配置 Hide Folders 需要在Hide Folder的配置界面，进行隐藏文件夹进行配置。（没找到白名单模式，不知道后续作者会不会更新一个白名单模式）。在Folders to hide 中添加 。配置完成之后只有archetypes和content两个文件夹目录了，瞬间就变得很清爽，可以更加专注博客的编辑而不被hugo的项目文件影响。\ntext assets data i18n layouts public resources static themes Paste Image Rename 一个非常好用的插件，不需要配置，在截完图粘贴进Obsidian之后就会有一个对话框让你输入新的文件名，第一次会提示是否需要更新文章中的链接，直接点击以后一直更新就好了。\nAttachment Manager 附件管理插件，我没有进行其他配置，安装完启用即可，真正的开箱即用。\nCode Sytler 设置，选择 CodeBlock Styling后，选择 Codeblock Header，选择 Display Header Language Tags 为Always\n1. 实现图形化新建文章 Hugo的文章创建需要使用 Commander 命令来进行创建，为了让Hugo给文章进行初始化的设置（可能还有其他的配置文件修改，根据我自己的使用经验，在posts目录下创建的文章可以被编译，但对于新增的Layout直接新建文件会无法编译）。所以，我认为还是通过在图像界面上新增一个功能来代替我们输入命令会更合适一些。\n需要用到的插件\nShell Command：用于将 hugo new 命令封装成Obsidian的命令 Commander：用于将封装好的Obsidian命令添加到Obsidian的界面上 Shell Command 使用前确保hugo相关命令可以被命令行程序调用，即hugo.exe需要在环境变量中，可以通过打开cmd输入 hugo version 进行尝试。\n打开Shell Command的配置界面，新增一条Shell Command 在命令界面中输入 hugo new posts/{{_filename}}.md 这是我们需要执行的新增文档命令，其中 {{_filename}} 是一个变量，下一步中会配置接收变量的方式\n打开Shell Command的配置界面，新增一条Precations。点击new promt按钮，可以进入图片中的编辑页面，名称可以随意取，最关键是的需要绑定到{{_filename}} 变量，在Target Variable中新建这个变量即可 在Shell Command命令的配置面板，点击命令的小齿轮按钮，打开详细设置，连接 proactions和命令，可以在通用设置中添加一个别名方便寻找 配置完成后，可按 Ctrl + P 唤出Obsidian的操作面板进行尝试\nCommander 打开Commander的配置面板，在左侧栏目中，新增一个按钮 具体步骤为，点击添加命令，选中 Shell Command创建的命令，输入界面中按钮名称 配置完成后，可以在左侧看到一个新的按钮 2. 图床配置 博客的图片管理一直是让人头疼的事情，综合费用和便捷程度考虑，我选用腾讯云的是COS作为图床服务，免费的额度足够日常使用，因为我平时写文基本都是打开源码模式（当然，就算不用源码模式写文也用不完免费额度，主要还是在博客生产环境的浏览量），当然也可以选用其他的图床服务，配置的不同仅仅在于PicGo的目标端。\nPicList软件配置 软件下载安装完成之后，配置腾讯云COS的链接信息，并设置为默认图床。\n需要准备以下内容：\nSecretId：在腾讯云，头像Hover下的菜单-访问管理-API管理中创建 SecretKey: 在腾讯云，头像Hover下的菜单-访问管理-API管理中创建，只出现一次，下载下来记住了 Bucket：在腾讯云-控制台-对象存储-存储桶列表 AppId：在腾讯云，头像Hover下的菜单-访问管理-API管理中创建 存储区域：在腾讯云-控制台-对象存储-存储桶列表 将内容配置到PicList中，并设置为默认图床，可以上传一个图片进行测试。\n然后是可选的插件配置，在PicList的界面中，打开菜单插件，搜索 rename-file插件，安装并进行配置。配置文件格式路径为 /{localFolder:1}/{origin} ，在我实际的使用过程中，开启附件管理后，图床上的位置为 /${blogfile}/content/posts/xx.md_Attachements/xx.png 。完全符合我的预期，图片可以根据文档分类存放，在后期的管理和博客更新过程中也会非常方便。\nIamge Auto Upload插件配置 可选 可以开启可选项，上传后删除源文件。其他都不需要配置\nCommander新增一键上传 在页首栏新增一个按钮 最终会在编辑器的上方，一本阅读模式按钮（一本书） 边上出现一个新按钮，用于一件上传本文中的所有图片到图床。\n3. Hugo Preview 安装好Hugo Preview插件后。会在右下角出现一个Go的图标（蓝色），点击之后就会出现Hugo站点的预览。（双屏食用更佳）\nFAQ: 已知问题 记录本人在配置过程中遇到的问题及解决方案\n1. Git跟踪文件异常 现象：在Obsidian中，文件没有修改，Git跟踪的文件中却提示被修改哦，打开diff看发现也没有区别 原因：Windows系统下Git开启了换行符自动转换，Ob转换为LF，而Git转换为CRLF 解决方案：在仓库目录下输入命令 git config core.autocrlf input 所有换行符统一转换为LF 2. Git无法使用\u0026\u0026Hugo Preview无法使用 现象： Git使用时，提示报错obsidian cannot run git command，hugo preview 提示报错 原因： 无法调用到Git命令 解决方案： （推荐方案） Git命令未加入环境变量，编辑系统环境变量，将 Git的bin目录加入系统环境变量 在Obsidian的Git插件中配置Git的地址为git.exe的绝对路径 ",
-  "wordCount" : "240",
-  "inLanguage": "zh",
-  "datePublished": "2025-01-01T04:00:00+08:00",
-  "dateModified": "2025-01-10T16:33:19+08:00",
-  "author":{
-    "@type": "Person",
-    "name": "Zanks"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.zanks.link/2025/01/01/hugo-3/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "乱话三千",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.zanks.link/assets/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://www.zanks.link/" accesskey="h" title="乱话三千 (Alt + H)">
-                <img src="https://www.zanks.link/assets/favicon.ico" alt="" aria-label="logo"
-                    height="30">乱话三千<span id="typeit-on-logo"></span>
-                <script>
-                    new TypeIt("#typeit-on-logo", {
-                        speed: 1,
-                        waitUntilVisible: true,
-                    }).go();
-                </script>
-            </a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
+<body>
+  <header>
+    <div class="header-container">
+    <a class="header-title-container" href="/">
+        <div class="header-icon">
+                <img class="header-icon" src="/favicon.ico">
             </div>
+        <div class="header-title">乱话三千</div>
+        
+        <div class="toggle" id="toggle-button">
+            <div id="light-mode-icon" class="toggle-icon active"><span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M28.0527 4.41085C22.5828 5.83695 18.5455 10.8106 18.5455 16.7273C18.5455 23.7564 24.2436 29.4545 31.2727 29.4545C37.1894 29.4545 42.1631 25.4172 43.5891 19.9473C43.8585 21.256 44 22.6115 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C25.3885 4 26.744 4.14149 28.0527 4.41085Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span></div>
+            <div id="dark-mode-icon" class="toggle-icon"><span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M24 37C31.1797 37 37 31.1797 37 24C37 16.8203 31.1797 11 24 11C16.8203 11 11 16.8203 11 24C11 31.1797 16.8203 37 24 37Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/><path fill="currentColor" d="M24 6C25.3807 6 26.5 4.88071 26.5 3.5C26.5 2.11929 25.3807 1 24 1C22.6193 1 21.5 2.11929 21.5 3.5C21.5 4.88071 22.6193 6 24 6Z" fill="#333"/><path fill="currentColor" d="M38.5 12C39.8807 12 41 10.8807 41 9.5C41 8.11929 39.8807 7 38.5 7C37.1193 7 36 8.11929 36 9.5C36 10.8807 37.1193 12 38.5 12Z" fill="#333"/><path fill="currentColor" d="M44.5 26.5C45.8807 26.5 47 25.3807 47 24C47 22.6193 45.8807 21.5 44.5 21.5C43.1193 21.5 42 22.6193 42 24C42 25.3807 43.1193 26.5 44.5 26.5Z" fill="#333"/><path fill="currentColor" d="M38.5 41C39.8807 41 41 39.8807 41 38.5C41 37.1193 39.8807 36 38.5 36C37.1193 36 36 37.1193 36 38.5C36 39.8807 37.1193 41 38.5 41Z" fill="#333"/><path fill="currentColor" d="M24 47C25.3807 47 26.5 45.8807 26.5 44.5C26.5 43.1193 25.3807 42 24 42C22.6193 42 21.5 43.1193 21.5 44.5C21.5 45.8807 22.6193 47 24 47Z" fill="#333"/><path fill="currentColor" d="M9.5 41C10.8807 41 12 39.8807 12 38.5C12 37.1193 10.8807 36 9.5 36C8.11929 36 7 37.1193 7 38.5C7 39.8807 8.11929 41 9.5 41Z" fill="#333"/><path fill="currentColor" d="M3.5 26.5C4.88071 26.5 6 25.3807 6 24C6 22.6193 4.88071 21.5 3.5 21.5C2.11929 21.5 1 22.6193 1 24C1 25.3807 2.11929 26.5 3.5 26.5Z" fill="#333"/><path fill="currentColor" d="M9.5 12C10.8807 12 12 10.8807 12 9.5C12 8.11929 10.8807 7 9.5 7C8.11929 7 7 8.11929 7 9.5C7 10.8807 8.11929 12 9.5 12Z" fill="#333"/></svg>
+</span></div>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="https://www.zanks.link/search/" title="🔍 搜索 (Alt &#43; /)" accesskey=/>
-                    <span>🔍 搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.zanks.link/posts/" title="📖 文章">
-                    <span>📖 文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.zanks.link/friends/" title="🤝 友链">
-                    <span>🤝 友链</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.zanks.link/message/" title="💬 留言板">
-                    <span>💬 留言板</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.zanks.link/about/" title="😾 关于">
-                    <span>😾 关于</span>
-                </a>
-            </li>
+    </a>
+    <div class="header-center-container">
+        <div class="header-center-board">
+            <span id="header-center-text"></span>
+        </div>
+    </div>
+    <div class="nav-container">
+        
+  <nav>
+    <ul>
+    
+    <li>
+      <a href="/posts/">📖 文章</a>
+        <ul>
+    <li>
+      <a href="/tags/">🍵 标签</a>
+    </li>
+    <li>
+      <a href="/categories/">🍵 分类</a>
+    </li>
         </ul>
-    </nav>
-</header>
-<main class="main">
+    </li>
+    <li>
+      <a href="/friends/">🤝 友链</a>
+    </li>
+    <li>
+      <a href="/chirp/">💬 碎碎念</a>
+    </li>
+    <li>
+      <a href="/about/">😾 关于</a>
+    </li>
+    </ul>
+  </nav>
 
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="https://www.zanks.link/">主页</a>&nbsp;»&nbsp;<a href="https://www.zanks.link/posts/">📖 文章</a></div>
-    <h1 class="post-title entry-hint-parent" style="margin-top: 10px;">
-      【Hugo】体验篇：Obsidian写作
-    </h1>
-    <div class="post-meta" style="margin-top: 20px;">发布于: <no value> <span title='2025-01-01 04:00:00 +0800 +0800'>2025-01-01</span>&nbsp;·&nbsp;最后修改于: <no value> <span title='2025-01-10 16:33:19 +0800 +0800'>2025-01-10</span>&nbsp;·&nbsp;2 分钟&nbsp;·&nbsp;240 字&nbsp;·&nbsp;Zanks
-
+    </div>
 </div>
 
+  </header>
+  <main>
     
-  </header> <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <detail>
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
-                    <li>
-                        <a href="#%e6%8f%92%e4%bb%b6%e8%bd%af%e4%bb%b6" aria-label="插件&amp;软件">插件&amp;软件</a><ul>
-                            
-                    <li>
-                        <a href="#%e5%8a%9f%e8%83%bd%e6%8f%92%e4%bb%b6" aria-label="功能插件">功能插件</a><ul>
-                            
-                    <li>
-                        <a href="#shell-command" aria-label="Shell Command">Shell Command</a></li>
-                    <li>
-                        <a href="#commander" aria-label="Commander">Commander</a></li>
-                    <li>
-                        <a href="#git" aria-label="Git">Git</a></li>
-                    <li>
-                        <a href="#hugo-preview" aria-label="Hugo Preview">Hugo Preview</a></li>
-                    <li>
-                        <a href="#image-auto-upload" aria-label="Image Auto Upload">Image Auto Upload</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e7%be%8e%e5%8c%96%e6%93%8d%e4%bd%9c%e6%95%88%e7%8e%87%e6%8f%92%e4%bb%b6" aria-label="美化&amp;操作效率插件">美化&amp;操作效率插件</a><ul>
-                            
-                    <li>
-                        <a href="#%e4%b8%bb%e9%a2%98board" aria-label="主题：Board">主题：Board</a></li>
-                    <li>
-                        <a href="#hide-folders" aria-label="Hide Folders">Hide Folders</a></li>
-                    <li>
-                        <a href="#clear-unused-image" aria-label="Clear Unused Image">Clear Unused Image</a></li>
-                    <li>
-                        <a href="#paste-image-rename" aria-label="Paste Image Rename">Paste Image Rename</a></li>
-                    <li>
-                        <a href="#attachment-manager" aria-label="Attachment Manager">Attachment Manager</a></li>
-                    <li>
-                        <a href="#code-styler" aria-label="Code Styler">Code Styler</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e8%bd%af%e4%bb%b6" aria-label="软件">软件</a><ul>
-                            
-                    <li>
-                        <a href="#picgo" aria-label="PicGO">PicGO</a></li>
-                    <li>
-                        <a href="#piclist" aria-label="PicList">PicList</a></li></ul>
-                    </li></ul>
-                    </li>
-                    <li>
-                        <a href="#%e9%85%8d%e7%bd%ae" aria-label="配置">配置</a><ul>
-                            
-                    <li>
-                        <a href="#%e9%9d%9e%e5%8a%9f%e8%83%bd%e6%8f%92%e4%bb%b6%e9%85%8d%e7%bd%ae" aria-label="非功能插件配置">非功能插件配置</a><ul>
-                            
-                    <li>
-                        <a href="#hide-folders-1" aria-label="Hide Folders">Hide Folders</a></li>
-                    <li>
-                        <a href="#paste-image-rename-1" aria-label="Paste Image Rename">Paste Image Rename</a></li>
-                    <li>
-                        <a href="#attachment-manager-1" aria-label="Attachment Manager">Attachment Manager</a></li>
-                    <li>
-                        <a href="#code-sytler" aria-label="Code Sytler">Code Sytler</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#1-%e5%ae%9e%e7%8e%b0%e5%9b%be%e5%bd%a2%e5%8c%96%e6%96%b0%e5%bb%ba%e6%96%87%e7%ab%a0" aria-label="1. 实现图形化新建文章">1. 实现图形化新建文章</a><ul>
-                            
-                    <li>
-                        <a href="#shell-command-1" aria-label="Shell Command">Shell Command</a></li>
-                    <li>
-                        <a href="#commander-1" aria-label="Commander">Commander</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#2-%e5%9b%be%e5%ba%8a%e9%85%8d%e7%bd%ae" aria-label="2. 图床配置">2. 图床配置</a><ul>
-                            
-                    <li>
-                        <a href="#piclist%e8%bd%af%e4%bb%b6%e9%85%8d%e7%bd%ae" aria-label="PicList软件配置">PicList软件配置</a></li>
-                    <li>
-                        <a href="#iamge-auto-upload%e6%8f%92%e4%bb%b6%e9%85%8d%e7%bd%ae" aria-label="Iamge Auto Upload插件配置">Iamge Auto Upload插件配置</a></li>
-                    <li>
-                        <a href="#commander%e6%96%b0%e5%a2%9e%e4%b8%80%e9%94%ae%e4%b8%8a%e4%bc%a0" aria-label="Commander新增一键上传">Commander新增一键上传</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#3-hugo-preview" aria-label="3. Hugo Preview">3. Hugo Preview</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#faq-%e5%b7%b2%e7%9f%a5%e9%97%ae%e9%a2%98" aria-label="FAQ: 已知问题">FAQ: 已知问题</a><ul>
-                            
-                    <li>
-                        <a href="#1-git%e8%b7%9f%e8%b8%aa%e6%96%87%e4%bb%b6%e5%bc%82%e5%b8%b8" aria-label="1. Git跟踪文件异常">1. Git跟踪文件异常</a></li>
-                    <li>
-                        <a href="#2-git%e6%97%a0%e6%b3%95%e4%bd%bf%e7%94%a8hugo-preview%e6%97%a0%e6%b3%95%e4%bd%bf%e7%94%a8" aria-label="2. Git无法使用&amp;&amp;Hugo Preview无法使用">2. Git无法使用&amp;&amp;Hugo Preview无法使用</a>
-                    </li>
-                </ul>
-                </li>
-                </ul>
-            </div>
-        </detail>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    
-    document.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-    
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-        if (elements.length > 0) {
-            
-            activeElement = elements[0];
-            const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-            document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-        }
-    
-        
-        const topLink = document.getElementById('top-link');
-        if (topLink) {
-            topLink.addEventListener('click', (event) => {
-                
-                event.preventDefault();
-    
-                
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        }
-    }, false);
-    
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-    
-    window.addEventListener('scroll', () => {
-        
-        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    
-        
-        if (scrollPosition === 0) {
-            return;
-        }
-    
-        
-        if (elements && elements.length > 0) {
-            
-            activeElement = Array.from(elements).find((element) => {
-                if ((getOffsetTop(element) - scrollPosition) > 0 && 
-                    (getOffsetTop(element) - scrollPosition) < window.innerHeight / 2) {
-                    return element;
-                }
-            }) || activeElement;
-    
-            elements.forEach(element => {
-                const id = encodeURI(element.getAttribute('id')).toLowerCase();
-                const tocLink = document.querySelector(`.inner ul li a[href="#${id}"]`);
-                if (element === activeElement){
-                    tocLink.classList.add('active');
-    
-                    
-                    const tocContainer = document.querySelector('.toc .inner');
-                    const linkOffsetTop = tocLink.offsetTop;
-                    const containerHeight = tocContainer.clientHeight;
-                    const linkHeight = tocLink.clientHeight;
-    
-                    
-                    const scrollPosition = linkOffsetTop - (containerHeight / 2) + (linkHeight / 2);
-                    tocContainer.scrollTo({ top: scrollPosition, behavior: 'smooth' });
-                } else {
-                    tocLink.classList.remove('active');
-                }
-            });
-        }
-    }, false);
-    
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-    
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-    
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-    
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-    
-</script>
-<aside class="right-side">
-    <div class="">
-        <div class="author-info">
-            
-            <a href="/about" class="author-avatar-container">
-                <img src="/homepage.jpg" class="author-avatar"/>
-            </a>
-            
-            <div class="social-icons">
-                <a href="https://github.com/ZaNksC" target="_blank" rel="noopener noreferrer me"
-                title="Visit Github Page">
-                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-    </path>
-</svg>
-                </a>
-                <a href="mailto:za_nks@hotmail.com" target="_blank" rel="noopener noreferrer me"
-                title="Send Email To">
-                <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-    <polyline points="22,6 12,13 2,6"></polyline>
-</svg>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="fixed-container">
-        <div id= "announcement" class="fixed-board">
-            <div class="announcement-title" style="font-weight: bold;font-size: 1.2rem">📢 最新公告</div>
-            <div class="announcement-content" style="font-size: 0.9rem;margin: 0.5rem">本站于2025年启动，目前托管于Github Pages，计划于2月底迁移至国内服务器完成备案。
-            </div>
-        </div>
-        <div class="fixed-board">
-            <div class="last-mod-title">
-                <div class="custom-divider"></div>
-                <div style="width: 100%;">最近更新</div>
-                <div class="custom-divider"></div>
-            </div>
-            <div class="last-mod-table">
-                
-                
-                
-                <a class="last-mod-item" href="/2025/01/01/hugo-3/">
-                    <div class="last-mod-item-tile">【Hugo】体验篇：Obsidian写作 </div>
-                    <div class="last-mod-item-time">
-                        
-                        <svg t="1735543415889" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="5269" width="200" height="200">
-                            <path
-                                    d="M512 938.666667C277.333333 938.666667 85.333333 746.666667 85.333333 512c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667c0 187.733333 153.6 341.333333 341.333333 341.333333s341.333333-153.6 341.333333-341.333333-153.6-341.333333-341.333333-341.333333C396.8 170.666667 290.133333 226.133333 230.4 324.266667 213.333333 341.333333 187.733333 345.6 170.666667 332.8 149.333333 320 145.066667 294.4 157.866667 273.066667 234.666667 157.866667 371.2 85.333333 512 85.333333c234.666667 0 426.666667 192 426.666667 426.666667S746.666667 938.666667 512 938.666667zM512 554.666667c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 298.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 213.333333C554.666667 537.6 537.6 554.666667 512 554.666667zM640 682.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-128-128c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l128 128c17.066667 17.066667 17.066667 42.666667 0 59.733333C661.333333 678.4 652.8 682.666667 640 682.666667zM341.333333 341.333333 170.666667 341.333333C145.066667 341.333333 128 324.266667 128 298.666667L128 128c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 128 128 0c25.6 0 42.666667 17.066667 42.666667 42.666667S366.933333 341.333333 341.333333 341.333333z"
-                                    fill="var(--text-color)" p-id="5270"></path>
-                        </svg>
-                        <div>
-                            2025-01-10
-                        </div>
-                        <svg t="1735544175558" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="6749" width="200" height="200" fill="var(--text-color)">
-                            <path
-                                    d="M797.653 932.511l80.935-39.61c9.902 36.182 15.234 74.65 15.234 113.69v8.188h-87.98v-6.475c0-25.708-2.857-50.846-8.19-75.793zM643.78 715.034a332.254 332.254 0 0 0-175.39-50.084c-185.865 0-336.88 153.3-336.88 342.593v6.475H43.72v-8.19c0-201.099 135.78-370.015 318.788-417.814-113.69-45.514-188.15-156.157-188.15-278.607 0-164.916 131.782-299.554 294.223-299.554 162.06 0 294.222 134.066 294.222 299.554 0 127.02-78.078 235.378-188.15 278.607 39.61 10.474 78.079 26.851 113.119 48.37l-43.99 78.65zM263.863 309.598c0 114.832 91.98 208.526 204.527 208.526 113.119 0 204.528-93.313 204.528-208.526 0-114.833-91.98-208.527-204.528-208.527-112.356 0.381-204.527 93.694-204.527 208.527z m713.37 173.486c-2.856 20.948-6.475 43.039-11.045 67.605-4.57 23.804-9.331 48.37-14.664 72.936-4.57 22.662-9.902 44.943-15.806 67.605l-72.175 40.182c8.76-2.857 17.52-4.57 25.709-7.618 7.046-2.285 14.473-4.57 22.09-6.474 7.618-2.286 13.902-4 18.663-6.475l-7.617 29.136c-2.285 8.189-4 14.473-5.904 18.092-3.428 9.902-8.188 19.234-12.759 27.422-4.57 8.76-9.903 15.806-13.33 22.09-4.57 7.047-9.903 14.474-15.806 19.806l-66.462 19.805L862.4 857.1c-7.046 6.475-15.235 12.188-23.233 19.234-7.047 5.332-15.235 11.045-24.567 17.52-9.33 6.475-19.233 11.616-29.136 16.377-10.474 5.333-22.09 7.618-33.707 8.19-12.188 0-23.805-0.572-35.04-2.857-13.33-1.714-26.28-5.333-38.468-9.332 3.999-6.475 8.189-12.759 12.759-20.948 4-7.046 8.76-14.663 14.473-23.233s11.617-18.662 17.52-29.708c16.949-29.708 33.707-58.273 50.085-86.838s30.85-54.274 43.61-77.507c15.234-26.852 29.136-51.799 42.466-75.793-16.948 19.805-35.04 41.895-53.702 66.462-18.663 24.566-36.754 48.941-54.274 74.079-20.948 30.85-41.325 62.272-60.559 94.456-4.57 7.046-9.331 15.234-14.473 23.804-5.332 8.76-11.045 18.663-16.949 29.137-5.903 10.474-11.616 20.376-18.662 31.421-5.904 10.474-12.188 21.52-18.663 31.422-14.473 23.805-29.136 48.942-44.371 74.65 0.571-7.617 1.714-17.52 3.999-29.707 2.285-10.474 5.903-23.233 11.045-38.468 4.57-15.235 12.188-33.707 21.52-54.274 6.474-12.76 11.044-23.233 13.901-30.85s5.903-12.76 7.617-16.95c1.143-2.856 2.286-6.474 4.57-8.76-1.713-2.284-2.284-6.474-0.57-12.758 0.57-5.904 2.285-14.473 6.474-25.71 3.428-11.044 9.332-26.85 17.52-46.656 8.19-20.376 19.234-42.467 32.565-65.89 13.33-23.805 28.565-46.657 45.514-69.89 16.949-23.233 35.611-46.085 54.845-67.605 18.663-20.947 39.04-40.181 60.558-58.273 20.377-16.948 41.325-30.85 61.701-41.324s40.754-16.949 59.988-18.091c2.475 12.95 1.333 29.707-1.524 50.655z"
-                                    p-id="6750"></path>
-                        </svg>
-                        <div> Zanks </div>
-                    </div>
-                </a>
-                
-                <a class="last-mod-item" href="/2025/01/01/hugo-2/">
-                    <div class="last-mod-item-tile">【Hugo】进阶篇：PaperMod主题美化 </div>
-                    <div class="last-mod-item-time">
-                        
-                        <svg t="1735543415889" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="5269" width="200" height="200">
-                            <path
-                                    d="M512 938.666667C277.333333 938.666667 85.333333 746.666667 85.333333 512c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667c0 187.733333 153.6 341.333333 341.333333 341.333333s341.333333-153.6 341.333333-341.333333-153.6-341.333333-341.333333-341.333333C396.8 170.666667 290.133333 226.133333 230.4 324.266667 213.333333 341.333333 187.733333 345.6 170.666667 332.8 149.333333 320 145.066667 294.4 157.866667 273.066667 234.666667 157.866667 371.2 85.333333 512 85.333333c234.666667 0 426.666667 192 426.666667 426.666667S746.666667 938.666667 512 938.666667zM512 554.666667c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 298.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 213.333333C554.666667 537.6 537.6 554.666667 512 554.666667zM640 682.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-128-128c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l128 128c17.066667 17.066667 17.066667 42.666667 0 59.733333C661.333333 678.4 652.8 682.666667 640 682.666667zM341.333333 341.333333 170.666667 341.333333C145.066667 341.333333 128 324.266667 128 298.666667L128 128c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 128 128 0c25.6 0 42.666667 17.066667 42.666667 42.666667S366.933333 341.333333 341.333333 341.333333z"
-                                    fill="var(--text-color)" p-id="5270"></path>
-                        </svg>
-                        <div>
-                            2025-01-10
-                        </div>
-                        <svg t="1735544175558" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="6749" width="200" height="200" fill="var(--text-color)">
-                            <path
-                                    d="M797.653 932.511l80.935-39.61c9.902 36.182 15.234 74.65 15.234 113.69v8.188h-87.98v-6.475c0-25.708-2.857-50.846-8.19-75.793zM643.78 715.034a332.254 332.254 0 0 0-175.39-50.084c-185.865 0-336.88 153.3-336.88 342.593v6.475H43.72v-8.19c0-201.099 135.78-370.015 318.788-417.814-113.69-45.514-188.15-156.157-188.15-278.607 0-164.916 131.782-299.554 294.223-299.554 162.06 0 294.222 134.066 294.222 299.554 0 127.02-78.078 235.378-188.15 278.607 39.61 10.474 78.079 26.851 113.119 48.37l-43.99 78.65zM263.863 309.598c0 114.832 91.98 208.526 204.527 208.526 113.119 0 204.528-93.313 204.528-208.526 0-114.833-91.98-208.527-204.528-208.527-112.356 0.381-204.527 93.694-204.527 208.527z m713.37 173.486c-2.856 20.948-6.475 43.039-11.045 67.605-4.57 23.804-9.331 48.37-14.664 72.936-4.57 22.662-9.902 44.943-15.806 67.605l-72.175 40.182c8.76-2.857 17.52-4.57 25.709-7.618 7.046-2.285 14.473-4.57 22.09-6.474 7.618-2.286 13.902-4 18.663-6.475l-7.617 29.136c-2.285 8.189-4 14.473-5.904 18.092-3.428 9.902-8.188 19.234-12.759 27.422-4.57 8.76-9.903 15.806-13.33 22.09-4.57 7.047-9.903 14.474-15.806 19.806l-66.462 19.805L862.4 857.1c-7.046 6.475-15.235 12.188-23.233 19.234-7.047 5.332-15.235 11.045-24.567 17.52-9.33 6.475-19.233 11.616-29.136 16.377-10.474 5.333-22.09 7.618-33.707 8.19-12.188 0-23.805-0.572-35.04-2.857-13.33-1.714-26.28-5.333-38.468-9.332 3.999-6.475 8.189-12.759 12.759-20.948 4-7.046 8.76-14.663 14.473-23.233s11.617-18.662 17.52-29.708c16.949-29.708 33.707-58.273 50.085-86.838s30.85-54.274 43.61-77.507c15.234-26.852 29.136-51.799 42.466-75.793-16.948 19.805-35.04 41.895-53.702 66.462-18.663 24.566-36.754 48.941-54.274 74.079-20.948 30.85-41.325 62.272-60.559 94.456-4.57 7.046-9.331 15.234-14.473 23.804-5.332 8.76-11.045 18.663-16.949 29.137-5.903 10.474-11.616 20.376-18.662 31.421-5.904 10.474-12.188 21.52-18.663 31.422-14.473 23.805-29.136 48.942-44.371 74.65 0.571-7.617 1.714-17.52 3.999-29.707 2.285-10.474 5.903-23.233 11.045-38.468 4.57-15.235 12.188-33.707 21.52-54.274 6.474-12.76 11.044-23.233 13.901-30.85s5.903-12.76 7.617-16.95c1.143-2.856 2.286-6.474 4.57-8.76-1.713-2.284-2.284-6.474-0.57-12.758 0.57-5.904 2.285-14.473 6.474-25.71 3.428-11.044 9.332-26.85 17.52-46.656 8.19-20.376 19.234-42.467 32.565-65.89 13.33-23.805 28.565-46.657 45.514-69.89 16.949-23.233 35.611-46.085 54.845-67.605 18.663-20.947 39.04-40.181 60.558-58.273 20.377-16.948 41.325-30.85 61.701-41.324s40.754-16.949 59.988-18.091c2.475 12.95 1.333 29.707-1.524 50.655z"
-                                    p-id="6750"></path>
-                        </svg>
-                        <div> Zanks </div>
-                    </div>
-                </a>
-                
-                <a class="last-mod-item" href="/2025/01/01/hugo-1/">
-                    <div class="last-mod-item-tile">【Hugo】基础篇：个人博客搭建 </div>
-                    <div class="last-mod-item-time">
-                        
-                        <svg t="1735543415889" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="5269" width="200" height="200">
-                            <path
-                                    d="M512 938.666667C277.333333 938.666667 85.333333 746.666667 85.333333 512c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667c0 187.733333 153.6 341.333333 341.333333 341.333333s341.333333-153.6 341.333333-341.333333-153.6-341.333333-341.333333-341.333333C396.8 170.666667 290.133333 226.133333 230.4 324.266667 213.333333 341.333333 187.733333 345.6 170.666667 332.8 149.333333 320 145.066667 294.4 157.866667 273.066667 234.666667 157.866667 371.2 85.333333 512 85.333333c234.666667 0 426.666667 192 426.666667 426.666667S746.666667 938.666667 512 938.666667zM512 554.666667c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 298.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 213.333333C554.666667 537.6 537.6 554.666667 512 554.666667zM640 682.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-128-128c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l128 128c17.066667 17.066667 17.066667 42.666667 0 59.733333C661.333333 678.4 652.8 682.666667 640 682.666667zM341.333333 341.333333 170.666667 341.333333C145.066667 341.333333 128 324.266667 128 298.666667L128 128c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 128 128 0c25.6 0 42.666667 17.066667 42.666667 42.666667S366.933333 341.333333 341.333333 341.333333z"
-                                    fill="var(--text-color)" p-id="5270"></path>
-                        </svg>
-                        <div>
-                            2025-01-10
-                        </div>
-                        <svg t="1735544175558" class="last-mod-icon" viewBox="0 0 1024 1024" version="1.1"
-                             xmlns="http://www.w3.org/2000/svg" p-id="6749" width="200" height="200" fill="var(--text-color)">
-                            <path
-                                    d="M797.653 932.511l80.935-39.61c9.902 36.182 15.234 74.65 15.234 113.69v8.188h-87.98v-6.475c0-25.708-2.857-50.846-8.19-75.793zM643.78 715.034a332.254 332.254 0 0 0-175.39-50.084c-185.865 0-336.88 153.3-336.88 342.593v6.475H43.72v-8.19c0-201.099 135.78-370.015 318.788-417.814-113.69-45.514-188.15-156.157-188.15-278.607 0-164.916 131.782-299.554 294.223-299.554 162.06 0 294.222 134.066 294.222 299.554 0 127.02-78.078 235.378-188.15 278.607 39.61 10.474 78.079 26.851 113.119 48.37l-43.99 78.65zM263.863 309.598c0 114.832 91.98 208.526 204.527 208.526 113.119 0 204.528-93.313 204.528-208.526 0-114.833-91.98-208.527-204.528-208.527-112.356 0.381-204.527 93.694-204.527 208.527z m713.37 173.486c-2.856 20.948-6.475 43.039-11.045 67.605-4.57 23.804-9.331 48.37-14.664 72.936-4.57 22.662-9.902 44.943-15.806 67.605l-72.175 40.182c8.76-2.857 17.52-4.57 25.709-7.618 7.046-2.285 14.473-4.57 22.09-6.474 7.618-2.286 13.902-4 18.663-6.475l-7.617 29.136c-2.285 8.189-4 14.473-5.904 18.092-3.428 9.902-8.188 19.234-12.759 27.422-4.57 8.76-9.903 15.806-13.33 22.09-4.57 7.047-9.903 14.474-15.806 19.806l-66.462 19.805L862.4 857.1c-7.046 6.475-15.235 12.188-23.233 19.234-7.047 5.332-15.235 11.045-24.567 17.52-9.33 6.475-19.233 11.616-29.136 16.377-10.474 5.333-22.09 7.618-33.707 8.19-12.188 0-23.805-0.572-35.04-2.857-13.33-1.714-26.28-5.333-38.468-9.332 3.999-6.475 8.189-12.759 12.759-20.948 4-7.046 8.76-14.663 14.473-23.233s11.617-18.662 17.52-29.708c16.949-29.708 33.707-58.273 50.085-86.838s30.85-54.274 43.61-77.507c15.234-26.852 29.136-51.799 42.466-75.793-16.948 19.805-35.04 41.895-53.702 66.462-18.663 24.566-36.754 48.941-54.274 74.079-20.948 30.85-41.325 62.272-60.559 94.456-4.57 7.046-9.331 15.234-14.473 23.804-5.332 8.76-11.045 18.663-16.949 29.137-5.903 10.474-11.616 20.376-18.662 31.421-5.904 10.474-12.188 21.52-18.663 31.422-14.473 23.805-29.136 48.942-44.371 74.65 0.571-7.617 1.714-17.52 3.999-29.707 2.285-10.474 5.903-23.233 11.045-38.468 4.57-15.235 12.188-33.707 21.52-54.274 6.474-12.76 11.044-23.233 13.901-30.85s5.903-12.76 7.617-16.95c1.143-2.856 2.286-6.474 4.57-8.76-1.713-2.284-2.284-6.474-0.57-12.758 0.57-5.904 2.285-14.473 6.474-25.71 3.428-11.044 9.332-26.85 17.52-46.656 8.19-20.376 19.234-42.467 32.565-65.89 13.33-23.805 28.565-46.657 45.514-69.89 16.949-23.233 35.611-46.085 54.845-67.605 18.663-20.947 39.04-40.181 60.558-58.273 20.377-16.948 41.325-30.85 61.701-41.324s40.754-16.949 59.988-18.091c2.475 12.95 1.333 29.707-1.524 50.655z"
-                                    p-id="6750"></path>
-                        </svg>
-                        <div> Zanks </div>
-                    </div>
-                </a>
-                
-            </div>
-        </div>
-    </div>
 
+
+
+
+
+
+<div class="single-container fund-padding-top">
     
-    <div class="right-side-btns"><script src="/js/go-comment.js"></script>
-        <a href="#comments-title" class="right-side-btn" id="comments-link"
-            style="visibility: visible; opacity: 1;padding: 0.6rem;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.338 29.338" fill="currentColor">
-                <path d="M27.184,1.605H2.156C0.967,1.605,0,2.572,0,3.76v17.572c0,1.188,0.967,2.155,2.156,2.155h13.543
-        l5.057,3.777c0.414,0.31,0.842,0.468,1.268,0.468c0.789,0,1.639-0.602,1.637-1.923v-2.322h3.523c1.188,0,2.154-0.967,2.154-2.155
-        V3.76C29.338,2.572,28.371,1.605,27.184,1.605z M27.34,21.332c0,0.085-0.068,0.155-0.154,0.155h-5.523v3.955l-5.297-3.956H2.156
-        c-0.086,0-0.154-0.07-0.154-0.155V3.759c0-0.085,0.068-0.155,0.154-0.155v0.001h25.029c0.086,0,0.154,0.07,0.154,0.155
-        L27.34,21.332L27.34,21.332z M5.505,10.792h4.334v4.333H5.505C5.505,15.125,5.505,10.792,5.505,10.792z M12.505,10.792h4.334v4.333
-        h-4.334V10.792z M19.505,10.792h4.334v4.333h-4.334V10.792z" />
-            </svg>
-        </a>
-        <script src="/js/go-top.js"></script>
-        <a href="#top" class="right-side-btn" id="top-link" style="text-align: center;">
-            <span id="pe-read-progress"></span>
-        </a>
+    <div class="single-cover-bg" style="
+        background:
+        linear-gradient(to bottom, var(--backgroud--mask-alpha80), var(--backgroud--mask-alpha20)),
+        url(/images/default/cover.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%, cover;
+        background-position: center, center;">
     </div>
-</aside>
-  <div class="post-content"><blockquote>
+    <div class="post-header">
+        <div class="over-title-container">
+            
+            <div> 原创</div>
+        </div>
+        <div class="title">
+            【Hugo】体验篇：Obsidian写作
+        </div>
+        <div class="meta fund-secondary">
+            <div class="meta-info">
+                
+<div class="post-meta-item" id="publish-date">
+    <div class="post-meta-item-header" id="update-date"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-width="4" stroke="#333" d="M5 19h38v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19ZM5 9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v10H5V9Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M16 4v8M32 4v8M28 34h6M14 34h6M28 26h6M14 26h6" data-follow-stroke="#333"/></svg>
+</span>发布于:
+    </div>
+    <span>
+        2025-01-01
+    </span>
+</div>
+
+<div class="post-meta-item">
+    <div class="post-meta-item-header"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M33.542 27c-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7v6M33.542 15v6c-1.274-4.057-5.064-7-9.542-7-4.477 0-8.268 2.943-9.542 7" data-follow-stroke="#333"/></svg>
+</span>更新于:
+    </div><span>
+        2025-01-26
+    </span>
+</div>
+
+
+
+            </div>
+            
+
+            <div class="meta-info">
+                
+                <a href="/tags/hugo">#Hugo</a>
+                
+                <a href="/tags/%E5%BB%BA%E7%AB%99">#建站</a>
+                
+                <a href="/tags/obsidian">#Obsidian</a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="left-container fund-border">
+            <div class="post-container" id="md-container">
+                <div class="post-content">
+
+                    <blockquote>
 <p>装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。</p>
 </blockquote>
-<h1 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h1>
+<h1 id="前言">前言</h1>
 <p>Hugo作为建站博客工具的时候，博文的载体是 <code>markdown</code> ，而 <code>markdown</code> 本身是一个纯文本的标记语言，在Hugo工具提供的命令中，会转换成静态的网页文件来提供更加优质的阅读体验。所以，在理论上，选用任何的文本编辑器，其实都可以作为博客的写作工具。</p>
 <p>然而，在真实使用的情况下，我们需要先在命令行中，输入 <code>hugo new posts/xxx.md</code> 命令来创建一篇文章，然后打开对应的文本编辑器来编辑文章，还需要在命令中使用 <code>hugo serve -D</code> 来看一下显示效果，如果用到图片，还需要手动管理图片的地址来保证本地和发布之后保持一致，整个过程就会显得非常的繁琐。</p>
 <p>基于以上我博客的编写流程，提炼了几个痛点和几点期望</p>
@@ -592,110 +219,110 @@
 <li><a href="https://piclist.cn/">PicList</a>: 一款基于PicGo二次开发的图床管理工具</li>
 <li>腾讯云COS服务： 请自行前往腾讯云开启（<strong>有免费额度，超过之后需要付费</strong>）</li>
 </ul>
-<h1 id="插件软件">插件&amp;软件<a hidden class="anchor" aria-hidden="true" href="#插件软件">#</a></h1>
+<h1 id="插件软件">插件&amp;软件</h1>
 <p><strong>以下插件均指代Obsidian插件市场中的插件，软件为系统软件，均需要自己安装。</strong>
 对于Obsidian插件需要关闭安全模式，来开启第三方插件，以下插件均可以通过插件市场下载，插件在Github中，如遇到网络问题请自行解决。
 <strong>安装完OB插件记得重启</strong></p>
-<h2 id="功能插件">功能插件<a hidden class="anchor" aria-hidden="true" href="#功能插件">#</a></h2>
+<h2 id="功能插件">功能插件</h2>
 <p>以下插件均为必须安装的插件，用于实现前文提到的功能。</p>
-<h3 id="shell-command">Shell Command<a hidden class="anchor" aria-hidden="true" href="#shell-command">#</a></h3>
+<h3 id="shell-command">Shell Command</h3>
 <p>Shell Command是一款可以在Obsidian中运行操作系统命令的插件，由于hugo和Git的操作之前都是基于命令行手敲的，所以我选用了他作为实现层的插件，在Shell Command中包装好常用的命令，然后通过其他插件来进行更近一步的封装。</p>
-<h3 id="commander">Commander<a hidden class="anchor" aria-hidden="true" href="#commander">#</a></h3>
+<h3 id="commander">Commander</h3>
 <p>Shell Command是一款可以将命令设置为图标的插件，用于将Hugo创建博客的命令可视化</p>
-<h3 id="git">Git<a hidden class="anchor" aria-hidden="true" href="#git">#</a></h3>
+<h3 id="git">Git</h3>
 <p>用于可视化Git操作</p>
-<h3 id="hugo-preview">Hugo Preview<a hidden class="anchor" aria-hidden="true" href="#hugo-preview">#</a></h3>
+<h3 id="hugo-preview">Hugo Preview</h3>
 <p>用于在本地进行Hugo网站预览，可以实时预览，非常好用，免去了打开命令行输入<code>hugo server -D</code> 命令的麻烦（实际上这个按钮代替你执行了这个命令），如果有双屏的话，可以一个屏幕预览一个屏幕书写，非常好用。</p>
-<h3 id="image-auto-upload">Image Auto Upload<a hidden class="anchor" aria-hidden="true" href="#image-auto-upload">#</a></h3>
+<h3 id="image-auto-upload">Image Auto Upload</h3>
 <p>文件主动上传到图床的工具，需要配合PicGo来使用。</p>
-<h2 id="美化操作效率插件">美化&amp;操作效率插件<a hidden class="anchor" aria-hidden="true" href="#美化操作效率插件">#</a></h2>
+<h2 id="美化操作效率插件">美化&amp;操作效率插件</h2>
 <p>以下插件为选装插件，用于提升外观和使用效率。有很多图片相关的插件，因为Obsidian的图片管理实在令人感到很苦闷。</p>
-<h3 id="主题board">主题：Board<a hidden class="anchor" aria-hidden="true" href="#主题board">#</a></h3>
+<h3 id="主题board">主题：Board</h3>
 <p>单纯的记录以下我现在正在用的主题插件</p>
-<h3 id="hide-folders">Hide Folders<a hidden class="anchor" aria-hidden="true" href="#hide-folders">#</a></h3>
+<h3 id="hide-folders">Hide Folders</h3>
 <p>Obsidian只是一个单纯的Mardown编辑器，很多代码相关的文件不会显示，所以目录下会有很多平时写作时完全不需要的目录，可以通过Hide Folders插件进行隐藏。</p>
-<h3 id="clear-unused-image">Clear Unused Image<a hidden class="anchor" aria-hidden="true" href="#clear-unused-image">#</a></h3>
+<h3 id="clear-unused-image">Clear Unused Image</h3>
 <p><strong>后来我发现不需要安装，因为上传插件中可以开启图片上传后移除</strong></p>
 <p><del><strong>不推荐Git使用不熟练的同学安装，如果要安装，务必理解配置的含义，或者完全照抄我的。</strong></del>
 <del>这是一个删除未使用图片的插件，我按照我的使用习惯，进行编译时，会把图片放在本地，等上传图床后，进行删除。</del></p>
-<h3 id="paste-image-rename">Paste Image Rename<a hidden class="anchor" aria-hidden="true" href="#paste-image-rename">#</a></h3>
+<h3 id="paste-image-rename">Paste Image Rename</h3>
 <p>一个用于将截图添加到文章中进行重命名的插件</p>
-<h3 id="attachment-manager">Attachment Manager<a hidden class="anchor" aria-hidden="true" href="#attachment-manager">#</a></h3>
+<h3 id="attachment-manager">Attachment Manager</h3>
 <p>OB的附件管理软件，可以将一个笔记下的附件（主要是图片）放到单独的文件夹下，我会将这个路径映射到图床上，图片的管理和会方便很多，可以配合 Paste Image Rename 使用，相当丝滑，强烈推荐。</p>
-<h3 id="code-styler">Code Styler<a hidden class="anchor" aria-hidden="true" href="#code-styler">#</a></h3>
+<h3 id="code-styler">Code Styler</h3>
 <p>用于实现代码输出美化的插件，主要是用来折叠代码。</p>
-<h2 id="软件">软件<a hidden class="anchor" aria-hidden="true" href="#软件">#</a></h2>
-<h3 id="picgo">PicGO<a hidden class="anchor" aria-hidden="true" href="#picgo">#</a></h3>
+<h2 id="软件">软件</h2>
+<h3 id="picgo">PicGO</h3>
 <p>PicGo是一款图床管理软件，支持主流的多种云服务图像存储或图床服务。</p>
-<h3 id="piclist">PicList<a hidden class="anchor" aria-hidden="true" href="#piclist">#</a></h3>
+<h3 id="piclist">PicList</h3>
 <p>PicList是基于PicGo二次开发的图床管理软件，我主要是为了方便进行文件的管理(带删除和管理相当的方便)。最终选用了PicList。</p>
 <p><strong>需要在PicList中添加一个名为 <code>rename-file</code> 的插件，来配合OB附件管理插件来进行图片的分目录管理</strong></p>
-<h1 id="配置">配置<a hidden class="anchor" aria-hidden="true" href="#配置">#</a></h1>
-<h2 id="非功能插件配置">非功能插件配置<a hidden class="anchor" aria-hidden="true" href="#非功能插件配置">#</a></h2>
-<h3 id="hide-folders-1">Hide Folders<a hidden class="anchor" aria-hidden="true" href="#hide-folders-1">#</a></h3>
+<h1 id="配置">配置</h1>
+<h2 id="非功能插件配置">非功能插件配置</h2>
+<h3 id="hide-folders-1">Hide Folders</h3>
 <p>需要在Hide Folder的配置界面，进行隐藏文件夹进行配置。（没找到白名单模式，不知道后续作者会不会更新一个白名单模式）。在Folders to hide 中添加 。配置完成之后只有archetypes和content两个文件夹目录了，瞬间就变得很清爽，可以更加专注博客的编辑而不被hugo的项目文件影响。</p>
 
 
 
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ text ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
 
-<div class="pe-code-block-wrap  pe-code-details   open  scrollable">
-    <div class="pe-code-block-header pe-code-details-summary">
-        <div class="pe-code-block-header-left">
-            
-            <i class="arrow fas fa-chevron-right fa-fw pe-code-details-icon" aria-hidden="true"></i>
-            
-            
-            <span>text
-            </span>
-            
-        </div>
-        <div class="pe-code-block-header-center">
-            <span>
-            </span>
-        </div>
-        <div class="pe-code-block-header-right">
-            
-            <i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i>
-            
-            <button class="pe-code-copy-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="pe-icon"><path fill="currentColor" fill-rule="evenodd" d="M7 5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h2zm2 2h5a3 3 0 0 1 3 3v5h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1zM5 9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z" clip-rule="evenodd"></path></svg>
-            </button>
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
         </div>
     </div>
-    <div class="pe-code-details-content scrollable">
-        <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>assets
-</span></span><span style="display:flex;"><span>data
-</span></span><span style="display:flex;"><span>i18n
-</span></span><span style="display:flex;"><span>layouts
-</span></span><span style="display:flex;"><span>public
-</span></span><span style="display:flex;"><span>resources
-</span></span><span style="display:flex;"><span>static
-</span></span><span style="display:flex;"><span>themes</span></span></code></pre></div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">assets
+</span></span><span class="line"><span class="ln">2</span><span class="cl">data
+</span></span><span class="line"><span class="ln">3</span><span class="cl">i18n
+</span></span><span class="line"><span class="ln">4</span><span class="cl">layouts
+</span></span><span class="line"><span class="ln">5</span><span class="cl">public
+</span></span><span class="line"><span class="ln">6</span><span class="cl">resources
+</span></span><span class="line"><span class="ln">7</span><span class="cl">static
+</span></span><span class="line"><span class="ln">8</span><span class="cl">themes</span></span></code></pre></div>
     </div>
 </div><p><div class="post-img-view">
     <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/hige-folder-config.png">
         <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/hige-folder-config.png" alt="hige-folder-config"  />
     </a>
 </div></p>
-<h3 id="paste-image-rename-1">Paste Image Rename<a hidden class="anchor" aria-hidden="true" href="#paste-image-rename-1">#</a></h3>
+<h3 id="paste-image-rename-1">Paste Image Rename</h3>
 <p>一个非常好用的插件，不需要配置，在截完图粘贴进Obsidian之后就会有一个对话框让你输入新的文件名，第一次会提示是否需要更新文章中的链接，直接点击以后一直更新就好了。</p>
-<h3 id="attachment-manager-1">Attachment Manager<a hidden class="anchor" aria-hidden="true" href="#attachment-manager-1">#</a></h3>
+<h3 id="attachment-manager-1">Attachment Manager</h3>
 <p>附件管理插件，我没有进行其他配置，安装完启用即可，真正的开箱即用。</p>
-<h3 id="code-sytler">Code Sytler<a hidden class="anchor" aria-hidden="true" href="#code-sytler">#</a></h3>
+<h3 id="code-sytler">Code Sytler</h3>
 <p>设置，选择 CodeBlock Styling后，选择 Codeblock Header，选择 Display Header Language Tags 为Always</p>
 <p><div class="post-img-view">
     <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/code-sytle-conf.png">
         <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/code-sytle-conf.png" alt="code-sytle-conf"  />
     </a>
 </div></p>
-<h2 id="1-实现图形化新建文章">1. 实现图形化新建文章<a hidden class="anchor" aria-hidden="true" href="#1-实现图形化新建文章">#</a></h2>
+<h2 id="1-实现图形化新建文章">1. 实现图形化新建文章</h2>
 <p>Hugo的文章创建需要使用 <code>Commander </code> 命令来进行创建，为了让Hugo给文章进行初始化的设置（可能还有其他的配置文件修改，根据我自己的使用经验，在posts目录下创建的文章可以被编译，但对于新增的Layout直接新建文件会无法编译）。所以，我认为还是通过在图像界面上新增一个功能来代替我们输入命令会更合适一些。</p>
 <p>需要用到的插件</p>
 <ul>
 <li>Shell Command：用于将 <code>hugo new</code> 命令封装成Obsidian的命令</li>
 <li>Commander：用于将封装好的Obsidian命令添加到Obsidian的界面上</li>
 </ul>
-<h3 id="shell-command-1">Shell Command<a hidden class="anchor" aria-hidden="true" href="#shell-command-1">#</a></h3>
+<h3 id="shell-command-1">Shell Command</h3>
 <p>使用前确保hugo相关命令可以被命令行程序调用，即hugo.exe需要在环境变量中，可以通过打开cmd输入 <code>hugo version</code> 进行尝试。</p>
 <ol>
 <li>
@@ -725,7 +352,7 @@
 </li>
 </ol>
 <p>配置完成后，可按 <code>Ctrl + P</code> 唤出Obsidian的操作面板进行尝试</p>
-<h3 id="commander-1">Commander<a hidden class="anchor" aria-hidden="true" href="#commander-1">#</a></h3>
+<h3 id="commander-1">Commander</h3>
 <ol>
 <li>打开Commander的配置面板，在左侧栏目中，新增一个按钮
 <div class="post-img-view">
@@ -736,9 +363,9 @@
 具体步骤为，点击添加命令，选中 Shell Command创建的命令，输入界面中按钮名称
 配置完成后，可以在左侧看到一个新的按钮</li>
 </ol>
-<h2 id="2-图床配置">2. 图床配置<a hidden class="anchor" aria-hidden="true" href="#2-图床配置">#</a></h2>
+<h2 id="2-图床配置">2. 图床配置</h2>
 <p>博客的图片管理一直是让人头疼的事情，综合费用和便捷程度考虑，我选用腾讯云的是COS作为图床服务，免费的额度足够日常使用，因为我平时写文基本都是打开源码模式（当然，就算不用源码模式写文也用不完免费额度，主要还是在博客生产环境的浏览量），当然也可以选用其他的图床服务，配置的不同仅仅在于PicGo的目标端。</p>
-<h3 id="piclist软件配置">PicList软件配置<a hidden class="anchor" aria-hidden="true" href="#piclist软件配置">#</a></h3>
+<h3 id="piclist软件配置">PicList软件配置</h3>
 <p>软件下载安装完成之后，配置腾讯云COS的链接信息，并设置为默认图床。</p>
 <p>需要准备以下内容：</p>
 <ul>
@@ -755,9 +382,9 @@
         <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/piclist-plugin.png" alt="piclist-plugin"  />
     </a>
 </div></p>
-<h3 id="iamge-auto-upload插件配置">Iamge Auto Upload插件配置<a hidden class="anchor" aria-hidden="true" href="#iamge-auto-upload插件配置">#</a></h3>
+<h3 id="iamge-auto-upload插件配置">Iamge Auto Upload插件配置</h3>
 <p><strong>可选</strong> 可以开启可选项，上传后删除源文件。其他都不需要配置</p>
-<h3 id="commander新增一键上传">Commander新增一键上传<a hidden class="anchor" aria-hidden="true" href="#commander新增一键上传">#</a></h3>
+<h3 id="commander新增一键上传">Commander新增一键上传</h3>
 <p>在页首栏新增一个按钮
 <div class="post-img-view">
     <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/upload-img-btn.png">
@@ -765,22 +392,22 @@
     </a>
 </div>
 最终会在编辑器的上方，一本阅读模式按钮（一本书） 边上出现一个新按钮，用于一件上传本文中的所有图片到图床。</p>
-<h2 id="3-hugo-preview">3. Hugo Preview<a hidden class="anchor" aria-hidden="true" href="#3-hugo-preview">#</a></h2>
+<h2 id="3-hugo-preview">3. Hugo Preview</h2>
 <p>安装好Hugo Preview插件后。会在右下角出现一个Go的图标（蓝色），点击之后就会出现Hugo站点的预览。（双屏食用更佳）</p>
 <p><div class="post-img-view">
     <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/hugo-preview-show.png">
         <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//zanks-blog/content/posts/hugo-build-3.md_Attachments/hugo-preview-show.png" alt="hugo-preview-show"  />
     </a>
 </div></p>
-<h1 id="faq-已知问题">FAQ: 已知问题<a hidden class="anchor" aria-hidden="true" href="#faq-已知问题">#</a></h1>
+<h1 id="faq-已知问题">FAQ: 已知问题</h1>
 <p>记录本人在配置过程中遇到的问题及解决方案</p>
-<h2 id="1-git跟踪文件异常">1. Git跟踪文件异常<a hidden class="anchor" aria-hidden="true" href="#1-git跟踪文件异常">#</a></h2>
+<h2 id="1-git跟踪文件异常">1. Git跟踪文件异常</h2>
 <ul>
 <li>现象：在Obsidian中，文件没有修改，Git跟踪的文件中却提示被修改哦，打开diff看发现也没有区别</li>
 <li>原因：Windows系统下Git开启了换行符自动转换，Ob转换为LF，而Git转换为CRLF</li>
 <li>解决方案：在仓库目录下输入命令 <code>git config core.autocrlf input</code> 所有换行符统一转换为LF</li>
 </ul>
-<h2 id="2-git无法使用hugo-preview无法使用">2. Git无法使用&amp;&amp;Hugo Preview无法使用<a hidden class="anchor" aria-hidden="true" href="#2-git无法使用hugo-preview无法使用">#</a></h2>
+<h2 id="2-git无法使用hugo-preview无法使用">2. Git无法使用&amp;&amp;Hugo Preview无法使用</h2>
 <ul>
 <li>现象： Git使用时，提示报错obsidian cannot run git command，hugo preview 提示报错</li>
 <li>原因： 无法调用到Git命令</li>
@@ -791,123 +418,228 @@
 </ol>
 </li>
 </ul>
-
-
-  </div><div class="copyright">
+<div class="copyright">
     <hr>
     <blockquote>
         <p>本文为原创内容，版权归作者所有。如需转载，请在文章中声明本文标题及链接。</p>
-        <p>文章标题：【Hugo】体验篇：Obsidian写作 —— Zanks</p>
+        <p>文章标题：【Hugo】体验篇：Obsidian写作 —— </p>
         <p>文章链接：<a href="https://www.zanks.link/2025/01/01/hugo-3/" target="_blank">https://www.zanks.link/2025/01/01/hugo-3/</a></p>
         <p>许可协议：<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans" target="_blank">CC BY-NC 4.0</a></p>
     </blockquote>
-</div><footer class="post-footer">
-    <ul class="post-tags">
-      <li><a href="https://www.zanks.link/tags/hugo/">Hugo</a></li>
-      <li><a href="https://www.zanks.link/tags/%E5%BB%BA%E7%AB%99/">建站</a></li>
-      <li><a href="https://www.zanks.link/tags/obsidian/">Obsidian</a></li>
-    </ul>
-<nav class="paginav">
-  <a class="next" href="https://www.zanks.link/2025/01/01/hugo-2/">
-    <span class="title">下一页 »</span>
-    <br>
-    <span>【Hugo】进阶篇：PaperMod主题美化</span>
-  </a>
-</nav>
-
-  </footer><div class="comments-title" id="comments-title">
-    <p class="x-comments-title">欢迎来到评论区</p>
-    <p style="font-size: 1rem">感谢您的耐心阅读！如需交流，请留个评论吧！ </p>
+</div></div>
+                <div class="post-footer">
+                    <div class="comments">
+                            
+                            
+<div class="comments-title" id="comments-title">
+    <div class="fund-divider fund-title">
+        <span>欢迎来到评论区</span>
+    </div>
+    <p>感谢您的耐心阅读！如需交流，请留个评论吧！ </p>
 </div>
 
 <div>
-    
     <div id="tcomment"></div>
-    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
-    <script>
-    twikoo.init({
-      envId: 'https://zanks-twikoo.netlify.app/.netlify/functions/twikoo', 
-      el: '#tcomment', 
-      
-      
-      
-    })
-    </script>
 </div>
 
-</article>
-    </main>
-    
-<footer class="footer">
-    <span>&copy; 2025 - 2025 · <a href="https://www.zanks.link/">乱话三千</a></span> · 
-    
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<script src="/js/base.js"></script>
-<script src="/js/pe-code.js"></script>
-<script src="/js/git.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <div class="right-container">
+            <div class="author-info-container">
+    <div class="author-info fund-border">
+    <div class="swiper" id="author-info-swiper">
+        <div class="swiper-wrapper">
+            
+            
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
 
 <script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('#author-info-swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000, 
+            },
+            observer: true, 
+            observeParents: true, 
+            on: {
+                touchEnd: function () {
+                    setTimeout(() => {
+                        this.autoplay.start();
+                    }, 500);
+                },
+            },
         });
     });
-
 </script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
+</div>
+<div class="announcements-container">
+    <div class="fund-block fund-border">
+    <div class="fund-title block-title">
+        <div class="fund-divider">
+            <span>📢 公告</span>
+        </div>
+    </div>
+    <div class="swiper announcement" id="announcement-swiper">
+        <div class="swiper-wrapper"><div class="swiper-slide">
+                <div class="announcement-content-container">
+                    <div class="announcement-time fund-secondary">
+                        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-width="4" stroke="#333" d="M5 19h38v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19ZM5 9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v10H5V9Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M16 4v8M32 4v8M28 34h6M14 34h6M28 26h6M14 26h6" data-follow-stroke="#333"/></svg>
+</span>
+                        <span>
+                            发布于 2025-01-26 00:00:00
+                        </span>
+                    </div>
+                    <div class="announcement-content">
+                        主题切换至自研的Fund（没错，就是本人可爱小猫黄基金命名的主题）
+                    </div>
+                </div>
+            </div><div class="swiper-slide">
+                <div class="announcement-content-container">
+                    <div class="announcement-time fund-secondary">
+                        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-width="4" stroke="#333" d="M5 19h38v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19ZM5 9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v10H5V9Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M16 4v8M32 4v8M28 34h6M14 34h6M28 26h6M14 26h6" data-follow-stroke="#333"/></svg>
+</span>
+                        <span>
+                            发布于 2025-01-01 00:00:00
+                        </span>
+                    </div>
+                    <div class="announcement-content">
+                        本站于2025年一月一日重启，托管于Github Pages.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('#announcement-swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000, 
+            },
+            observer: true, 
+            observeParents: true, 
+            on: {
+                touchEnd: function () {
+                    setTimeout(() => {
+                        this.autoplay.start();
+                    }, 500);
+                },
+            },
+        });
+    });
 </script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
+</div>
 
-</script></body>
 
+    <div class="toc-container pinned">
+        <div class="toc fund-block fund-border">
+    <div class="fund-title block-title">
+        <div class="fund-divider">
+            <span>📑 目录</span>
+        </div>
+    </div>
+    <div class="toc-content shadow-a">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#插件软件">插件&amp;软件</a>
+      <ul>
+        <li><a href="#功能插件">功能插件</a>
+          <ul>
+            <li><a href="#shell-command">Shell Command</a></li>
+            <li><a href="#commander">Commander</a></li>
+            <li><a href="#git">Git</a></li>
+            <li><a href="#hugo-preview">Hugo Preview</a></li>
+            <li><a href="#image-auto-upload">Image Auto Upload</a></li>
+          </ul>
+        </li>
+        <li><a href="#美化操作效率插件">美化&amp;操作效率插件</a>
+          <ul>
+            <li><a href="#主题board">主题：Board</a></li>
+            <li><a href="#hide-folders">Hide Folders</a></li>
+            <li><a href="#clear-unused-image">Clear Unused Image</a></li>
+            <li><a href="#paste-image-rename">Paste Image Rename</a></li>
+            <li><a href="#attachment-manager">Attachment Manager</a></li>
+            <li><a href="#code-styler">Code Styler</a></li>
+          </ul>
+        </li>
+        <li><a href="#软件">软件</a>
+          <ul>
+            <li><a href="#picgo">PicGO</a></li>
+            <li><a href="#piclist">PicList</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#配置">配置</a>
+      <ul>
+        <li><a href="#非功能插件配置">非功能插件配置</a>
+          <ul>
+            <li><a href="#hide-folders-1">Hide Folders</a></li>
+            <li><a href="#paste-image-rename-1">Paste Image Rename</a></li>
+            <li><a href="#attachment-manager-1">Attachment Manager</a></li>
+            <li><a href="#code-sytler">Code Sytler</a></li>
+          </ul>
+        </li>
+        <li><a href="#1-实现图形化新建文章">1. 实现图形化新建文章</a>
+          <ul>
+            <li><a href="#shell-command-1">Shell Command</a></li>
+            <li><a href="#commander-1">Commander</a></li>
+          </ul>
+        </li>
+        <li><a href="#2-图床配置">2. 图床配置</a>
+          <ul>
+            <li><a href="#piclist软件配置">PicList软件配置</a></li>
+            <li><a href="#iamge-auto-upload插件配置">Iamge Auto Upload插件配置</a></li>
+            <li><a href="#commander新增一键上传">Commander新增一键上传</a></li>
+          </ul>
+        </li>
+        <li><a href="#3-hugo-preview">3. Hugo Preview</a></li>
+      </ul>
+    </li>
+    <li><a href="#faq-已知问题">FAQ: 已知问题</a>
+      <ul>
+        <li><a href="#1-git跟踪文件异常">1. Git跟踪文件异常</a></li>
+        <li><a href="#2-git无法使用hugo-preview无法使用">2. Git无法使用&amp;&amp;Hugo Preview无法使用</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </div>
+        </div>
+    </div>
+
+</div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2025 - 2025. All rights reserved. Powered By Hugo.Designed By Hugo-Fund</p>
+
+  </footer>
+</body>
 </html>

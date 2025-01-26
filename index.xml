@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>乱话三千</title>
     <link>https://www.zanks.link/</link>
     <description>Recent content on 乱话三千</description>
-    <generator>Hugo -- 0.139.3</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Jan 2025 16:33:19 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2025 11:15:13 +0800</lastBuildDate>
     <atom:link href="https://www.zanks.link/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【Hugo】体验篇：Obsidian写作</title>
@@ -30,66 +30,18 @@
       <description>旧时代的船，想要载新世界的梦</description>
     </item>
     <item>
-      <title>💬 留言板</title>
-      <link>https://www.zanks.link/message/</link>
-      <pubDate>Fri, 13 Dec 2024 21:14:22 +0800</pubDate>
-      <guid>https://www.zanks.link/message/</guid>
+      <title>标签</title>
+      <link>https://www.zanks.link/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zanks.link/tags/</guid>
       <description></description>
     </item>
     <item>
-      <title>🍳 Zanks的私人食谱 🍳</title>
-      <link>https://www.zanks.link/recipe/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
-      <guid>https://www.zanks.link/recipe/</guid>
-      <description>&lt;h1 id=&#34;小高姐三酱牛肉&#34;&gt;小高姐三酱牛肉&lt;/h1&gt;
-&lt;p&gt;来自： &lt;a href=&#34;https://www.bilibili.com/video/BV1VW41147Fh/?spm_id_from=333.337.search-card.all.click&#34;&gt;B站传送门&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;材料&#34;&gt;材料&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;牛腱子 1000g&lt;/li&gt;
-&lt;li&gt;豆瓣酱 120g&lt;/li&gt;
-&lt;li&gt;酱油 180g&lt;/li&gt;
-&lt;li&gt;生姜 适量&lt;/li&gt;
-&lt;li&gt;腐乳 两块&lt;/li&gt;
-&lt;li&gt;八角、香叶等香料适量（香料包+草果）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;制作步骤&#34;&gt;制作步骤&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;牛腱子泡水（冬天可长一点，夏天3小时）&lt;/li&gt;
-&lt;li&gt;牛腱子用酱油腌制，放入冰箱12小时&lt;/li&gt;
-&lt;li&gt;冷水下锅，边煮边去血沫&lt;/li&gt;
-&lt;li&gt;沸腾后加入准备好的豆瓣酱、生姜、腐乳、香料&lt;/li&gt;
-&lt;li&gt;转小火煮2个小时，建议每半个小时看一次&lt;/li&gt;
-&lt;/ol&gt;</description>
-    </item>
-    <item>
-      <title>😾 关于基金的铲屎官 😾 </title>
-      <link>https://www.zanks.link/about/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
-      <guid>https://www.zanks.link/about/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;性别：男&lt;/li&gt;
-&lt;li&gt;年龄：保密&lt;/li&gt;
-&lt;li&gt;有一个博学多识且貌美如花的女朋友&lt;/li&gt;
-&lt;li&gt;养了一只叫“基金”的小猫&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;从事大数据、Java后端相关工作。曾经在最该奋斗的年纪进入了最能奋斗的地方，并且全身而退。目前已经回老家摆烂，开始重新思考工作和生活的意义。&lt;/p&gt;
-&lt;p&gt;在学校时就折腾过博客，因为懒癌（主要）和大厂连轴转的工作磨掉了对于技术的热爱（借口）后放弃了。现在从大厂离职摆烂了一年多之后，终于重新捡起了对于技术的热爱。&lt;/p&gt;
-&lt;p&gt;喜欢折腾HomeLab和各种奇奇怪怪的东西，爱好颇多，但擅长的没有。&lt;/p&gt;
-&lt;p&gt;本博客在2025年1月1日重启，希望可以坚持得久一些。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>🤝 Zanks的朋友们 🤝</title>
-      <link>https://www.zanks.link/friends/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0800</pubDate>
-      <guid>https://www.zanks.link/friends/</guid>
-      <description>&lt;p&gt;排名不分先后，按时间顺序添加。如需新增请留言，或通过其他方式联系我。
-本人的友链信息，互换请参考：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;名称： 乱话三千&lt;/li&gt;
-&lt;li&gt;链接： &lt;a href=&#34;https://www.zanks.link&#34;&gt;https://www.zanks.link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;描述： 会记录一些技术向的东西，喜欢做饭，有一只叫基金的可爱小猫&lt;/li&gt;
-&lt;li&gt;图片： &lt;a href=&#34;https://avatars.githubusercontent.com/u/144093429?v=4&#34;&gt;https://avatars.githubusercontent.com/u/144093429?v=4&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <title>分类</title>
+      <link>https://www.zanks.link/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.zanks.link/categories/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

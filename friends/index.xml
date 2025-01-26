@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>🤝 朋友们 🤝 on 乱话三千</title>
+    <link>https://www.zanks.link/friends/</link>
+    <description>Recent content in 🤝 朋友们 🤝 on 乱话三千</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <atom:link href="https://www.zanks.link/friends/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description>一个写代码的人</description>
+    </item>
+  </channel>
+</rss>
