@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on 乱话三千</title>
+    <link>https://www.zanks.link/tags/markdown/</link>
+    <description>Recent content in Markdown on 乱话三千</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Feb 2025 19:14:41 +0800</lastBuildDate>
+    <atom:link href="https://www.zanks.link/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fund：自己写一个主题作为生日礼物送给小猫</title>
+      <link>https://www.zanks.link/2025/02/16/hugo-4/</link>
+      <pubDate>Sun, 16 Feb 2025 23:26:23 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/02/16/hugo-4/</guid>
+      <description>临近小猫黄基金的生日，自作多情的铲屎官写了一个以他名字命名的Hugo主题送给作为生日礼物。2025.02.16，Release 1.0.0。</description>
+    </item>
+  </channel>
+</rss>
