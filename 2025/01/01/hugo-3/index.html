@@ -4,7 +4,7 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>【Hugo】体验篇：Obsidian写作 | 乱话三千</title>
-<meta name="start-time" content="2025-01-01 00:00:00">
+<meta name="start-time" content="2025-01-01 00:00:00"><meta name="home-page-content" content="">
 
 <link rel="shortcut icon" href="" type="image/x-icon">
 <link rel="icon" href="" type="image/x-icon"><meta name="twikoo-env-id" content="https://zanks-twikoo.netlify.app/.netlify/functions/twikoo">
@@ -15,10 +15,10 @@
 <link rel="stylesheet" href="/css/authors.min.ea4efdff1158f97241ec30e87f98e5c8772e40d1f596ac9c2b9203ad6848ef2c.css" integrity="sha256-6k79/xFY&#43;XJB7DDof5jlyHcuQNH1lqycK5IDrWhI7yw=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/basic.min.277d6a7464200b9f4e1f28aaf47a316d2cba09bdd73247a52ca33eb834b373c9.css" integrity="sha256-J31qdGQgC59OHyiq9HoxbSy6Cb3XMkelLKM&#43;uDSzc8k=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/chirp.min.ca5885bfce51f047e97eae90b850419926d33331c9f46b84cfd03258b85a3c97.css" integrity="sha256-yliFv85R8Efpfq6QuFBBmSbTMzHJ9GuEz9AyWLhaPJc=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/comments.min.2739193240e24a2a9299dfa449e7b81eb79846863e29dacbc9c350bc97c436a1.css" integrity="sha256-JzkZMkDiSiqSmd&#43;kSee4HreYRoY&#43;KdrLycNQvJfENqE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/comments.min.c2751df1064a72145ef98cd93582261da82b3ea7fd6941c470016d0b5e37d64f.css" integrity="sha256-wnUd8QZKchRe&#43;YzZNYImHagrPqf9aUHEcAFtC1431k8=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/copyright.min.cc055a71e31b212da911bb0f8acdcab692717a022a831e57e3027a2736425459.css" integrity="sha256-zAVaceMbIS2pEbsPis3KtpJxegIqgx5X4wJ6JzZCVFk=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/friends.min.0b848156173e92104ad44840b06038c15059eb7eae187175e807a15f48a1f2f1.css" integrity="sha256-C4SBVhc&#43;khBK1EhAsGA4wVBZ636uGHF16AehX0ih8vE=" crossorigin="anonymous">
-<link rel="stylesheet" href="/css/header.min.b3ddedefba9141d3dd58dcb5275f00e01ab7bb2a97c7b7ee456b6bfff82bcbe5.css" integrity="sha256-s93t77qRQdPdWNy1J18A4Bq3uyqXx7fuRWtr//gry&#43;U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/friends.min.f01bfe8b2e9b5bda8b39e6b321b870bc3fdc83f6b03d134dc84f836ab45e3ce0.css" integrity="sha256-8Bv&#43;iy6bW9qLOeazIbhwvD/cg/awPRNNyE&#43;DarRePOA=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/header.min.e5350339126619888037f8ecfbf39d138ba52cda749fa81386d3af403202c17b.css" integrity="sha256-5TUDORJmGYiAN/js&#43;/OdE4ulLNp0n6gThtOvQDICwXs=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/home.min.199221816490e0948ddacd2bb28fd264331abc8fc80781ed3855a80b781f6cfc.css" integrity="sha256-GZIhgWSQ4JSN2s0rso/SZDMavI/IB4HtOFWoC3gfbPw=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/last-update.min.d276c6d33c7439effc07f5634c131b5fb84d6ac0fd714acaaa574b32543e0b0a.css" integrity="sha256-0nbG0zx0Oe/8B/VjTBMbX7hNasD9cUrKqldLMlQ&#43;Cwo=" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/list-post.min.fed39e3ac9b553e7bcdefe4019e91da5d1cd05e75f7114fe3e1f963d7802be9b.css" integrity="sha256-/tOeOsm1U&#43;e83v5AGekdpdHNBedfcRT&#43;Ph&#43;WPXgCvps=" crossorigin="anonymous">
@@ -66,6 +66,9 @@
 <script src="/js/third-party/swiper-bundle.min.js"></script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+
+
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/cal-heatmap/dist/cal-heatmap.css" />
@@ -103,6 +106,9 @@
     <div class="header-center-container">
         <div class="header-center-board">
             <span id="header-center-text"></span>
+        </div>
+        <div class="header-center-typeit-board">
+            <span id="header-type-it"></span>
         </div>
     </div>
     <div class="nav-container">
