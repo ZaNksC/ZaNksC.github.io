@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AI on 乱话三千</title>
-    <link>https://www.zanks.link/categories/ai/</link>
-    <description>Recent content in AI on 乱话三千</description>
+    <title>AI-IDE on 乱话三千</title>
+    <link>https://www.zanks.link/tags/ai-ide/</link>
+    <description>Recent content in AI-IDE on 乱话三千</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 21 Feb 2025 19:19:27 +0800</lastBuildDate>
-    <atom:link href="https://www.zanks.link/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.zanks.link/tags/ai-ide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Trae —— 希望之火 or 黄昏的丧钟</title>
       <link>https://www.zanks.link/2025/02/21/ai-trae/</link>
       <pubDate>Fri, 21 Feb 2025 19:12:33 +0800</pubDate>
       <guid>https://www.zanks.link/2025/02/21/ai-trae/</guid>
       <description>当智能编程助手深度植入开发链路，开发者群体面临历史性抉择——这究竟是解放生产力的&amp;quot;普罗米修斯之火&amp;quot;，还是敲响职业黄昏的&amp;quot;自动化丧钟&amp;quot;？</description>
-    </item>
-    <item>
-      <title>一站式AI工作台</title>
-      <link>https://www.zanks.link/2025/02/05/ai-tools-cherry-studio/</link>
-      <pubDate>Wed, 05 Feb 2025 18:12:53 +0800</pubDate>
-      <guid>https://www.zanks.link/2025/02/05/ai-tools-cherry-studio/</guid>
-      <description>大模型浪潮下，生产力工具被颠覆性革命，顺应潮流，给自己打造一个趁手的AI工作台</description>
     </item>
   </channel>
 </rss>
