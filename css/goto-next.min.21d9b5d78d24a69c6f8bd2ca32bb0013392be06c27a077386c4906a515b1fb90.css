@@ -1,0 +1,1 @@
+.goto-next-grid{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:auto;gap:.3rem;padding-bottom:.5rem}.goto-next-item{border-radius:.5rem}.goto-next-item:hover{background-color:var(--fund-btn-hover-color)}
