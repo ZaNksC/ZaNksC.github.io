@@ -6,8 +6,15 @@
     <description>Recent content in Categories on 乱话三千</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 21 Feb 2025 19:27:02 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 06 Mar 2025 11:06:42 +0800</lastBuildDate>
     <atom:link href="https://www.zanks.link/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>https://www.zanks.link/categories/java/</link>
+      <pubDate>Wed, 05 Mar 2025 19:40:50 +0800</pubDate>
+      <guid>https://www.zanks.link/categories/java/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://www.zanks.link/categories/ai/</link>
