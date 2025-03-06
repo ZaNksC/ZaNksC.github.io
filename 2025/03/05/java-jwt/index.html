@@ -508,6 +508,7 @@ signed or integrity protected with a Message Authentication Code
 <h2 id="登录状态保存可选">登录状态保存（可选）</h2>
 <p>如果不需要使用长期状态保持可以只是用 AccessToken，在过期后引导用户重新输入用户名和密码进行登录即可。</p>
 <p>如果需要像APP一样做到长期登录状态的保持，考虑到如果只是延长accessToken过期时间，会无限放大Token泄露风险。所以引入了RefreshToken，该Token不可用于认证，只能用于签发新的AccessToken与RefreshToken，并且服务端将RefreshToken与用户进行绑定。这个绑定关系存储到数据库中保存，在签发新的Token后立刻废弃老的，被废弃的RefreshToken将会被当成无效Token处理。（当然，这样的设计是无法兼容单用户多设备场景的，如果需要兼顾多设备登录场景，可以将 RefreshToken与  <code>user_id,device_id</code> 绑定，实际上与设备绑定可以有效防止Token泄露后被盗用的风险）</p>
+<p>在实际的使用中，登录签发两个Token，并将RefreshToken存入数据库。鉴权场景RefreshToken不参加，新增一个使用RefreshToken签发新Token的场景用于存续登录状态，获取新的AccessToken。</p>
 <div class="copyright">
     <hr>
     <blockquote>
