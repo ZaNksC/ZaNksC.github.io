@@ -6,8 +6,15 @@
     <description>Recent content on 乱话三千</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Mar 2025 08:44:22 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Mar 2025 19:35:53 +0800</lastBuildDate>
     <atom:link href="https://www.zanks.link/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jellyfin电视剧刮削修复小记</title>
+      <link>https://www.zanks.link/2025/03/27/jellyfin-tvshow/</link>
+      <pubDate>Thu, 27 Mar 2025 19:12:33 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/03/27/jellyfin-tvshow/</guid>
+      <description>受不了Jellyfin刮削失败？受不了Jellyfin刮削电视剧后找不到第几集？想要看精美海报？进来一看吧！</description>
+    </item>
     <item>
       <title>JWT认证机制实践</title>
       <link>https://www.zanks.link/2025/03/05/java-jwt/</link>
