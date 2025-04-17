@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>【Hugo】运维篇：部署&amp;备案 | 乱话三千</title>
+<meta name="start-time" content="2025-01-01 00:00:00"><meta name="home-page-content" content="琐碎的日常、肤浅的思考与并不精湛的技术">
+
+<link rel="shortcut icon" href="" type="image/x-icon">
+<link rel="icon" href="" type="image/x-icon">
+
+<link rel="stylesheet" href="/css/about.min.3bd28d7600c4f0a0b8c01cd3cf3bda99a1aaec45be8271c0affe1f63747e1487.css" integrity="sha256-O9KNdgDE8KC4wBzTzzvamaGq7EW&#43;gnHAr/4fY3R&#43;FIc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/announcement.min.4aa56228e8aaec652528ee567a608c64629a0eb2d9de7403daec6ea5e97aa9cc.css" integrity="sha256-SqViKOiq7GUlKO5WemCMZGKaDrLZ3nQD2uxupel6qcw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/author-info.min.dc87bcd3f028c2dde3ea16d085e5717eeafcd00682a5fcfcc21169e64afe527a.css" integrity="sha256-3Ie80/Aowt3j6hbQheVxfur80AaCpfz8whFp5kr&#43;Uno=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/authors.min.ea4efdff1158f97241ec30e87f98e5c8772e40d1f596ac9c2b9203ad6848ef2c.css" integrity="sha256-6k79/xFY&#43;XJB7DDof5jlyHcuQNH1lqycK5IDrWhI7yw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/basic.min.277d6a7464200b9f4e1f28aaf47a316d2cba09bdd73247a52ca33eb834b373c9.css" integrity="sha256-J31qdGQgC59OHyiq9HoxbSy6Cb3XMkelLKM&#43;uDSzc8k=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/chirp.min.314185ce937fdc2ac73b2371ad3043871b66d141b84ca190826ae17afbce299c.css" integrity="sha256-MUGFzpN/3CrHOyNxrTBDhxtm0UG4TKGQgmrhevvOKZw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/comments.min.e4171beb72736744a3f6c50c2b4fdfeef88e2a56c8a4b8ef3615e98ef2e23dc6.css" integrity="sha256-5Bcb63JzZ0Sj9sUMK0/f7viOKlbIpLjvNhXpjvLiPcY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/copyright.min.cc055a71e31b212da911bb0f8acdcab692717a022a831e57e3027a2736425459.css" integrity="sha256-zAVaceMbIS2pEbsPis3KtpJxegIqgx5X4wJ6JzZCVFk=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/friends.min.86e876c797fe282e0dcac6cefcc90599f5280368e3310615fa98622e587d58be.css" integrity="sha256-huh2x5f&#43;KC4NysbO/MkFmfUoA2jjMQYV&#43;phiLlh9WL4=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/goto-next.min.21d9b5d78d24a69c6f8bd2ca32bb0013392be06c27a077386c4906a515b1fb90.css" integrity="sha256-Idm1140kppxvi9LKMrsAEzkr4GwnoHc4bEkGpRWx&#43;5A=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/header.min.f5db73278da983c7a2115f617aa37c62bcea954189500dd97c03196296fd3968.css" integrity="sha256-9dtzJ42pg8eiEV9heqN8YrzqlUGJUA3ZfAMZYpb9OWg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/home.min.199221816490e0948ddacd2bb28fd264331abc8fc80781ed3855a80b781f6cfc.css" integrity="sha256-GZIhgWSQ4JSN2s0rso/SZDMavI/IB4HtOFWoC3gfbPw=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/last-update.min.d1b9fb9c3f03856abc897283724600e0ae25d4fdd9e87081befb3b8b5b7bf8b7.css" integrity="sha256-0bn7nD8DhWq8iXKDckYA4K4l1P3Z6HCBvvs7i1t7&#43;Lc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/list-post.min.369fcddcc2fda2b18ce670202e78a3a3fe0d158fff89a7d128842ff9bd36af39.css" integrity="sha256-Np/N3ML9orGM5nAgLnijo/4NFY//iafRKIQv&#43;b02rzk=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/list.min.ba6eece6ea29ba755d3d4989c14ff1c730c9a68122468f841675efd689ad72f7.css" integrity="sha256-um7s5uopunVdPUmJwU/xxzDJpoEiRo&#43;EFnXv1omtcvc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/main.min.22aa6a071c63e010d1cd98165743c8f42a80a24fb0fc48bb9104b54f29e6a3db.css" integrity="sha256-IqpqBxxj4BDRzZgWV0PI9CqAok&#43;w/Ei7kQS1Tynmo9s=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/md.min.0e3575794d5fa5e3232de59e26050171a86cece8310668ab3836f12010826b17.css" integrity="sha256-DjV1eU1fpeMjLeWeJgUBcahs7OgxBmirODbxIBCCaxc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/menu.min.f38cd69111b7a83bdbca2c301f67c54bc7847378e4f524d091025ff147f29146.css" integrity="sha256-84zWkRG3qDvbyiwwH2fFS8eEc3jk9STQkQJf8UfykUY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/page.min.327faf4b56f53f360d59c9ec4ebc3e459780d6081f93e8d2632a521705b75684.css" integrity="sha256-Mn&#43;vS1b1PzYNWcnsTrw&#43;RZeA1ggfk&#43;jSYypSFwW3VoQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/post-meta.min.dec6e55761a93b5cb004630e45bf1f35f3cbd5bf1be9627f2300be018b79d7f2.css" integrity="sha256-3sblV2GpO1ywBGMORb8fNfPL1b8b6WJ/IwC&#43;AYt51/I=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/single.min.eeaa54b8cbbaf978c50fc703e82d13e3eb8ea83b23836a8019491b23e66b00e2.css" integrity="sha256-7qpUuMu6&#43;XjFD8cD6C0T4&#43;uOqDsjg2qAGUkbI&#43;ZrAOI=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/site-info.min.99f7ea72487d21367994413cf28009c799038172b9fa27de1e78d6bc025a1baa.css" integrity="sha256-mffqckh9ITZ5lEE88oAJx5kDgXK5&#43;ifeHnjWvAJaG6o=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/tags.min.01948be497fb7f68e7327070ba65a644286938095ca3199e4079a649e96f87f4.css" integrity="sha256-AZSL5Jf7f2jnMnBwumWmRChpOAlcoxmeQHmmSelvh/Q=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/terms-tags.min.330c7f245c68d21a893b6a4e9cb468f37bc9cc8495224e89a38c384e545aa25d.css" integrity="sha256-Mwx/JFxo0hqJO2pOnLRo83vJzISVIk6Jo4w4TlRaol0=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/theme-default.min.e5b67e6744721c1a4c5c500a49c71ce7ea1b67d6c46fa4afd7e5d483e5a4af77.css" integrity="sha256-5bZ&#43;Z0RyHBpMXFAKSccc5&#43;obZ9bEb6Sv1&#43;XUg&#43;Wkr3c=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/toc.min.97935001d1c901f611b9a21cb1e0b103af62ffd1c8dca20518900dacb2af7968.css" integrity="sha256-l5NQAdHJAfYRuaIcseCxA69i/9HI3KIFGJANrLKveWg=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/third-party/swiper-bundle.min.min.5983c13a687fefa51ed8c90899af9d232c7cf661ce4b8227d98b68044c7b43d5.css" integrity="sha256-WYPBOmh/76Ue2MkIma&#43;dIyx89mHOS4In2YtoBEx7Q9U=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/shortcode/admonition.min.2a42de5374e28cad4d33f9381b26947b93a6fe37801c8ec996777009ae171907.css" integrity="sha256-KkLeU3TijK1NM/k4GyaUe5Om/jeAHI7JlndwCa4XGQc=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/shortcode/git.min.250fa59fcc440a058ca2862e8d3e4eebfdcb7e7de571b796d8d87b6b7637d992.css" integrity="sha256-JQ&#43;ln8xECgWMooYujT5O6/3Lfn3lcbeW2Nh7a3Y32ZI=" crossorigin="anonymous"><link rel="preload" href="/css/theme/github.min.1bebd3859a97fa10cb230aa9eba85751895a0c2221711d299dd7d9807c546d65.css" as="style">
+<link rel="preload" href="/css/theme/github-dark.min.a2843de5d40c4736eecaaad3cc67aa464147149e3051f1fb8328d98364348a33.css" as="style">
+<link rel="preload" href="/css/theme/twikoo-github.min.fb310c5b466f7eede3bb7899dd4070b393ffe16e70ba9eb3ccf7af3818b50b6f.css" as="style">
+<link rel="preload" href="/css/theme/twikoo-github-dark.min.16f26cba66c515e1b0052f72653bdd21499881d8d792db895cb914dd99992ecb.css" as="style">
+
+<link rel="stylesheet" href="/css/theme/github.min.1bebd3859a97fa10cb230aa9eba85751895a0c2221711d299dd7d9807c546d65.css" id="hl-github-css" media="all">
+<link rel="stylesheet" href="/css/theme/github-dark.min.a2843de5d40c4736eecaaad3cc67aa464147149e3051f1fb8328d98364348a33.css" id="hl-github-dark-css" media="all" disabled>
+<link rel="stylesheet" href="/css/theme/twikoo-github.min.fb310c5b466f7eede3bb7899dd4070b393ffe16e70ba9eb3ccf7af3818b50b6f.css" id="twikoo-github-css" media="all">
+<link rel="stylesheet" href="/css/theme/twikoo-github-dark.min.16f26cba66c515e1b0052f72653bdd21499881d8d792db895cb914dd99992ecb.css" id="twikoo-github-dark-css" media="all" disabled>
+
+
+
+
+<script src="/js/bundle.8201b150c56b1ffe751449520917470b09f5834822bd39eb530ea3d485ef5f89.js" integrity="sha256-ggGxUMVrH/51FElSCRdHCwn1g0givTnrUw6j1IXvX4k=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/third-party/swiper-bundle.min.css" />
+<script src="/js/third-party/swiper-bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/cal-heatmap/dist/cal-heatmap.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/cal-heatmap/dist/cal-heatmap.css" />
+
+
+<script src="/js/third-party/wordcloud2.js"></script>
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-420MPRSEER"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-420MPRSEER');
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+    <div class="header-title-container" >
+        <a class="site-title-container" href="/">
+            <div class="header-icon">
+                <img class="header-icon" src="/assets/favicon.ico">
+            </div>
+            <div class="header-title">乱话三千</div>
+        </a>
+        
+        <div class="toggle" id="toggle-button">
+            <div id="light-mode-icon" class="toggle-icon active"><span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M28.0527 4.41085C22.5828 5.83695 18.5455 10.8106 18.5455 16.7273C18.5455 23.7564 24.2436 29.4545 31.2727 29.4545C37.1894 29.4545 42.1631 25.4172 43.5891 19.9473C43.8585 21.256 44 22.6115 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C25.3885 4 26.744 4.14149 28.0527 4.41085Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span></div>
+            <div id="dark-mode-icon" class="toggle-icon"><span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M24 37C31.1797 37 37 31.1797 37 24C37 16.8203 31.1797 11 24 11C16.8203 11 11 16.8203 11 24C11 31.1797 16.8203 37 24 37Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/><path fill="currentColor" d="M24 6C25.3807 6 26.5 4.88071 26.5 3.5C26.5 2.11929 25.3807 1 24 1C22.6193 1 21.5 2.11929 21.5 3.5C21.5 4.88071 22.6193 6 24 6Z" fill="#333"/><path fill="currentColor" d="M38.5 12C39.8807 12 41 10.8807 41 9.5C41 8.11929 39.8807 7 38.5 7C37.1193 7 36 8.11929 36 9.5C36 10.8807 37.1193 12 38.5 12Z" fill="#333"/><path fill="currentColor" d="M44.5 26.5C45.8807 26.5 47 25.3807 47 24C47 22.6193 45.8807 21.5 44.5 21.5C43.1193 21.5 42 22.6193 42 24C42 25.3807 43.1193 26.5 44.5 26.5Z" fill="#333"/><path fill="currentColor" d="M38.5 41C39.8807 41 41 39.8807 41 38.5C41 37.1193 39.8807 36 38.5 36C37.1193 36 36 37.1193 36 38.5C36 39.8807 37.1193 41 38.5 41Z" fill="#333"/><path fill="currentColor" d="M24 47C25.3807 47 26.5 45.8807 26.5 44.5C26.5 43.1193 25.3807 42 24 42C22.6193 42 21.5 43.1193 21.5 44.5C21.5 45.8807 22.6193 47 24 47Z" fill="#333"/><path fill="currentColor" d="M9.5 41C10.8807 41 12 39.8807 12 38.5C12 37.1193 10.8807 36 9.5 36C8.11929 36 7 37.1193 7 38.5C7 39.8807 8.11929 41 9.5 41Z" fill="#333"/><path fill="currentColor" d="M3.5 26.5C4.88071 26.5 6 25.3807 6 24C6 22.6193 4.88071 21.5 3.5 21.5C2.11929 21.5 1 22.6193 1 24C1 25.3807 2.11929 26.5 3.5 26.5Z" fill="#333"/><path fill="currentColor" d="M9.5 12C10.8807 12 12 10.8807 12 9.5C12 8.11929 10.8807 7 9.5 7C8.11929 7 7 8.11929 7 9.5C7 10.8807 8.11929 12 9.5 12Z" fill="#333"/></svg>
+</span></div>
+        </div>
+    </div>
+    <div class="header-center-container">
+        <div class="header-center-board">
+            <span id="header-center-text"></span>
+        </div>
+        <div class="header-center-typeit-board">
+            <span id="header-type-it"></span>
+        </div>
+    </div>
+    <div class="mobile-menu-btn" aria-label="导航菜单">☰</div>
+    <div class="nav-container">
+        
+  <nav>
+    <ul>
+    
+    <li>
+      <a href="/posts/">📖 文章</a>
+        <ul>
+    <li>
+      <a href="/tags/">🏷️ 标签</a>
+    </li>
+    <li>
+      <a href="/categories/">🔖 分类</a>
+    </li>
+        </ul>
+    </li>
+    <li>
+      <a href="/friends/">🤝 友链</a>
+    </li>
+    <li>
+      <a href="/chirp/">💬 碎碎念</a>
+    </li>
+    <li>
+      <a href="/about/">😾 关于</a>
+    </li>
+    </ul>
+  </nav>
+
+    </div>
+</div>
+
+  </header>
+  <main>
+    
+
+
+
+
+
+
+<div class="single-container fund-padding-top">
+    
+    <div class="single-cover-bg" style="
+        background:
+        linear-gradient(to bottom, var(--backgroud--mask-alpha80), var(--backgroud--mask-alpha20)),
+        url(https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/hugo-5-cover.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%, cover;
+        background-position: center, center;">
+    </div>
+    <div class="post-header">
+        <div class="over-title-container">
+            
+            <div> 原创</div>
+        </div>
+        <div class="title">
+            【Hugo】运维篇：部署&amp;备案
+        </div>
+        <div class="meta fund-secondary">
+            <div class="meta-info">
+                
+<div class="post-meta-item" id="publish-date">
+    <div class="post-meta-item-header" id="update-date"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-width="4" stroke="#333" d="M5 19h38v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19ZM5 9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v10H5V9Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M16 4v8M32 4v8M28 34h6M14 34h6M28 26h6M14 26h6" data-follow-stroke="#333"/></svg>
+</span>发布于:
+    </div>
+    <span>
+        2025-04-17
+    </span>
+</div>
+
+<div class="post-meta-item">
+    <div class="post-meta-item-header"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M33.542 27c-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7v6M33.542 15v6c-1.274-4.057-5.064-7-9.542-7-4.477 0-8.268 2.943-9.542 7" data-follow-stroke="#333"/></svg>
+</span>更新于:
+    </div><span>
+        2025-04-17
+    </span>
+</div>
+
+
+
+            </div>
+            
+<div class="authors">
+    <span><span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#icon-6ffb2852696ccc)"><path fill="currentColor" d="M30.9995 8.99902L38.9995 16.999" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M7.99953 31.999L35.9994 4L43.9995 11.999L15.9995 39.999L5.99951 41.999L7.99953 31.999Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M30.9995 8.99902L38.9995 16.999" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M8.99951 31.999L15.9995 38.999" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M12.9995 34.999L34.9995 12.999" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="icon-6ffb2852696ccc"><rect width="48" height="48" fill="#333"/></clipPath></defs></svg>
+</span>作者: </span>
+    <div>
+        
+        <span>Za_Nks</span>
+    </div>
+</div>
+
+            <div class="meta-info">
+                
+                <a href="/tags/%E5%BB%BA%E7%AB%99">#建站</a>
+                
+                <a href="/tags/hugo">#Hugo</a>
+                
+                <a href="/tags/%E5%A4%87%E6%A1%88">#备案</a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="left-container fund-border">
+            <div class="post-container" id="md-container">
+                <div class="post-content">
+
+                    <h1 id="前言">前言</h1>
+<p>想了老半天终于还是把博客搬到国内服务器上了，简单的记录一下搬迁过程。主要记录了证书申请&amp;管理，nginx部署，顺便附带一些服务器管理和防爆破的小技巧。</p>
+<h1 id="部署实践">部署实践</h1>
+<h2 id="环境准备">环境准备</h2>
+<h3 id="服务器">服务器</h3>
+<p>从阿里云购买云服务器一台，配置如下：</p>
+<ul>
+<li>实例规格： ecs.e-c1m1.large</li>
+<li>CPU： 2vCpu</li>
+<li>内存： 2GiB</li>
+<li>带宽： 3Mbps</li>
+<li>存储： 40GiB</li>
+<li>操作系统： Alibaba Cloud Linux 3.2104 LTS 64位 UEFI版</li>
+</ul>
+<p>我在安装操作系统时选了禁止root登录，所以需要知道root和ecs-user密码，其中root密码用于执行sudo命令。</p>
+<p>因为是需要作为网站的入口使用，所以需要开放80和443端口。具体步骤为 实例详情页-进入安全组tab-管理规则，在规则管理页面，添加入方向的80和443规则，开放给所有IP。可以点击快速添加，勾选80和443。
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com/%E5%BC%80%E6%94%BE%E5%AE%89%E5%85%A8%E7%BB%84.png">
+        <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com/%E5%BC%80%E6%94%BE%E5%AE%89%E5%85%A8%E7%BB%84.png" alt="开放安全组"  />
+    </a>
+</div></p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>修改主机名（可选）<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">执行命令<code>hostnamectl set-hostname ${HOST_NAME}</code>，其中HOST_NAME更换为需要更改的主机名
+修改后可通过 <code>hostname</code> 验证，并重启验证是否永久生效</div>
+        </div>
+    </div>
+<h3 id="nginx">Nginx</h3>
+<p>使用nginx作为站点的HTTP容器。</p>
+<p>登录服务器后，执行 <code>sudo yum install nginx</code> 进行安装，遇到提示后按y表示同意安装，如果需要输入root密码则输入root密码。</p>
+<p>输入命令 <code>nginx -v</code> 来验证nginx是否安装完成，输出版本即为安装完成，比如我安装的是 <code>1.20.1</code> ，则输出为 <code>nginx version: nginx/1.20.1</code>。</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>启动测试（可选）<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">输入命令<code>sudo nginx</code>，来启动nginx。可以通过 <code>ps -ef|grep nginx</code> 命令来验证进程是否启动。如正常启动，可以看到一个root用户启动的master进程和若干个nginx用户启动的worker进程。（数量取决于核心数，由配置项 <code>worker_processes auto;</code> 控制）
+如果需要在浏览器中验证页面是否可以访问，需要在阿里云的安全组中放行80端口。可以访问的话可以在浏览器中看到一个经典的Nginx小白页面。</div>
+        </div>
+    </div>
+<h2 id="hugo部署">Hugo部署</h2>
+<p>首先，需要规划一下我们网站部署的目录，以便修改nginx的配置。这里简单介绍一下nginx如何配置静态网站。我们的网站都被打包成静态文件放在服务器的某个目录里，而nginx可以通过指定root到这个目录来实现访问，网站的入口就是这个目录的<code>index.html</code> 。在Hugo中，这个目录就是运行hugo server后生成的 <code>public/</code> 目录。所以，部署只需要把 <code>public/</code> 目录放到服务器上，然后修改nginx的配置文件就好，网站的更新也只需要更新这个目录，而不需要修改nginx配置。
+但是考虑到增量部署的场景，不断在目录中更新是也可以解决文件的新增和修改，无法删除文件。所以，在我的规划中，我每一次的部署都会放一个将打包出来的内容放到一个新的目录中。为了不修改nginx的配置，并保证目录切换的时间足够短(提供高的可访问性，虽然必要性不大)，我对比了三个方案，最终选择在自动部署方案中采用了软链接的方式。</p>
+<ul>
+<li>先删除后上传：上传时间较长，会有比较长时间的一段无法提供服务的时间</li>
+<li>先上传后删除：一个相当比较好的方案，具体步骤为 上传新版本-删除老版本-重命名新版本，但是上一个版本删除后无法回滚，不过一般也用不到，再部署修复即可。（这里也可以把删除老版本改为重命名，但是依然需要做历史版本的管理）</li>
+<li>软链接：具体步骤为 上传新版本-修改软链接-删除老版本。在更新了软连接好就可用了。
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>使用Git的版本控制来实现更新<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">其实使用git更新也是一个非常好的方案，维护成本也不高。只是长期使用git的历史堆积会使得文件夹变得比较大，需要定期清理历史版本信息来控制文件大小。</div>
+        </div>
+    </div>
+最初方案下图所示：
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88.webp">
+        <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E9%83%A8%E7%BD%B2%E6%96%B9%E6%A1%88.webp" alt="部署方案"  />
+    </a>
+</div>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>文件权限说明<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><code>/website</code>、<code>/website/data</code> 、 <code>/website/data/blog_xxx</code> 的属主为ecs-user，权限为755，需要保证nginx的读和部署用户ecs-user的读写。</div>
+        </div>
+    </div></li>
+</ul>
+<h3 id="nginx配置修改">nginx配置修改</h3>
+<p>按照规划，更改nginx的配置，在 <code>/etc/nginx/default.d/</code> 下新建文件 <code>blog.conf</code> 输入以下内容：</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ conf ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <pre tabindex="0"><code class="language-conf" data-lang="conf">server_name ${YOUR_DOMAIN} # 替换为自己的域名
+location / { 
+	root /website/blog/;
+	index index.html;
+}</code></pre>
+    </div>
+</div><p>这段配置用于将root指向 <code>/website/blog</code> 目录，同时，需要删除原本 <code>nginx.conf</code> 中的内容，注释即可，可参考以下代码。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            /etc/nginx/nginx.conf
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <pre tabindex="0"><code class="language-conf" data-lang="conf">listen       80;
+listen       [::]:80;
+#server_name  _;
+#root         /usr/share/nginx/html;
+
+# Load configuration files for the default server block.
+include /etc/nginx/default.d/*.conf;
+
+#error_page 404 /404.html;
+#    location = /40x.html {
+#}
+
+#error_page 500 502 503 504 /50x.html;
+#    location = /50x.html {
+#}
+}</code></pre>
+    </div>
+</div><p>还需要更改 <code>nginx.conf</code> 中的user为 <code>/website/blog</code> 目录的属主。</p>
+<h3 id="手动部署">手动部署</h3>
+<p>手动部署不做赘述，将本地的 <code>public/</code> 拉到服务器的 <code>/website/blog</code> 目录下就可以看到网站了（注意，是要用 <code>hugo serve</code> 重新生成过的，不是开发的直接拿上去）。</p>
+<h3 id="自动部署cicd集成">自动部署（CI/CD集成）</h3>
+<p>自动部署要做的事情其实不也复杂，就是在Github Action中添加一步，把 <code>public/</code> 部署到服务器上，然调用服务器上的脚本就可以了。
+先来写一个脚本，用于实现软链接的创建/更新和历史版本数量的管理，脚本位于服务器的某个目录就可以了，我放在了 <code>~/scripts/</code> 下。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            ~/scrpits/deploy_blog.sh
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c1"># 指定目录路径</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nv">DIRECTORY</span><span class="o">=</span><span class="s2">&#34;/website/data/blog&#34;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="c1"># 软连接路径</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="nv">SOFT_LINK</span><span class="o">=</span><span class="s2">&#34;/website/blog&#34;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c1"># 获取所有符合 blog_xxxx 格式的目录，并按创建时间排序</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nv">directories</span><span class="o">=(</span><span class="k">$(</span>ls -d <span class="s2">&#34;</span><span class="nv">$DIRECTORY</span><span class="s2">&#34;</span>/blog_* <span class="p">|</span> xargs -I <span class="o">{}</span> stat --format <span class="s1">&#39;%Y {}&#39;</span> <span class="o">{}</span> <span class="p">|</span> sort -n <span class="p">|</span> cut -d<span class="s1">&#39; &#39;</span> -f2-<span class="k">)</span><span class="o">)</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="c1"># 获取目录数量</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="nv">num_directories</span><span class="o">=</span><span class="si">${#</span><span class="nv">directories</span><span class="p">[@]</span><span class="si">}</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="c1"># 如果存在目录，则更新或新建软连接到最新创建的目录</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="nv">$num_directories</span> -gt <span class="m">0</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">    <span class="nv">latest_directory</span><span class="o">=</span><span class="si">${</span><span class="nv">directories</span><span class="p">[-1]</span><span class="si">}</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;将使用目录 </span><span class="nv">$latest_directory</span><span class="s2"> 作为工作目录&#34;</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">    <span class="c1"># 如果软连接不存在，则新建软连接</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">    <span class="k">if</span> <span class="o">[</span> ! -L <span class="s2">&#34;</span><span class="nv">$SOFT_LINK</span><span class="s2">&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">        ln -s <span class="s2">&#34;</span><span class="nv">$latest_directory</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="nv">$SOFT_LINK</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">        <span class="c1"># 如果软连接已存在，则更新软连接</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">        ln -sfn <span class="s2">&#34;</span><span class="nv">$latest_directory</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="nv">$SOFT_LINK</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">    <span class="k">fi</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">
+</span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="c1"># 如果目录数量大于2，则删除最早创建的目录，直到只剩下2个</span>
+</span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="k">while</span> <span class="o">[</span> <span class="nv">$num_directories</span> -gt <span class="m">2</span> <span class="o">]</span><span class="p">;</span> <span class="k">do</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">    <span class="c1"># 删除最早创建的目录</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">	<span class="nb">echo</span> <span class="s2">&#34;删除目录 </span><span class="si">${</span><span class="nv">directories</span><span class="p">[0]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">    rm -rf <span class="s2">&#34;</span><span class="si">${</span><span class="nv">directories</span><span class="p">[0]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="c1"># 更新目录列表</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    <span class="nv">directories</span><span class="o">=(</span><span class="s2">&#34;</span><span class="si">${</span><span class="nv">directories</span><span class="p">[@]:</span><span class="nv">1</span><span class="si">}</span><span class="s2">&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl">    <span class="nv">num_directories</span><span class="o">=</span><span class="k">$((</span>num_directories-1<span class="k">))</span>
+</span></span><span class="line"><span class="ln">35</span><span class="cl"><span class="k">done</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">
+</span></span><span class="line"><span class="ln">37</span><span class="cl"><span class="c1"># 如果目录数量少于或等于2，不需要进一步操作</span>
+</span></span><span class="line"><span class="ln">38</span><span class="cl"><span class="k">if</span> <span class="o">[</span> <span class="nv">$num_directories</span> -le <span class="m">2</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="ln">39</span><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;目录数量符合要求，无需进一步操作。&#34;</span>
+</span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;操作完成，现在目录数量为 </span><span class="nv">$num_directories</span><span class="s2">。&#34;</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="ln">43</span><span class="cl">
+</span></span><span class="line"><span class="ln">44</span><span class="cl">chmod -R <span class="m">755</span> <span class="s2">&#34;</span><span class="nv">$DIRECTORY</span><span class="s2">&#34;</span>/blog_*</span></span></code></pre></div>
+    </div>
+</div><p>写好部署脚本之后，需要添加执行权限 <code>chmod +x deploy_blog.sh</code> ，然后，更新一下Github Action的流水线定义文件，添加了两个步骤。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            .github/workflow/hugo.yaml
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy Hugo site to Pages</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">  </span><span class="c"># Runs on pushes targeting the default branch</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;main&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">  </span><span class="c"># Allows you to run this workflow manually from the Actions tab</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w"></span><span class="c"># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages</span><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w"></span><span class="nt">permissions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l">read</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">  </span><span class="nt">pages</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">  </span><span class="nt">id-token</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="w"></span><span class="c"># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.</span><span class="w">
+</span></span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="w"></span><span class="c"># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.</span><span class="w">
+</span></span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="w"></span><span class="nt">concurrency</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="w">  </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;pages&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="w">  </span><span class="nt">cancel-in-progress</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="w"></span><span class="c"># Default to bash</span><span class="w">
+</span></span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="w"></span><span class="nt">defaults</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">27</span><span class="cl"><span class="w">    </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">bash</span><span class="w">
+</span></span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">29</span><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">30</span><span class="cl"><span class="w">  </span><span class="c"># Build job</span><span class="w">
+</span></span></span><span class="line"><span class="ln">31</span><span class="cl"><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">32</span><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln">33</span><span class="cl"><span class="w">    </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">34</span><span class="cl"><span class="w">      </span><span class="nt">HUGO_VERSION</span><span class="p">:</span><span class="w"> </span><span class="m">0.139.3</span><span class="w">
+</span></span></span><span class="line"><span class="ln">35</span><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">36</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Get current date</span><span class="w">
+</span></span></span><span class="line"><span class="ln">37</span><span class="cl"><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">gen-id</span><span class="w">
+</span></span></span><span class="line"><span class="ln">38</span><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">echo &#34;::set-output name=time::$(date +&#39;%Y%m%d%H%M%s&#39;)&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">39</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Hugo CLI</span><span class="w">
+</span></span></span><span class="line"><span class="ln">40</span><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="ln">41</span><span class="cl"><span class="sd">          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+</span></span></span><span class="line"><span class="ln">42</span><span class="cl"><span class="sd">          &amp;&amp; sudo dpkg -i ${{ runner.temp }}/hugo.deb</span><span class="w">          
+</span></span></span><span class="line"><span class="ln">43</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Dart Sass</span><span class="w">
+</span></span></span><span class="line"><span class="ln">44</span><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo snap install dart-sass</span><span class="w">
+</span></span></span><span class="line"><span class="ln">45</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="ln">46</span><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v4</span><span class="w">
+</span></span></span><span class="line"><span class="ln">47</span><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">48</span><span class="cl"><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive</span><span class="w">
+</span></span></span><span class="line"><span class="ln">49</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Node.js dependencies</span><span class="w">
+</span></span></span><span class="line"><span class="ln">50</span><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;[[ -f package-lock.json || -f npm-shrinkwrap.json ]] &amp;&amp; npm ci || true&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="ln">51</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build with Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="ln">52</span><span class="cl"><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">53</span><span class="cl"><span class="w">          </span><span class="nt">HUGO_CACHEDIR</span><span class="p">:</span><span class="w"> </span><span class="l">${{ runner.temp }}/hugo_cache</span><span class="w">
+</span></span></span><span class="line"><span class="ln">54</span><span class="cl"><span class="w">          </span><span class="nt">HUGO_ENVIRONMENT</span><span class="p">:</span><span class="w"> </span><span class="l">production</span><span class="w">
+</span></span></span><span class="line"><span class="ln">55</span><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">56</span><span class="cl"><span class="w">          </span><span class="l">hugo --baseURL=https://www.zanks.link/</span><span class="w">
+</span></span></span><span class="line"><span class="ln">57</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy Pages</span><span class="w">
+</span></span></span><span class="line"><span class="ln">58</span><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">peaceiris/actions-gh-pages@v3</span><span class="w">
+</span></span></span><span class="line"><span class="ln">59</span><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">60</span><span class="cl"><span class="w">            </span><span class="nt">PERSONAL_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.PERSONAL_TOKEN }}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">61</span><span class="cl"><span class="w">            </span><span class="nt">EXTERNAL_REPOSITORY</span><span class="p">:</span><span class="w"> </span><span class="l">ZaNksC/ZaNksC.github.io</span><span class="w">
+</span></span></span><span class="line"><span class="ln">62</span><span class="cl"><span class="w">            </span><span class="nt">PUBLISH_BRANCH</span><span class="p">:</span><span class="w"> </span><span class="l">main</span><span class="w">
+</span></span></span><span class="line"><span class="ln">63</span><span class="cl"><span class="w">            </span><span class="nt">PUBLISH_DIR</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span></span></span><span class="line"><span class="ln">64</span><span class="cl"><span class="w">            </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event.head_commit.message }}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">65</span><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">scp ssh pipelines</span><span class="w">
+</span></span></span><span class="line"><span class="ln">66</span><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">cross-the-world/ssh-scp-ssh-pipelines@latest</span><span class="w">
+</span></span></span><span class="line"><span class="ln">67</span><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln">68</span><span class="cl"><span class="w">          </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.HOST }}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">69</span><span class="cl"><span class="w">          </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.PORT }}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">70</span><span class="cl"><span class="w">          </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.USER }}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">71</span><span class="cl"><span class="w">          </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.PWD }}</span><span class="w">
+</span></span></span><span class="line"><span class="ln">72</span><span class="cl"><span class="w">          </span><span class="nt">scp</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="ln">73</span><span class="cl"><span class="sd">            ./public/* =&gt; /website/data/blog/blog_${{ steps.gen-id.outputs.time }}</span><span class="w">            
+</span></span></span><span class="line"><span class="ln">74</span><span class="cl"><span class="w">          </span><span class="nt">last_ssh</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="ln">75</span><span class="cl"><span class="sd">            /home/ecs-user/scripts/deploy_blog.sh</span><span class="w">            </span></span></span></code></pre></div>
+    </div>
+</div><p><code>${{ secret.HOST }}</code> 等三个变量，则需要在Github代码仓 - settings -Secrets And variables - Actions 中添加，分别表示 IP地址、ssh端口（如果改过）、部署用户和部署用户登陆凭证（密码用 <code>pass: ${{ VAR }}</code> , 密钥用 <code>key: ${{ VAR }}</code>, 推荐用密钥）。</p>
+<h3 id="ssl证书可选">SSL证书（可选）</h3>
+<p>觉得没有小绿锁没有格调，又觉得有了小绿锁续签太过麻烦？没关系，接下来就教你从申请到配置再到自动续签的全过程。</p>
+<p>SSL证书将通过acme.sh客户端向Let&rsquo;s Encrypt申请（免费！！！）。</p>
+<p>acme.sh 是一个优秀的证书管理客户端。可以非常简单的做到申请与续签。
+
+
+
+
+
+
+<div class="git github">
+    <div class="git-platform">
+        <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="git-info">
+        <div class="git-repo-name">
+            acmesh-official/acme.sh
+        </div>
+        <div class="git-description"></div>
+        <div class="git-extend">
+            <span class="git-language"></span>
+            <div class="git-count"></div>
+        </div>
+    </div>
+</div></p>
+<p>登录服务器，找一个目录，安装 <code>acme.sh</code> ，我是在 <code>/home/ecs-user/scripts</code> 下，输入以下命令(国内版)进行安装。<code>my@example.com</code> 替换为自己的邮箱（没有git的话，<code>sudo yum install git</code> 来安装）。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">git clone https://gitee.com/neilpang/acme.sh.git
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">cd</span> acme.sh
+</span></span><span class="line"><span class="ln">3</span><span class="cl">./acme.sh --install -m my@example.com</span></span></code></pre></div>
+    </div>
+</div><p>输出OK表示已经安装完成了。当然，也可以输入 <code>./acme.sh version</code> 来查看版本来验证。</p>
+<p>在安装过程，acme完成了三件事情</p>
+<ul>
+<li>在 <code>~/.acme.sh/</code> 目录下完成了安装</li>
+<li>在 <code>~/.bashrc</code> 中新增了一行，用于配置别名，可以在任意目录输入 <code>acme.sh</code> 命令（需要 <code>source ~/.bashrc</code> 或重新登录生效）</li>
+<li>创建了一个crontab的任务，用于检测即将过期的证书来实现自动续签，可以通过命令 <code>crontab -l</code> 查看</li>
+</ul>
+<p>安装完成之后，因为acme的默认证书签发机构不是Let&rsquo;s Encrypt所以需要手动配置一下。输入命令 <code>acme.sh --set-default-ca  --server  letsencrypt</code> 来完成配置。当然，也可以在申请命令中添加 <code>--server letsencrypt</code> 来指定机构。</p>
+<p>接下来就是主题了，开始申请证书。在申请证书的过程中，机构会验证我们是否为域名的主人，在泛域名证书 <code>*.zanks.link</code> (以下命令中替换为自己的域名)的申请中，只能使用DNS方式来验证。输入以下命令来使用dns验证方式申请证书。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">acme.sh  --issue  --dns -d *.zanks.link <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span> --yes-I-know-dns-manual-mode-enough-go-ahead-please</span></span></code></pre></div>
+    </div>
+</div><p>执行完成之后，会提示需要添加一条TXT的解析记录。添加完成之后，根据DNS解析时间等待一段时间（NameSilo的解析实在是太慢了，改用腾讯之后体验非常好，秒解析），建议等待半小时，然后执行以下命令。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">acme.sh  --renew   -d *.zanks.link <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>  --yes-I-know-dns-manual-mode-enough-go-ahead-please</span></span></code></pre></div>
+    </div>
+</div><p>申请证书也可以通过域名商API的方式，参考  <a href="https://github.com/acmesh-official/acme.sh/wiki/dnsapi">【官方文档】</a> (我试了一下没成功，感觉是网络问题)
+申请成功后会出现4个文件，分别是 <code>domainname.cer</code> 、 <code>domainname.key</code> 、 <code>ca.cer</code> 、 <code>fullchain.cer</code>。主要使用的是 <code>fullchain.cer</code> 文件和 <code>domainname.key</code> 文件。<code>fullchain.cer</code> 提供了完整的证书链，而 <code>domainname.key</code> 是用于解密由客户端发送的加密数据的私钥。</p>
+<p>证书生成之后，安装到nginx，不要手动去拷贝，使用以下命令。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">acme.sh --install-cert -d *.zanks.link <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>--key-file       /home/ecs-user/.acme.sh/*.zanks.link/*.zanks.link.key  <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>--fullchain-file /home/ecs-user/.acme.sh/*.zanks.link/fullchain.cer <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>--reloadcmd     <span class="s2">&#34;service nginx force-reload&#34;</span></span></span></code></pre></div>
+    </div>
+</div><p>其中 <code>--key-file</code> 的参数修改为 <code>domainname.key</code> 的文件路径，<code>--fullchain-file</code> 的参数修改为 <code>fullchain.cer</code> 的文件路径。</p>
+<p>之后就是修改nginx的配置开启443端口，代码如下：</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ conf ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <pre tabindex="0"><code class="language-conf" data-lang="conf">    server {
+        listen       443 ssl http2;
+        listen       [::]:443 ssl http2;
+        #server_name  _;
+        #root         /usr/share/nginx/html;
+
+        ssl_certificate &#34;/path/to/fullchain.cer&#34;;
+        ssl_certificate_key &#34;/path/to/domainname.key&#34;;
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout  10m;
+        ssl_ciphers PROFILE=SYSTEM;
+        ssl_prefer_server_ciphers on;
+
+        # Load configuration files for the default server block.
+        include /etc/nginx/default.d/*.conf;
+
+        #error_page 404 /404.html;
+        #    location = /40x.html {
+        #}
+
+        #error_page 500 502 503 504 /50x.html;
+        #    location = /50x.html {
+        #}
+    }</code></pre>
+    </div>
+</div><p>保持了跟http一样的配置，只是新增了一些ssl相关的配置，只需要将 <code>fullchain.cer</code> 和 <code>domainname.key</code> 的文件路径替换成之前申请出来的即可。</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>强制HTTPS（可选）<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>配置好https之后，如果希望只能通过https访问，那么可以通过重定向配合HSTS来告诉浏览器使用https。需要修改 <code>/etc/nginx/nginx.conf</code> 来实现。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ conf ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <pre tabindex="0"><code class="language-conf" data-lang="conf">server {
+	listen       80;
+	listen       [::]:80;
+	server_name  example.com www.example.com;
+	return 301 https://$server_name$request_uri;
+}
+
+
+server {
+	listen       443 ssl http2;
+	listen       [::]:443 ssl http2;
+
+	ssl_certificate &#34;/path/to/fullchain.cer&#34;;
+	ssl_certificate_key &#34;/path/to/example.key&#34;;
+	ssl_session_cache shared:SSL:1m;
+	ssl_session_timeout  10m;
+	ssl_ciphers PROFILE=SYSTEM;
+	ssl_prefer_server_ciphers on;
+	
+	add_header Strict-Transport-Security &#34;max-age=31536000; includeSubDomains&#34; always;
+
+	include /etc/nginx/default.d/*.conf;
+}</code></pre>
+    </div>
+</div></div>
+        </div>
+    </div>
+<p>最后，就是在DNS解析中添加一条A记录，用于指向服务器。</p>
+<h1 id="dns解析实践">DNS解析实践</h1>
+<p>由于服务器是没有IPv6地址的，为了使得网站支持IPv6，我在域名的解析规则中保留了Github Pages的IPv6站点。
+最终，我的DNS解析规则（最后发现提交不了那么多条，腾讯云免费版的可解析条目有限，按需选择了）就是</p>
+<table>
+  <thead>
+      <tr>
+          <th>subdomain</th>
+          <th>domain</th>
+          <th>Type</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td></td>
+          <td>zanks.link</td>
+          <td>A</td>
+          <td>我的服务器ip</td>
+      </tr>
+      <tr>
+          <td>www</td>
+          <td>zanks.link</td>
+          <td>A</td>
+          <td>我的服务器ip</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8000::153</td>
+      </tr>
+      <tr>
+          <td>www</td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8000::153</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8001::153</td>
+      </tr>
+      <tr>
+          <td>www</td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8001::153</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8002::153</td>
+      </tr>
+      <tr>
+          <td>www</td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8002::153</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8003::153</td>
+      </tr>
+      <tr>
+          <td>www</td>
+          <td>zanks.link</td>
+          <td>AAAA</td>
+          <td>2606:50c0:8003::153</td>
+      </tr>
+  </tbody>
+</table>
+<p>通过 <code>nslookup www.zanks.link</code> 可以看到返回1个IPv4地址（自己的服务器地址）和多个IPv6地址（Github Pages）。</p>
+<p>同时，分别通过 <code>curl www.zanks.link</code> 和 <code>curl -6 www.zanks.link</code> 可以验证IPv4和IPv6的访问。</p>
+<h1 id="域名备案">域名备案</h1>
+<p>当我们的服务器是国内IP时，要求域名进行备案，否则会无法使用。</p>
+<blockquote>
+<p><strong>国外注册商无法通过备案，需要转到国内</strong></p>
+</blockquote>
+<h2 id="域名转移">域名转移</h2>
+<p>我是在NameSilo上买的域名，已转入腾讯云。</p>
+<p>首先，需要在NameSilo上解锁域名+获取转移码。转移码的获取可以通过点击 <code>Send Email</code> ，而且需要等到60天之后才可以转移。（为此拖延了好几个月才备案）</p>
+<h2 id="域名备案-1">域名备案</h2>
+<h3 id="icp备案">ICP备案</h3>
+<p>ICP备案需要在服务器所在的云服务商处发起备份，比如我的域名在腾讯云管理，服务器却在阿里云，我是从阿里云发起的ICP备案。发起是比较简单的，按照规范填好订单直接发起即可，发起后会有专员审核，帮你修改掉简单的错误就提交到管理局了（有一个比较麻烦的是需要拍一个读保证书的视频）。如果有无法通过的则会退回来，比如之前是在NameSilo买的域名没办法备案。提交申请快的话一天就可以，提交之后会收到一个管理局的短信去阿里云备案流程里面输入一下，然后等审批就好。</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>一些弯路<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">备案第一次失败了，退回原因为，该网站备案在审核通过前网站已开通，把DNS的解析关了之后重新提交。</div>
+        </div>
+    </div>
+<h3 id="公安备案">公安备案</h3>
+<p>公安备案需要在ICP备案完成后的30天内进行（不知道不备案会有什么后果，查了一下可能会切断dns解析）。按照阿里云给出的文档，在全国互联网安全管理平台申请主体（需要下载一个app做人脸认证），需要准备 身份证正面、身份证反面、手持身份证照片、网站域名证书等材料。</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>一些弯路<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">公安的备案相当麻烦，需要关闭评论等功能，提交之后会当地负责网安的民警来协助你，需要你提交材料，如实回答，如实禀报即可。（就是评论功能这块，需要验证能发送的人每个人都实名有点为难个人博客了）</div>
+        </div>
+    </div>
+<h1 id="番外服务器安全加固">番外：服务器安全加固</h1>
+<h2 id="fail2ban">fail2ban</h2>
+<p>用于防止暴力密码破解，在高位端口被扫到后，黑客会进行暴力密码破解，即便是IP代理池进行破解，代理池中的IP也是有限的，可以通过暴力拆解多次失败后将IP加入黑名单来提高黑客的破解成本，毕竟小破服务器也没什么值得人家大张旗鼓破解的必要，别人也只想要个肉鸡。所以这个操作可以有效防止黑客的暴力密码破解。</p>
+<h3 id="安装">安装</h3>
+<p>输入命令进行安装</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo yum install fail2ban</span></span></code></pre></div>
+    </div>
+</div><p>通过以下命令管理fail2ban</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo systemctl status fail2ban <span class="c1"># 查看状态</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">sudo systemctl start fail2ban <span class="c1"># 启动服务</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">sudo systemctl stop fail2ban <span class="c1"># 停止服务</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">sudo systemctl restart fail2ban <span class="c1"># 重启服务</span></span></span></code></pre></div>
+    </div>
+</div><h3 id="配置">配置</h3>
+<p>fail2ban的配置位于 <code>/etc/fail2ban</code> 目录下，通常自定配置写在 <code>/etc/fail2ban/jail.local</code> 中，使用命令复制 <code>jail.conf</code> 来自定义配置，进行微调。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local</span></span></code></pre></div>
+    </div>
+</div><p>可以使用命令 <code>sudo fail2ban-client status</code> 来检查fail2ban的配置</p>
+<p>编辑 <code>jail.local</code> ，找到 <code>[sshd]</code> 模块进行修改。其中port如果改过，需要设置为配置的端口。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ text ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">enabled = true 
+</span></span><span class="line"><span class="ln">2</span><span class="cl">port = 22222 
+</span></span><span class="line"><span class="ln">3</span><span class="cl">filter = sshd 
+</span></span><span class="line"><span class="ln">4</span><span class="cl">logpath = /var/log/secure 
+</span></span><span class="line"><span class="ln">5</span><span class="cl">maxretry = 5 
+</span></span><span class="line"><span class="ln">6</span><span class="cl">findtime = 5m 
+</span></span><span class="line"><span class="ln">7</span><span class="cl">bantime = 4h</span></span></code></pre></div>
+    </div>
+</div><p>修改后重启服务，并查看配置可以看到有一条生效的。</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ text ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="ln">1</span><span class="cl">sudo fail2ban-client status Status 
+</span></span><span class="line"><span class="ln">2</span><span class="cl">|- Number of jail: 1 
+</span></span><span class="line"><span class="ln">3</span><span class="cl">`- Jail list: sshd</span></span></code></pre></div>
+    </div>
+</div><h2 id="登录选项设置">登录选项设置</h2>
+<p>设置ssh登录方式为禁止root登录。由于机器需要使用Github Action进行部署，暂时无法禁用密码登录（实际上是可以的）</p>
+<p>修改 <code>/etc/ssh/sshd_config</code> 中的 <code>PermitRootLogin yes</code> 为 <code>PermitRootLogin no</code> 。
+重启ssh服务 <code>sudo systemctl restart sshd</code></p>
+<h2 id="高位端口">高位端口</h2>
+<p>将ssh端口设置为高位端口，可以预防大部分的常规扫描。</p>
+<p>修改 <code>/etc/ssh/sshd_config</code> 中的 <code>#port 22</code> 为 <code>port 22222</code> 或其他端口。
+重启ssh服务 <code>sudo systemctl restart sshd</code></p>
+<h2 id="检查登录日志">检查登录日志</h2>
+<p>查看ssh登录失败日志</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo cat /var/log/secure <span class="p">|</span> grep <span class="s2">&#34;Failed&#34;</span></span></span></code></pre></div>
+    </div>
+</div><p>查看failed2ban的日志</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">sudo cat /var/log/fail2ban.log</span></span></code></pre></div>
+    </div>
+</div><div class="copyright">
+    <hr>
+    <blockquote>
+        <p>本文为原创内容，版权归作者所有。如需转载，请在文章中声明本文标题及链接。</p>
+        <p>文章标题：【Hugo】运维篇：部署&amp;备案 —— [Za_Nks]</p>
+        <p>文章链接：<a href="https://www.zanks.link/2025/04/17/hugo-5/" target="_blank">https://www.zanks.link/2025/04/17/hugo-5/</a></p>
+        <p>许可协议：<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans" target="_blank">CC BY-NC 4.0</a></p>
+    </blockquote>
+</div></div>
+                <div class="post-footer">
+                    <div class="comments">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-container">
+            <div class="author-info-container">
+    <div class="author-info fund-border">
+    <div class="swiper" id="author-info-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                        <div class="one-author-container">
+                            <a class="avatar" href="/about">
+                                <img  src="/images/default/avatar.jpg">
+                            </a>
+                            <div class="author-name fund-title">Za_Nks</div>
+                            <div class="author-summary">剥龙虾大王、剥柚子也还可以</div>
+                            
+                        </div>
+                    </div>
+            
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('#author-info-swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000, 
+            },
+            observer: true, 
+            observeParents: true, 
+            on: {
+                touchEnd: function () {
+                    setTimeout(() => {
+                        this.autoplay.start();
+                    }, 500);
+                },
+            },
+        });
+    });
+</script>
+</div>
+<div class="announcements-container">
+    <div class="fund-block fund-border">
+    <div class="fund-title block-title">
+        <div class="fund-divider">
+            <span>📢 公告</span>
+        </div>
+    </div>
+    <div class="swiper announcement" id="announcement-swiper">
+        <div class="swiper-wrapper"><div class="swiper-slide">
+                <div class="announcement-content-container">
+                    <div class="announcement-time fund-secondary">
+                        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-width="4" stroke="#333" d="M5 19h38v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19ZM5 9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v10H5V9Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M16 4v8M32 4v8M28 34h6M14 34h6M28 26h6M14 26h6" data-follow-stroke="#333"/></svg>
+</span>
+                        <span>
+                            发布于 2025-04-17 00:00:00
+                        </span>
+                    </div>
+                    <div class="announcement-content">
+                        已切换至国内服务器，完成ICP及公安网备案，后续将考虑通过CDN等技术加速访问效率核IPv6支持，目前IPv6由Github Pages支持
+                    </div>
+                </div>
+            </div><div class="swiper-slide">
+                <div class="announcement-content-container">
+                    <div class="announcement-time fund-secondary">
+                        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-width="4" stroke="#333" d="M5 19h38v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19ZM5 9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v10H5V9Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M16 4v8M32 4v8M28 34h6M14 34h6M28 26h6M14 26h6" data-follow-stroke="#333"/></svg>
+</span>
+                        <span>
+                            发布于 2025-02-25 00:00:00
+                        </span>
+                    </div>
+                    <div class="announcement-content">
+                        近期将进行备案，可能会停止服务一段时间，为期15-30天
+                    </div>
+                </div>
+            </div><div class="swiper-slide">
+                <div class="announcement-content-container">
+                    <div class="announcement-time fund-secondary">
+                        <span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-width="4" stroke="#333" d="M5 19h38v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V19ZM5 9a2 2 0 0 1 2-2h34a2 2 0 0 1 2 2v10H5V9Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M16 4v8M32 4v8M28 34h6M14 34h6M28 26h6M14 26h6" data-follow-stroke="#333"/></svg>
+</span>
+                        <span>
+                            发布于 2025-01-26 00:00:00
+                        </span>
+                    </div>
+                    <div class="announcement-content">
+                        主题切换至自研的Fund（没错，就是本人可爱小猫黄基金命名的主题）
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('#announcement-swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000, 
+            },
+            observer: true, 
+            observeParents: true, 
+            on: {
+                touchEnd: function () {
+                    setTimeout(() => {
+                        this.autoplay.start();
+                    }, 500);
+                },
+            },
+        });
+    });
+</script>
+</div>
+
+<div class="fund-block fund-border" id="site-info">
+    <div class="site-info-title">
+        <div class="fund-divider fund-title">
+            
+            <span>🎲 不期而遇</span>
+        </div>
+    </div>
+    <div class="goto-next-grid">
+        <a href="https://www.foreverblog.cn/go.html" target="_blank">
+            <img src="https://img.foreverblog.cn/wormhole_1.gif" alt="" style="width:auto;height: auto" title="穿梭虫洞-随机访问十年之约友链博客">
+        </a>
+        <a style="text-decoration:none;" href="https://travel.moe/go.html" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" target="_blank">
+            <img src="https://travel.moe/images/icon/icon64.png" style="width:24px;height:24px">异次元之旅</a>
+        <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力">
+            <img src="https://www.travellings.cn/assets/logo.gif" alt="开往-友链接力" width="120">
+        </a>
+    </div>
+</div>
+
+    <div class="toc-container pinned">
+        <div class="toc fund-block fund-border">
+    <div class="fund-title block-title">
+        <div class="fund-divider">
+            <span>📑 目录</span>
+        </div>
+    </div>
+    <div class="toc-content shadow-a">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#部署实践">部署实践</a>
+      <ul>
+        <li><a href="#环境准备">环境准备</a>
+          <ul>
+            <li><a href="#服务器">服务器</a></li>
+            <li><a href="#nginx">Nginx</a></li>
+          </ul>
+        </li>
+        <li><a href="#hugo部署">Hugo部署</a>
+          <ul>
+            <li><a href="#nginx配置修改">nginx配置修改</a></li>
+            <li><a href="#手动部署">手动部署</a></li>
+            <li><a href="#自动部署cicd集成">自动部署（CI/CD集成）</a></li>
+            <li><a href="#ssl证书可选">SSL证书（可选）</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#dns解析实践">DNS解析实践</a></li>
+    <li><a href="#域名备案">域名备案</a>
+      <ul>
+        <li><a href="#域名转移">域名转移</a></li>
+        <li><a href="#域名备案-1">域名备案</a>
+          <ul>
+            <li><a href="#icp备案">ICP备案</a></li>
+            <li><a href="#公安备案">公安备案</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#番外服务器安全加固">番外：服务器安全加固</a>
+      <ul>
+        <li><a href="#fail2ban">fail2ban</a>
+          <ul>
+            <li><a href="#安装">安装</a></li>
+            <li><a href="#配置">配置</a></li>
+          </ul>
+        </li>
+        <li><a href="#登录选项设置">登录选项设置</a></li>
+        <li><a href="#高位端口">高位端口</a></li>
+        <li><a href="#检查登录日志">检查登录日志</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+    </div>
+        </div>
+    </div>
+
+</div>
+
+
+  </main>
+  <footer>
+    <p>Copyright 2025 - 2025. All rights reserved. Powered By Hugo.Designed By <a href="https://github.com/ZaNksC/hugo-theme-fund/tree/main">Fund</a></p>
+<div>
+    <a href="https://icp.gov.moe/?keyword=20250574" target="_blank">萌ICP备20250574号</a>
+    |
+    浙ICP备2025162460号 | 浙公网安备33020502001229号
+</div>
+  </footer>
+</body>
+</html>

@@ -6,8 +6,15 @@
     <description>Recent content on 乱话三千</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 27 Mar 2025 19:44:05 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 17 Apr 2025 12:46:18 +0800</lastBuildDate>
     <atom:link href="https://www.zanks.link/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】运维篇：部署&amp;备案</title>
+      <link>https://www.zanks.link/2025/04/17/hugo-5/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/04/17/hugo-5/</guid>
+      <description>忙活了几个月，终于把博客部署到国内服务器并完成备案了</description>
+    </item>
     <item>
       <title>Jellyfin电视剧刮削修复小记</title>
       <link>https://www.zanks.link/2025/03/27/jellyfin-tvshow/</link>
