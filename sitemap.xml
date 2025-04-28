@@ -2,13 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.zanks.link/categories/ai/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/categories/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/2025/04/28/ai-sse/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/%E6%B5%81%E5%BC%8F%E8%BE%93%E5%87%BA/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92/</loc>
+    <lastmod>2025-04-28T10:59:30+08:00</lastmod>
+  </url><url>
     <loc>https://www.zanks.link/2025/04/17/hugo-5/</loc>
     <lastmod>2025-04-17T12:46:18+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/hugo/</loc>
-    <lastmod>2025-04-17T12:46:18+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/tags/</loc>
     <lastmod>2025-04-17T12:46:18+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/%E5%A4%87%E6%A1%88/</loc>
@@ -16,12 +37,6 @@
   </url><url>
     <loc>https://www.zanks.link/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2025-04-17T12:46:18+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/</loc>
-    <lastmod>2025-04-17T12:46:18+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/categories/</loc>
-    <lastmod>2025-03-27T19:44:05+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/homelab/</loc>
     <lastmod>2025-03-27T19:44:05+08:00</lastmod>
@@ -51,9 +66,6 @@
     <lastmod>2025-03-14T08:44:22+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/ai/</loc>
-    <lastmod>2025-02-21T19:27:02+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/categories/ai/</loc>
     <lastmod>2025-02-21T19:27:02+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/ai-ide/</loc>

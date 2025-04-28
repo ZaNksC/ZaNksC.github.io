@@ -8,6 +8,13 @@
     <language>zh-cn</language>
     <atom:link href="https://www.zanks.link/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>大模型观察日记之流式输出</title>
+      <link>https://www.zanks.link/2025/04/28/ai-sse/</link>
+      <pubDate>Mon, 28 Apr 2025 10:57:53 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/04/28/ai-sse/</guid>
+      <description>大模型来袭，模型和应用场景卷出天际，但交流方式却出奇的统一。</description>
+    </item>
+    <item>
       <title>【Hugo】运维篇：部署&amp;备案</title>
       <link>https://www.zanks.link/2025/04/17/hugo-5/</link>
       <pubDate>Thu, 17 Apr 2025 00:00:00 +0800</pubDate>
