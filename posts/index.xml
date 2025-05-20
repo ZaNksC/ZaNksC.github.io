@@ -8,6 +8,13 @@
     <language>zh-cn</language>
     <atom:link href="https://www.zanks.link/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Macmini M4</title>
+      <link>https://www.zanks.link/2025/05/20/macmini-m4/</link>
+      <pubDate>Tue, 20 May 2025 10:14:05 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/05/20/macmini-m4/</guid>
+      <description>Macmini M4 无干活使用体验</description>
+    </item>
+    <item>
       <title>大模型观察日记之流式输出</title>
       <link>https://www.zanks.link/2025/04/28/ai-sse/</link>
       <pubDate>Mon, 28 Apr 2025 10:57:53 +0800</pubDate>
