@@ -200,7 +200,7 @@
     <div class="post-meta-item-header"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M33.542 27c-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7v6M33.542 15v6c-1.274-4.057-5.064-7-9.542-7-4.477 0-8.268 2.943-9.542 7" data-follow-stroke="#333"/></svg>
 </span>更新于:
     </div><span>
-        2025-05-20
+        2025-05-21
     </span>
 </div>
 
@@ -362,7 +362,69 @@
 </span></span><span class="line"><span class="ln">2</span><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;xxx@example.com&#34;</span>
 </span></span><span class="line"><span class="ln">3</span><span class="cl">cat ~/.ssh/id_rsa.pub</span></span></code></pre></div>
     </div>
-</div><div class="copyright">
+</div><h3 id="终端美化">终端美化</h3>
+<h4 id="终端工具">终端工具</h4>
+<p>由于原版的终端工具没有文件高亮和tab页的功能，所以重新装一个终端工具。
+终端工具使用 <code>iTerms2</code></p>
+<h4 id="zsh增加">ZSH增加</h4>
+<p>新版本的终端已经使用zsh了，所以只需要安装一个 <code>oh-my-zsh</code> 即可，主要是为了可以安装一个主题（装逼用）和主题管理（假装增加效率）。</p>
+<p>使用命令 <code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code> 安装。</p>
+<p>安装完之后终端就变成了新主题的样式，如下</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl">➜  ~ ll
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">total <span class="m">0</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">drwx------@  <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">17</span> 13:01 Applications
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">drwx------+  <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">17</span> 13:02 Desktop
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">drwx------+  <span class="m">7</span> zanks  staff   224B  <span class="m">4</span> <span class="m">29</span> 20:32 Documents
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">drwx------+  <span class="m">5</span> zanks  staff   160B  <span class="m">5</span>  <span class="m">2</span> 10:15 Downloads
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">-rw-r--r--@  <span class="m">1</span> zanks  staff     0B  <span class="m">4</span> <span class="m">22</span> 19:00 jcef_12792.log
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">-rw-r--r--@  <span class="m">1</span> zanks  staff     0B  <span class="m">4</span> <span class="m">22</span> 19:40 jcef_26614.log
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">drwx------@ <span class="m">98</span> zanks  staff   3.1K  <span class="m">4</span> <span class="m">29</span> 20:44 Library
+</span></span><span class="line"><span class="ln">10</span><span class="cl">drwx------   <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">16</span> 23:10 Movies
+</span></span><span class="line"><span class="ln">11</span><span class="cl">drwx------+  <span class="m">3</span> zanks  staff    96B  <span class="m">3</span> <span class="m">16</span> 22:33 Music
+</span></span><span class="line"><span class="ln">12</span><span class="cl">drwx------+  <span class="m">5</span> zanks  staff   160B  <span class="m">4</span>  <span class="m">2</span> 22:59 Pictures
+</span></span><span class="line"><span class="ln">13</span><span class="cl">drwxr-xr-x+  <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">16</span> 22:33 Public</span></span></code></pre></div>
+    </div>
+</div><h4 id="主题">主题</h4>
+<p>安装完 <code>oh-my-zsh</code> 之后，默认的主题提示的信息过少（次要）并且界面看上去也没有那么酷炫（主要）</p>
+<p>安装一个之前比较喜欢的主题 <code>powerlevel10k</code></p>
+<p>输入命令 <code>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git &quot;${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k&quot;</code> 安装后，修改 <code>.zshrc</code> 文件中的主题为 <code>ZSH_THEME=&quot;powerlevel10k/powerlevel10k&quot;</code></p>
+<p>重启终端后进入主题的配置项，需要安装特有字体来支持一些符号的显示。</p>
+<p>最终效果
+<div class="post-img-view">
+    <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96%E6%95%88%E6%9E%9C.webp">
+        <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96%E6%95%88%E6%9E%9C.webp" alt="终端美化效果|700x83"  />
+    </a>
+</div></p>
+<div class="copyright">
     <hr>
     <blockquote>
         <p>本文为原创内容，版权归作者所有。如需转载，请在文章中声明本文标题及链接。</p>
@@ -566,6 +628,13 @@
           <ul>
             <li><a href="#homebrew">HomeBrew</a></li>
             <li><a href="#git">Git</a></li>
+            <li><a href="#终端美化">终端美化</a>
+              <ul>
+                <li><a href="#终端工具">终端工具</a></li>
+                <li><a href="#zsh增加">ZSH增加</a></li>
+                <li><a href="#主题">主题</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
