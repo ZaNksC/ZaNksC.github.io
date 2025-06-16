@@ -2,31 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.zanks.link/</loc>
-    <lastmod>2025-06-16T09:10:42+08:00</lastmod>
-  </url><url>
     <loc>https://www.zanks.link/categories/</loc>
-    <lastmod>2025-06-15T22:05:15+08:00</lastmod>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/homelab/</loc>
-    <lastmod>2025-06-15T22:05:15+08:00</lastmod>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/nas/</loc>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/</loc>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/2025/06/15/ungree-dxp4800/</loc>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/</loc>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/categories/%E8%AE%BE%E5%A4%87/</loc>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/%E8%AE%BE%E5%A4%87%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2025-06-16T09:11:21+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/05/20/macmini-m4/</loc>
     <lastmod>2025-06-15T22:05:15+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/pc/</loc>
-    <lastmod>2025-06-15T22:05:15+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/tags/</loc>
-    <lastmod>2025-06-15T22:05:15+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2025-06-15T22:05:15+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/categories/%E8%AE%BE%E5%A4%87/</loc>
-    <lastmod>2025-06-15T22:05:15+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/tags/%E8%AE%BE%E5%A4%87%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2025-06-15T22:05:15+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/categories/ai/</loc>

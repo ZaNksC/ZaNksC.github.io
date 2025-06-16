@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>个人生活 on 乱话三千</title>
-    <link>https://www.zanks.link/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/</link>
-    <description>Recent content in 个人生活 on 乱话三千</description>
+    <title>Nas on 乱话三千</title>
+    <link>https://www.zanks.link/tags/nas/</link>
+    <description>Recent content in Nas on 乱话三千</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 16 Jun 2025 09:11:21 +0800</lastBuildDate>
-    <atom:link href="https://www.zanks.link/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.zanks.link/tags/nas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>绿联DXP4800开箱体验</title>
       <link>https://www.zanks.link/2025/06/15/ungree-dxp4800/</link>
       <pubDate>Sun, 15 Jun 2025 21:16:28 +0800</pubDate>
       <guid>https://www.zanks.link/2025/06/15/ungree-dxp4800/</guid>
       <description>终于到手的成品NAS，性价比之神DXP4800究竟是水军压境，还是真有实力？</description>
-    </item>
-    <item>
-      <title>Macmini M4</title>
-      <link>https://www.zanks.link/2025/05/20/macmini-m4/</link>
-      <pubDate>Tue, 20 May 2025 10:14:05 +0800</pubDate>
-      <guid>https://www.zanks.link/2025/05/20/macmini-m4/</guid>
-      <description>Macmini M4 无干货使用体验</description>
     </item>
   </channel>
 </rss>
