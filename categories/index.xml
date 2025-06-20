@@ -6,8 +6,15 @@
     <description>Recent content in Categories on 乱话三千</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Jun 2025 09:26:39 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jun 2025 10:01:11 +0800</lastBuildDate>
     <atom:link href="https://www.zanks.link/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Homelab</title>
+      <link>https://www.zanks.link/categories/homelab/</link>
+      <pubDate>Fri, 20 Jun 2025 09:42:47 +0800</pubDate>
+      <guid>https://www.zanks.link/categories/homelab/</guid>
+      <description></description>
+    </item>
     <item>
       <title>设备</title>
       <link>https://www.zanks.link/categories/%E8%AE%BE%E5%A4%87/</link>
@@ -20,13 +27,6 @@
       <link>https://www.zanks.link/categories/ai/</link>
       <pubDate>Mon, 28 Apr 2025 10:57:53 +0800</pubDate>
       <guid>https://www.zanks.link/categories/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Homelab</title>
-      <link>https://www.zanks.link/categories/homelab/</link>
-      <pubDate>Thu, 27 Mar 2025 19:12:33 +0800</pubDate>
-      <guid>https://www.zanks.link/categories/homelab/</guid>
       <description></description>
     </item>
     <item>

@@ -2,25 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.zanks.link/2025/06/20/proxy-node-nginx-proxy-manager/</loc>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
+  </url><url>
     <loc>https://www.zanks.link/categories/</loc>
-    <lastmod>2025-06-16T09:26:39+08:00</lastmod>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/homelab/</loc>
-    <lastmod>2025-06-16T09:26:39+08:00</lastmod>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
   </url><url>
-    <loc>https://www.zanks.link/tags/nas/</loc>
-    <lastmod>2025-06-16T09:26:39+08:00</lastmod>
+    <loc>https://www.zanks.link/categories/homelab/</loc>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/istoreos/</loc>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/nginx/</loc>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/</loc>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/</loc>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2025-06-20T10:01:11+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/nas/</loc>
     <lastmod>2025-06-16T09:26:39+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-06-16T09:26:39+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/06/15/ungree-dxp4800/</loc>
-    <lastmod>2025-06-16T09:26:39+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/</loc>
     <lastmod>2025-06-16T09:26:39+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/categories/%E8%AE%BE%E5%A4%87/</loc>
@@ -61,9 +76,6 @@
   </url><url>
     <loc>https://www.zanks.link/tags/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2025-04-17T12:46:18+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/categories/homelab/</loc>
-    <lastmod>2025-03-27T19:44:05+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/jellyfin/</loc>
     <lastmod>2025-03-27T19:44:05+08:00</lastmod>

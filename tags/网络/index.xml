@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homelab on 乱话三千</title>
-    <link>https://www.zanks.link/categories/homelab/</link>
-    <description>Recent content in Homelab on 乱话三千</description>
+    <title>网络 on 乱话三千</title>
+    <link>https://www.zanks.link/tags/%E7%BD%91%E7%BB%9C/</link>
+    <description>Recent content in 网络 on 乱话三千</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 20 Jun 2025 10:01:11 +0800</lastBuildDate>
-    <atom:link href="https://www.zanks.link/categories/homelab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.zanks.link/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【网络】Proxy节点：反代网关</title>
       <link>https://www.zanks.link/2025/06/20/proxy-node-nginx-proxy-manager/</link>
       <pubDate>Fri, 20 Jun 2025 09:42:47 +0800</pubDate>
       <guid>https://www.zanks.link/2025/06/20/proxy-node-nginx-proxy-manager/</guid>
       <description>服务越来越多怎么办啊，外网访问端口转发记一遍端口，内网访问又要记一遍ip和端口，根本记不住啊。别慌，来一个反代网关，只记域名，减少心智负担。</description>
-    </item>
-    <item>
-      <title>Jellyfin电视剧刮削修复小记</title>
-      <link>https://www.zanks.link/2025/03/27/jellyfin-tvshow/</link>
-      <pubDate>Thu, 27 Mar 2025 19:12:33 +0800</pubDate>
-      <guid>https://www.zanks.link/2025/03/27/jellyfin-tvshow/</guid>
-      <description>受不了Jellyfin刮削失败？受不了Jellyfin刮削电视剧后找不到第几集？想要看精美海报？进来一看吧！</description>
     </item>
   </channel>
 </rss>
