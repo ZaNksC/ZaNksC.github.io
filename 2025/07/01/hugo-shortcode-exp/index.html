@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Macmini M4 | 乱话三千</title>
+<title>【Hugo】本站已实现ShortCode展示及用法 | 乱话三千</title>
 <meta name="start-time" content="2025-01-01 00:00:00"><meta name="home-page-content" content="琐碎的日常、肤浅的思考与并不精湛的技术">
 
 <link rel="shortcut icon" href="" type="image/x-icon">
@@ -172,7 +172,7 @@
     <div class="single-cover-bg" style="
         background:
         linear-gradient(to bottom, var(--backgroud--mask-alpha80), var(--backgroud--mask-alpha20)),
-        url(https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/IMG-20250520102320469.webp);
+        url(/images/default/cover.png);
         background-repeat: no-repeat;
         background-size: 100% 100%, cover;
         background-position: center, center;">
@@ -183,7 +183,7 @@
             <div> 原创</div>
         </div>
         <div class="title">
-            Macmini M4
+            【Hugo】本站已实现ShortCode展示及用法
         </div>
         <div class="meta fund-secondary">
             <div class="meta-info">
@@ -193,7 +193,7 @@
 </span>发布于:
     </div>
     <span>
-        2025-05-20
+        2025-07-01
     </span>
 </div>
 
@@ -201,7 +201,7 @@
     <div class="post-meta-item-header"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M33.542 27c-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7v6M33.542 15v6c-1.274-4.057-5.064-7-9.542-7-4.477 0-8.268 2.943-9.542 7" data-follow-stroke="#333"/></svg>
 </span>更新于:
     </div><span>
-        2025-06-15
+        2025-07-01
     </span>
 </div>
 
@@ -220,13 +220,9 @@
 
             <div class="meta-info">
                 
-                <a href="/tags/%E4%B8%AA%E4%BA%BA%E7%94%9F%E6%B4%BB">#个人生活</a>
+                <a href="/tags/hugo">#Hugo</a>
                 
-                <a href="/tags/%E8%AE%BE%E5%A4%87%E5%88%86%E4%BA%AB">#设备分享</a>
-                
-                <a href="/tags/pc">#PC</a>
-                
-                <a href="/tags/homelab">#Homelab</a>
+                <a href="/tags/shortcode">#Short code</a>
                 
             </div>
         </div>
@@ -236,67 +232,161 @@
             <div class="post-container" id="md-container">
                 <div class="post-content">
 
-                    <h1 id="购物清单">购物清单</h1>
-<p>趁着国补的风，终于剁手了想买很久的mac，从半吊子的 <code>hackintosh</code> 用户（没有完美黑苹果，只用了没几天）洗白成了白果子。选购的是最近大火，号称苹果有史以来最具性价比产品的 <code>macmini m4（16G+256G+万兆网口版本）</code>，同时加购了一台 <code>Redmini A27U-TypeC</code> 版本。这套精致穷鬼套餐可以体验mac系统的最低门槛了。当然，我是为主机的万兆接口和显示器的TypeC接口额外付费了，如果纯丐版的话，入手价格还会更低（大概会再低800左右）。另外还额外配置了一个专用的拓展坞，又去淘了一块速度合适的固态硬盘。</p>
-<table>
-  <thead>
-      <tr>
-          <th>产品</th>
-          <th>规格</th>
-          <th>入手渠道</th>
-          <th>价格</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>mac mini</td>
-          <td>CPU: m4<!-- raw HTML omitted -->内存：16G<!-- raw HTML omitted -->硬盘：256G<!-- raw HTML omitted -->网口：电口万兆</td>
-          <td>京东</td>
-          <td>3900</td>
-      </tr>
-      <tr>
-          <td>Redmi A27U-TypeC版本</td>
-          <td>2个USB-A扩展口<!-- raw HTML omitted -->TypeC输入口（支持反向充电）<!-- raw HTML omitted -->HDMIx2<!-- raw HTML omitted -->DPx1</td>
-          <td>京东</td>
-          <td>1268</td>
-      </tr>
-      <tr>
-          <td>奥睿科 Macmini拓展坞 M49P</td>
-          <td>USB-A3.2 x2<!-- raw HTML omitted -->USB-A2.0 x2<!-- raw HTML omitted -->TF/SD 3.0<!-- raw HTML omitted -->M.2 1000MB/s</td>
-          <td>京东</td>
-          <td>396</td>
-      </tr>
-  </tbody>
-</table>
-<h1 id="购买理由">购买理由</h1>
-<p>其实仔细想想，也没有一个说得过去的理由，可能单纯就是喜欢而想要。想要mac的生态，价格合适，没太大压力，就当是为了爱好买单了。当然在购买前，我还是设想了一些场景说服自己。比如未来新家的电脑桌，我只会放这个小机器，玩游戏通过远程桌面或者串流来实现。再比如，这台机器会成为mac生态位接入HA的跳板（不想折腾mac-less），他的功耗足够低，性能又足够强。再比如，他会成为我编码的主力机器（如果没有购置新的macbook的话）。</p>
-<p>至于为什么选择这样的配置，面对苹果金子价格的储存，“丐版+尿袋”无疑是大部分人的解决方案，虽然不优雅，但足够经济与实用，这就是选择16+256的原因。但实际上，对于我而言，这台机器不会有过多的移动场景，所以奥睿科宛如一体设计的专用拓展坞，也会让 “尿袋方案” 变得足够优雅。万兆网口，则是因为未来我不希望在我家庭网络升级到万兆局域网的时候（在我的计划里，家里会有万兆nas），这台机器的网口会拖后腿，毕竟千兆到万兆，中间还会有2.5G、5G，而千兆网口是无法享受到2.5G网络的（不知道Wifi可以到多少）。多花了600，这个升级对我而言是值得的。</p>
-<p>如果要给Redmi A27U找一个购买理由的话，4K只卖1300，这就够了。铺天盖地的宣传下，我似乎已经默认这个显示器就是mac最具性价比的方案了，足够优秀，足够便宜，要什么自行车。TypeC版本单纯是额外消费的买单，实际上我很少会使用TypeC口反冲，不过理线还是带来了一些优势的，差价也只有100多一点，也不想多考虑了。</p>
-<h1 id="上手体验">上手体验</h1>
-<p>实话说，macmini的新模具，更像是一件桌搭单品，简单但很精致。机器本体非常非常小，几乎只有巴掌大，配合4K屏幕让第一次用苹果电脑的我有一种鸟枪换炮的既视感，画面非常细腻。（PS：用到第一周，看着21%的磁盘占用率，就后悔应该买512，而不是256的万兆版本了）</p>
-<p>整体使用体验非常不错，功率很低，日常用只有3-5W，买回来只有升级系统关机过一次，也没有网上说的发热等现象。目前使用开发体验丝滑，部分涉及CPU架构部分的通用性差一点，但是也只要配置就能解决，M系列的芯片生态还可以，网上基本都可以找到解决方案，没遇到需要自己解决的场景。</p>
-<h1 id="基础环境安装">基础环境安装</h1>
-<h2 id="系统相关">系统相关</h2>
-<h3 id="scroll-reverser">Scroll Reverser</h3>
-<p>用于控制鼠标滚轮和触控板的方向。我用于将滚轮反向，和Windows的操作体验保持一致。</p>
-<p><div class="post-img-view">
-    <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/image-1.webp">
-        <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/image-1.webp" alt="image-1"  />
-    </a>
-</div></p>
-<h2 id="windows-app">Windows APP</h2>
-<p>用于远程控制我的Windows机器（需要Windows开启远程登录服务），主要用于在Steam下载游戏和配置串流等。</p>
-<h3 id="stat">Stat</h3>
-<p>一款非常优秀的状态管理工具，颜值超高。直接在命令行中使用 <code>brew install stat</code> 进行安装（先装brew）。</p>
-<p><div class="post-img-view">
-    <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/image-1.webp">
-        <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/image-1.webp" alt="image-1"  />
-    </a>
-</div></p>
-<h2 id="开发">开发</h2>
-<h3 id="homebrew">HomeBrew</h3>
-<p>在终端输入命令 <code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code> 完成HomeBrew的安装。
-安装完成后，为了在命令行中使用 <code>brew</code> 命令，需要添加环境变量，输入以下代码(安装完成后，该代码会体现在提示中）。</p>
+                    <h1 id="前言">前言</h1>
+<p>以下ShortCode均可以被视为非原创实现，部分来自网上其他作者的源码，就算是首创，我也会说是GPT辅助实现，所以如果要引用，标注一下本文地址即可。</p>
+<p>本文更多是为了快速测试我自己写的代码，和方便我复制使用。如对你有帮助，那我非常荣幸。ShortCode是Hugo全主题通用的。需要源码可以从页面最底下的主题提示超链接点击前往或者点下面这个（如果我忘记更新主题仓，可以留言跟我要）。</p>
+
+
+
+
+
+
+<div class="git github">
+    <div class="git-platform">
+        <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="git-info">
+        <div class="git-repo-name">
+            ZaNksC/hugo-theme-fund
+        </div>
+        <div class="git-description"></div>
+        <div class="git-extend">
+            <span class="git-language"></span>
+            <div class="git-count"></div>
+        </div>
+    </div>
+</div>
+<h1 id="更优质的提示-admonition">更优质的提示： Admonition</h1>
+<p>来自某个 <code>paper-mod</code> 同好者的实现，但据我考证是来自其他框架或主题，具体来源就不找了，这个的实现挺泛滥的。</p>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw"></i>Success<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>已实现基本功能</li>
+</ul>
+</div>
+        </div>
+    </div>
+<div class="details admonition bug open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-bug fa-fw"></i>Bug<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><ul>
+<li>折叠无法使用</li>
+</ul>
+</div>
+        </div>
+    </div>
+<h2 id="效果展示">效果展示</h2>
+<p><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Note<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>笔记</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition abstract open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw"></i>Abstract<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>基础</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw"></i>Info<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>消息</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>Tip<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>技巧</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw"></i>Success<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>成功</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw"></i>Question<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>问题</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw"></i>Warning<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>警告</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition failure open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-times-circle fa-fw"></i>Failure<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>失败</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition danger open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-skull-crossbones fa-fw"></i>Danger<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>危险</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition bug open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-bug fa-fw"></i>Bug<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>bug</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ol fa-fw"></i>Example<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>举例</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition quote open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw"></i>Quote<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>引用</strong> 横幅</div>
+        </div>
+    </div></p>
+<h2 id="使用方式">使用方式</h2>
 
 
 
@@ -311,7 +401,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            [ bash ]
+            [ html ]
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn open">
@@ -326,12 +416,53 @@
         </div>
     </div>
     <div class="fund-code-content">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">echo</span> &gt;&gt; /Users/zanks/.zprofile
-</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;eval &#34;$(/opt/homebrew/bin/brew shellenv)&#34;&#39;</span> &gt;&gt; /Users/zanks/.zprofile
-</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">eval</span> <span class="s2">&#34;</span><span class="k">$(</span>/opt/homebrew/bin/brew shellenv<span class="k">)</span><span class="s2">&#34;</span></span></span></code></pre></div>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">note</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Note&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **笔记** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">abstract</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Abstract&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **基础** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">info</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Info&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **消息** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">tip</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Tip&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **技巧** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">success</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Success&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **成功** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">question</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Question&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **问题** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">warning</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Warning&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **警告** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">failure</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Failure&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **失败** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">danger</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Danger&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **危险** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln">10</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">bug</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Bug&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **bug** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln">11</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">example</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Example&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **举例** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln">12</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">admonition</span> <span class="na">type</span><span class="o">=</span><span class="s">quote</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Quote&#34;</span> <span class="na">open</span><span class="o">=</span><span class="s">true</span> <span class="p">&gt;</span>}} 一个 **引用** 横幅 {{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">admonition</span> <span class="p">&gt;</span>}}</span></span></code></pre></div>
     </div>
-</div><h3 id="git">Git</h3>
-<p>在命令行中可以直接使用Homebrew来进行安装，安装完成后，需要生成一对密钥，以便Github等平台使用 <code>ssh</code> 协议。公钥位于 <code>～/.ssh/id_rsa.pub</code> 中。</p>
+</div><h1 id="代码仓展示的逼格之选-git">代码仓展示的逼格之选: Git</h1>
+<p>这个实现也是来自于网络，实在是不记得从哪里抄的了。目前我只用Github平台，所以不太清楚具体支持哪些平台。</p>
+<h2 id="效果展示-1">效果展示</h2>
+
+
+
+
+
+
+<div class="git github">
+    <div class="git-platform">
+        <div class="loading">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="git-info">
+        <div class="git-repo-name">
+            ZaNksC/hugo-theme-fund
+        </div>
+        <div class="git-description"></div>
+        <div class="git-extend">
+            <span class="git-language"></span>
+            <div class="git-count"></div>
+        </div>
+    </div>
+</div>
+<h2 id="使用方式-1">使用方式</h2>
 
 
 
@@ -346,7 +477,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            [ bash ]
+            [ html ]
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn open">
@@ -361,18 +492,59 @@
         </div>
     </div>
     <div class="fund-code-content">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">brew install git
-</span></span><span class="line"><span class="ln">2</span><span class="cl">ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">&#34;xxx@example.com&#34;</span>
-</span></span><span class="line"><span class="ln">3</span><span class="cl">cat ~/.ssh/id_rsa.pub</span></span></code></pre></div>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln">1</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">git</span> <span class="na">platform</span><span class="o">=</span><span class="s">&#34;github&#34;</span> <span class="na">repo</span><span class="o">=</span><span class="s">&#34;ZaNksC/hugo-theme-fund&#34;</span> <span class="p">&gt;</span>}}</span></span></code></pre></div>
     </div>
-</div><h3 id="终端美化">终端美化</h3>
-<h4 id="终端工具">终端工具</h4>
-<p>由于原版的终端工具没有文件高亮和tab页的功能，所以重新装一个终端工具。
-终端工具使用 <code>iTerms2</code></p>
-<h4 id="zsh增加">ZSH增加</h4>
-<p>新版本的终端已经使用zsh了，所以只需要安装一个 <code>oh-my-zsh</code> 即可，主要是为了可以安装一个主题（装逼用）和主题管理（假装增加效率）。</p>
-<p>使用命令 <code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</code> 安装。</p>
-<p>安装完之后终端就变成了新主题的样式，如下</p>
+</div><h1 id="万能小徽章-badge">万能小徽章: Badge</h1>
+<h2 id="效果展示-2">效果展示</h2>
+<style>
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        padding: 0.35em 1em;
+        font-size: 0.9em;
+        font-weight: 700;
+        color: var(--badge-text-color, #fff);
+        background: linear-gradient(135deg, var(--badge-bg-start, #667eea), var(--badge-bg-end, #764ba2));
+        border-radius: 9999px;  
+        box-shadow:
+                0 4px 6px rgba(0,0,0,0.1),
+                inset 0 -2px 0 rgba(255,255,255,0.3);
+        user-select: none;
+        white-space: nowrap;
+        transition: background 0.3s ease, box-shadow 0.3s ease;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    }
+    .badge:hover {
+        background: linear-gradient(135deg, var(--badge-bg-end, #764ba2), var(--badge-bg-start, #667eea));
+        box-shadow:
+                0 6px 12px rgba(0,0,0,0.15),
+                inset 0 -2px 5px rgba(255,255,255,0.4);
+    }
+    .badge-emoji {
+        font-size: 1.2em;
+        line-height: 1;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+        transform: translateY(1px);
+        user-select: none;
+    }
+</style>
+
+<span
+        class="badge"
+        style="
+    --badge-text-color: #3c2a00;
+--badge-bg-start: #f7971e;
+--badge-bg-end: #ffd200;
+"
+>
+
+<span class="badge-emoji" aria-hidden="true">🚀</span>
+
+Pro
+</span>
+
+<h2 id="使用方式-2">使用方式</h2>
 
 
 
@@ -387,7 +559,7 @@
         </div>
         <div class="fund-code-header-mid-container">
             
-            [ bash ]
+            [ html ]
         </div>
         <div class="fund-code-header-right-container">
             <div class="fold-btn open">
@@ -402,37 +574,131 @@
         </div>
     </div>
     <div class="fund-code-content">
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl">➜  ~ ll
-</span></span><span class="line"><span class="ln"> 2</span><span class="cl">total <span class="m">0</span>
-</span></span><span class="line"><span class="ln"> 3</span><span class="cl">drwx------@  <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">17</span> 13:01 Applications
-</span></span><span class="line"><span class="ln"> 4</span><span class="cl">drwx------+  <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">17</span> 13:02 Desktop
-</span></span><span class="line"><span class="ln"> 5</span><span class="cl">drwx------+  <span class="m">7</span> zanks  staff   224B  <span class="m">4</span> <span class="m">29</span> 20:32 Documents
-</span></span><span class="line"><span class="ln"> 6</span><span class="cl">drwx------+  <span class="m">5</span> zanks  staff   160B  <span class="m">5</span>  <span class="m">2</span> 10:15 Downloads
-</span></span><span class="line"><span class="ln"> 7</span><span class="cl">-rw-r--r--@  <span class="m">1</span> zanks  staff     0B  <span class="m">4</span> <span class="m">22</span> 19:00 jcef_12792.log
-</span></span><span class="line"><span class="ln"> 8</span><span class="cl">-rw-r--r--@  <span class="m">1</span> zanks  staff     0B  <span class="m">4</span> <span class="m">22</span> 19:40 jcef_26614.log
-</span></span><span class="line"><span class="ln"> 9</span><span class="cl">drwx------@ <span class="m">98</span> zanks  staff   3.1K  <span class="m">4</span> <span class="m">29</span> 20:44 Library
-</span></span><span class="line"><span class="ln">10</span><span class="cl">drwx------   <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">16</span> 23:10 Movies
-</span></span><span class="line"><span class="ln">11</span><span class="cl">drwx------+  <span class="m">3</span> zanks  staff    96B  <span class="m">3</span> <span class="m">16</span> 22:33 Music
-</span></span><span class="line"><span class="ln">12</span><span class="cl">drwx------+  <span class="m">5</span> zanks  staff   160B  <span class="m">4</span>  <span class="m">2</span> 22:59 Pictures
-</span></span><span class="line"><span class="ln">13</span><span class="cl">drwxr-xr-x+  <span class="m">4</span> zanks  staff   128B  <span class="m">3</span> <span class="m">16</span> 22:33 Public</span></span></code></pre></div>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln">1</span><span class="cl">{{/*<span class="p">&lt;</span> <span class="nt">badge</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="na">text</span><span class="o">=</span><span class="s">&#34;Pro&#34;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="na">emoji</span><span class="o">=</span><span class="s">&#34;🚀&#34;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="na">bgColorStart</span><span class="o">=</span><span class="s">&#34;#f7971e&#34;</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="na">bgColorEnd</span><span class="o">=</span><span class="s">&#34;#ffd200&#34;</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="na">textColor</span><span class="o">=</span><span class="s">&#34;#3c2a00&#34;</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="err">*</span><span class="p">/&gt;</span>}}</span></span></code></pre></div>
     </div>
-</div><h4 id="主题">主题</h4>
-<p>安装完 <code>oh-my-zsh</code> 之后，默认的主题提示的信息过少（次要）并且界面看上去也没有那么酷炫（主要）</p>
-<p>安装一个之前比较喜欢的主题 <code>powerlevel10k</code></p>
-<p>输入命令 <code>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git &quot;${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k&quot;</code> 安装后，修改 <code>.zshrc</code> 文件中的主题为 <code>ZSH_THEME=&quot;powerlevel10k/powerlevel10k&quot;</code></p>
-<p>重启终端后进入主题的配置项，需要安装特有字体来支持一些符号的显示。</p>
-<p>最终效果
-<div class="post-img-view">
-    <a data-fancybox="gallery" href="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96%E6%95%88%E6%9E%9C.webp">
-        <img src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E7%BB%88%E7%AB%AF%E7%BE%8E%E5%8C%96%E6%95%88%E6%9E%9C.webp" alt="终端美化效果|700x83"  />
-    </a>
-</div></p>
-<div class="copyright">
+</div><h1 id="信用卡持卡展示-creditcard">信用卡持卡展示: CreditCard</h1>
+<h2 id="效果展示-3">效果展示</h2>
+
+<div class="credit-card">
+    <div class="card-img card-flex1">
+        <div class="card-img-wrapper">
+            
+            <img
+                    src="https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E6%8B%9B%E8%A1%8C.webp"
+                    alt="招商银行经典白金卡 卡片图片"
+            onerror="this.onerror=null;this.src='/images/cards/placeholder.png';"
+            />
+            
+            <div class="card-status">
+                
+                <span
+                        class="badge"
+                        style="
+                    --badge-bg-start: #9E9E9E;
+                    --badge-bg-end: #616161;
+                    "
+                >
+            已注销
+            </span>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="credit-card-info-meta card-flex1">
+        <div class ="credit-card-title"><strong> 招商银行经典白金卡</strong></div>
+        <div class="card-meta-item card-sub-text"><strong>🏦 发卡行：</strong>招商银行</div>
+        <div class="card-meta-item card-sub-text"><strong>💳 卡组织：</strong>Visa</div>
+        <div class="card-meta-item card-sub-text"><strong>🎖️ 卡等级：</strong>白金卡</div>
+    </div>
+    
+    
+
+<div class="credit-card-info-fee card-flex1">
+    <div class="card-subtitle">💰 年费政策</div>
+    <div class="card-sub-text"><ul>
+<li>首年免，次年刷6次免年费</li>
+<li>详情见官网 <a href="https://cmbchina.com">招商银行官网</a></li>
+</ul>
+</div>
+</div>
+
+<div class="credit-card-info-benefits card-flex1">
+    <div class="card-subtitle">🎁 持卡权益</div>
+    <div class="card-sub-text"><ul>
+<li>机场贵宾厅</li>
+<li>航班延误险</li>
+<li>免费道路救援</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+
+<h2 id="使用方式-3">使用方式</h2>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ html ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">credit-card</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="na">image</span><span class="o">=</span><span class="s">&#34;https://zanks1996-1256221076.cos.ap-shanghai.myqcloud.com//piclistTemp/%E6%8B%9B%E8%A1%8C.webp&#34;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="na">issuer</span><span class="o">=</span><span class="s">&#34;招商银行&#34;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="na">network</span><span class="o">=</span><span class="s">&#34;Visa&#34;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="na">level</span><span class="o">=</span><span class="s">&#34;白金卡&#34;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="na">status</span><span class="o">=</span><span class="s">&#34;inactive&#34;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="na">name</span><span class="o">=</span><span class="s">&#34;招商银行经典白金卡&#34;</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">credit-card-fee</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln">10</span><span class="cl">- 首年免，次年刷6次免年费
+</span></span><span class="line"><span class="ln">11</span><span class="cl">- 详情见官网 [招商银行官网](https://cmbchina.com)
+</span></span><span class="line"><span class="ln">12</span><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">credit-card-fee</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl">{{<span class="p">&lt;</span> <span class="nt">credit-card-benefits</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln">15</span><span class="cl">- 机场贵宾厅
+</span></span><span class="line"><span class="ln">16</span><span class="cl">- 航班延误险
+</span></span><span class="line"><span class="ln">17</span><span class="cl">- 免费道路救援
+</span></span><span class="line"><span class="ln">18</span><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">credit-card-benefits</span> <span class="p">&gt;</span>}}
+</span></span><span class="line"><span class="ln">19</span><span class="cl">
+</span></span><span class="line"><span class="ln">20</span><span class="cl">{{<span class="p">&lt;</span> <span class="p">/</span><span class="nt">credit-card</span> <span class="p">&gt;</span>}}</span></span></code></pre></div>
+    </div>
+</div><div class="copyright">
     <hr>
     <blockquote>
         <p>本文为原创内容，版权归作者所有。如需转载，请在文章中声明本文标题及链接。</p>
-        <p>文章标题：Macmini M4 —— [Za_Nks]</p>
-        <p>文章链接：<a href="https://www.zanks.link/2025/05/20/macmini-m4/" target="_blank">https://www.zanks.link/2025/05/20/macmini-m4/</a></p>
+        <p>文章标题：【Hugo】本站已实现ShortCode展示及用法 —— [Za_Nks]</p>
+        <p>文章链接：<a href="https://www.zanks.link/2025/07/01/hugo-shortcode-exp/" target="_blank">https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</a></p>
         <p>许可协议：<a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans" target="_blank">CC BY-NC 4.0</a></p>
     </blockquote>
 </div></div>
@@ -442,21 +708,21 @@
                     </div>
                     <div class="post-nav">
                         
-                        <a class="nav-block prev" href="/2025/04/28/ai-sse/">
+                        <a class="nav-block prev" href="/2025/06/20/proxy-node-nginx-proxy-manager/">
                             <span class="arrow">《 </span>
                             <div class="pn-content-container">
-                                <span>大模型观察日记之流式输出</span>
+                                <span>【网络】Proxy节点：反代网关</span>
                             </div>
                         </a>
                         
 
                         
-                        <a class="nav-block next" href="/2025/06/15/ungree-dxp4800/">
+                        <div class="nav-block next no-item">
                             <div class="pn-content-container">
-                                <span>绿联DXP4800开箱体验</span>
+                                <span>已经是最后一篇了哦</span>
                             </div>
-                            <span class="arrow"> 》</span>
-                        </a>
+                            <span class="arrow"></span>
+                        </div>
                         
                     </div>
 
@@ -637,34 +903,29 @@
     <div class="toc-content shadow-a">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#购物清单">购物清单</a></li>
-    <li><a href="#购买理由">购买理由</a></li>
-    <li><a href="#上手体验">上手体验</a></li>
-    <li><a href="#基础环境安装">基础环境安装</a>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#更优质的提示-admonition">更优质的提示： Admonition</a>
       <ul>
-        <li><a href="#系统相关">系统相关</a>
-          <ul>
-            <li><a href="#scroll-reverser">Scroll Reverser</a></li>
-          </ul>
-        </li>
-        <li><a href="#windows-app">Windows APP</a>
-          <ul>
-            <li><a href="#stat">Stat</a></li>
-          </ul>
-        </li>
-        <li><a href="#开发">开发</a>
-          <ul>
-            <li><a href="#homebrew">HomeBrew</a></li>
-            <li><a href="#git">Git</a></li>
-            <li><a href="#终端美化">终端美化</a>
-              <ul>
-                <li><a href="#终端工具">终端工具</a></li>
-                <li><a href="#zsh增加">ZSH增加</a></li>
-                <li><a href="#主题">主题</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
+        <li><a href="#效果展示">效果展示</a></li>
+        <li><a href="#使用方式">使用方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码仓展示的逼格之选-git">代码仓展示的逼格之选: Git</a>
+      <ul>
+        <li><a href="#效果展示-1">效果展示</a></li>
+        <li><a href="#使用方式-1">使用方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#万能小徽章-badge">万能小徽章: Badge</a>
+      <ul>
+        <li><a href="#效果展示-2">效果展示</a></li>
+        <li><a href="#使用方式-2">使用方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#信用卡持卡展示-creditcard">信用卡持卡展示: CreditCard</a>
+      <ul>
+        <li><a href="#效果展示-3">效果展示</a></li>
+        <li><a href="#使用方式-3">使用方式</a></li>
       </ul>
     </li>
   </ul>

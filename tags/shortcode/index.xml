@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ShortCode on 乱话三千</title>
+    <link>https://www.zanks.link/tags/shortcode/</link>
+    <description>Recent content in ShortCode on 乱话三千</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 Jul 2025 15:55:04 +0800</lastBuildDate>
+    <atom:link href="https://www.zanks.link/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】本站已实现ShortCode展示及用法</title>
+      <link>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</link>
+      <pubDate>Tue, 01 Jul 2025 07:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</guid>
+      <description>ShortCode是Hugo最伟大的地方，没有之一，自从用上Hugo之后热衷于让AI给我写ShortCode。AI可能不擅长大型工程，但ShortCode绝对是AI的舒适区了。</description>
+    </item>
+  </channel>
+</rss>
