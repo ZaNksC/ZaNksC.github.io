@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on 乱话三千</title>
+    <link>https://www.zanks.link/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on 乱话三千</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 01 Jul 2025 19:19:40 +0800</lastBuildDate>
+    <atom:link href="https://www.zanks.link/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【Hugo】本站已实现ShortCode展示及用法</title>
+      <link>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</link>
+      <pubDate>Tue, 01 Jul 2025 07:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</guid>
+      <description>ShortCode是Hugo最伟大的地方，没有之一，自从用上Hugo之后热衷于让AI给我写ShortCode。AI可能不擅长大型工程，但ShortCode绝对是AI的舒适区了。</description>
+    </item>
+    <item>
+      <title>【Hugo】运维篇：部署&amp;备案</title>
+      <link>https://www.zanks.link/2025/04/17/hugo-5/</link>
+      <pubDate>Thu, 17 Apr 2025 00:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/04/17/hugo-5/</guid>
+      <description>忙活了几个月，终于把博客部署到国内服务器并完成备案了</description>
+    </item>
+    <item>
+      <title>【Hugo】修仙篇：手搓主题</title>
+      <link>https://www.zanks.link/2025/02/16/hugo-4/</link>
+      <pubDate>Sun, 16 Feb 2025 23:26:23 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/02/16/hugo-4/</guid>
+      <description>临近小猫黄基金的生日，自作多情的铲屎官写了一个以他名字命名的Hugo主题送给作为生日礼物。2025.02.16，Release 1.0.0。</description>
+    </item>
+    <item>
+      <title>【Hugo】体验篇：Obsidian写作</title>
+      <link>https://www.zanks.link/2025/01/01/hugo-3/</link>
+      <pubDate>Wed, 01 Jan 2025 04:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/01/01/hugo-3/</guid>
+      <description>装修一下驾驶舱，让我们扬帆起航。我们应当知道，航海比造船更具魅力与挑战。</description>
+    </item>
+    <item>
+      <title>【Hugo】进阶篇：PaperMod主题美化</title>
+      <link>https://www.zanks.link/2025/01/01/hugo-2/</link>
+      <pubDate>Wed, 01 Jan 2025 02:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/01/01/hugo-2/</guid>
+      <description>装修一下旧时代的船，才能开门迎接更多的客人。</description>
+    </item>
+    <item>
+      <title>【Hugo】基础篇：个人博客搭建</title>
+      <link>https://www.zanks.link/2025/01/01/hugo-1/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/01/01/hugo-1/</guid>
+      <description>旧时代的船，想要载新世界的梦</description>
+    </item>
+  </channel>
+</rss>

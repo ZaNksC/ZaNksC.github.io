@@ -3,34 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</loc>
-    <lastmod>2025-07-01T15:55:04+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/categories/</loc>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/hugo/</loc>
-    <lastmod>2025-07-01T15:55:04+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/shortcode/</loc>
-    <lastmod>2025-07-01T15:55:04+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/</loc>
-    <lastmod>2025-07-01T15:55:04+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/</loc>
-    <lastmod>2025-07-01T15:55:04+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/06/20/proxy-node-nginx-proxy-manager/</loc>
     <lastmod>2025-06-20T16:15:47+08:00</lastmod>
   </url><url>
-    <loc>https://www.zanks.link/categories/</loc>
-    <lastmod>2025-06-20T16:15:47+08:00</lastmod>
-  </url><url>
     <loc>https://www.zanks.link/tags/homelab/</loc>
-    <lastmod>2025-06-20T16:15:47+08:00</lastmod>
+    <lastmod>2025-07-01T16:25:11+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/categories/homelab/</loc>
-    <lastmod>2025-06-20T16:15:47+08:00</lastmod>
+    <lastmod>2025-07-01T16:25:11+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/istoreos/</loc>
-    <lastmod>2025-06-20T16:15:47+08:00</lastmod>
+    <lastmod>2025-07-01T16:25:11+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/nginx/</loc>
     <lastmod>2025-06-20T16:15:47+08:00</lastmod>
@@ -75,13 +78,13 @@
     <lastmod>2025-04-28T10:59:30+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/04/17/hugo-5/</loc>
-    <lastmod>2025-04-17T12:46:18+08:00</lastmod>
+    <lastmod>2025-07-01T16:23:24+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/%E5%A4%87%E6%A1%88/</loc>
-    <lastmod>2025-04-17T12:46:18+08:00</lastmod>
+    <lastmod>2025-07-01T16:23:24+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2025-04-17T12:46:18+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/jellyfin/</loc>
     <lastmod>2025-03-27T19:44:05+08:00</lastmod>
@@ -114,13 +117,16 @@
     <lastmod>2025-02-21T19:27:02+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/02/16/hugo-4/</loc>
-    <lastmod>2025-02-18T21:06:14+08:00</lastmod>
-  </url><url>
-    <loc>https://www.zanks.link/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99/</loc>
-    <lastmod>2025-02-18T21:06:14+08:00</lastmod>
+    <lastmod>2025-07-01T16:23:24+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/%E8%87%AA%E7%A0%94%E4%B8%BB%E9%A2%98/</loc>
-    <lastmod>2025-02-18T21:06:14+08:00</lastmod>
+    <lastmod>2025-07-01T16:23:24+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/2025/02/05/istoreos%E5%86%85%E7%BD%91kms%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2025-07-01T16:25:11+08:00</lastmod>
+  </url><url>
+    <loc>https://www.zanks.link/tags/kms/</loc>
+    <lastmod>2025-07-01T16:25:11+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/cherrystudio/</loc>
     <lastmod>2025-02-06T08:22:23+08:00</lastmod>
@@ -135,19 +141,19 @@
     <lastmod>2025-02-06T08:22:23+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/01/01/hugo-3/</loc>
-    <lastmod>2025-02-05T18:48:08+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/obsidian/</loc>
-    <lastmod>2025-02-05T18:48:08+08:00</lastmod>
+    <lastmod>2025-07-01T19:19:40+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/01/01/hugo-2/</loc>
-    <lastmod>2025-02-05T18:48:08+08:00</lastmod>
+    <lastmod>2025-07-01T16:23:24+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/tags/papermod/</loc>
-    <lastmod>2025-02-05T18:48:08+08:00</lastmod>
+    <lastmod>2025-07-01T16:23:24+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/2025/01/01/hugo-1/</loc>
-    <lastmod>2025-02-05T18:48:08+08:00</lastmod>
+    <lastmod>2025-07-01T16:23:24+08:00</lastmod>
   </url><url>
     <loc>https://www.zanks.link/chirp/</loc>
     <lastmod>2025-01-26T11:11:40+08:00</lastmod>
