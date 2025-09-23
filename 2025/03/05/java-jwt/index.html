@@ -240,6 +240,10 @@
         <div class="left-container fund-border">
             <div class="post-container" id="md-container">
                 <div class="post-content">
+                    <blockquote id="expiration-reminder">
+                        <span style="font-size: 1.2rem">⚠️</span>
+                         这篇文章最后更新已经超过180天了，内容可能已经过时，如有想法请留言或通过其它方法与我交流。
+                    </blockquote>
 
                     <h1 id="前言">前言</h1>
 <p>在梳理公司内系统对于Redis的使用时，发现了部门内的开发人员对于登录认证这个模块的实现过于依赖Redis，并且对于JWT的机制存在一些误解。在实现时，登录成功后，生成一个Token放到Redis中，并且返回给前端，要求前端每次请求都携带。在鉴权校验时，与redis中的内容做存在对比，来实现对于身份校验。Redis充当了登录状态保存的作用，以至于Redis故障后，所有接口都会陷入瘫痪。

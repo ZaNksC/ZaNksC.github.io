@@ -208,7 +208,7 @@
     <div class="post-meta-item-header"><span class="inline-svg" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48"><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20Z" data-follow-stroke="#333"/><path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#333" d="M33.542 27c-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7v6M33.542 15v6c-1.274-4.057-5.064-7-9.542-7-4.477 0-8.268 2.943-9.542 7" data-follow-stroke="#333"/></svg>
 </span>更新于:
     </div><span>
-        2025-07-01
+        2025-09-23
     </span>
 </div>
 
@@ -762,9 +762,55 @@ include /etc/nginx/default.d/*.conf;
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">acme.sh --install-cert -d *.zanks.link <span class="se">\
 </span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>--key-file       /home/ecs-user/.acme.sh/*.zanks.link/*.zanks.link.key  <span class="se">\
 </span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>--fullchain-file /home/ecs-user/.acme.sh/*.zanks.link/fullchain.cer <span class="se">\
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>--reloadcmd     <span class="s2">&#34;sudo service nginx force-reload&#34;</span></span></span></code></pre></div>
+    </div>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>证书不自动更新（20250923修订日志）<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>原本的命令为</p>
+
+
+
+<div class="fund-code-container">
+    <div class="fund-code-header">
+        <div class="fund-code-header-left-container">
+            <svg id="code-lights" xmlns="http://www.w3.org/2000/svg" version="1.1"  x="0px" y="0px" viewBox="0 0 450 130">
+                <ellipse cx="65" cy="65" rx="50" ry="52" stroke="rgb(220,60,54)" stroke-width="2" fill="rgb(237,108,96)"/>
+                <ellipse cx="225" cy="65" rx="50" ry="52"  stroke="rgb(218,151,33)" stroke-width="2" fill="rgb(247,193,81)"/>
+                <ellipse cx="385" cy="65" rx="50" ry="52"  stroke="rgb(27,161,37)" stroke-width="2" fill="rgb(100,200,86)"/>
+            </svg>
+        </div>
+        <div class="fund-code-header-mid-container">
+            
+            [ bash ]
+        </div>
+        <div class="fund-code-header-right-container">
+            <div class="fold-btn open">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M19 12L31 24L19 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+
+            <div class="copy-btn">
+                <span class="inline-svg" ><?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M13 12.4316V7.8125C13 6.2592 14.2592 5 15.8125 5H40.1875C41.7408 5 43 6.2592 43 7.8125V32.1875C43 33.7408 41.7408 35 40.1875 35H35.5163" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M32.1875 13H7.8125C6.2592 13 5 14.2592 5 15.8125V40.1875C5 41.7408 6.2592 43 7.8125 43H32.1875C33.7408 43 35 41.7408 35 40.1875V15.8125C35 14.2592 33.7408 13 32.1875 13Z" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
+</span>
+            </div>
+        </div>
+    </div>
+    <div class="fund-code-content">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl">acme.sh --install-cert -d *.zanks.link <span class="se">\
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="se"></span>--key-file       /home/ecs-user/.acme.sh/*.zanks.link/*.zanks.link.key  <span class="se">\
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="se"></span>--fullchain-file /home/ecs-user/.acme.sh/*.zanks.link/fullchain.cer <span class="se">\
 </span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="se"></span>--reloadcmd     <span class="s2">&#34;service nginx force-reload&#34;</span></span></span></code></pre></div>
     </div>
-</div><p>其中 <code>--key-file</code> 的参数修改为 <code>domainname.key</code> 的文件路径，<code>--fullchain-file</code> 的参数修改为 <code>fullchain.cer</code> 的文件路径。</p>
+</div><p>发现在证书在三个月后过期了，手动执行reload命令发现需要root权限，重新执行上方改好的命令可以修改reloadCmd。
+验证reloadCmd是否修改完成的方式为，查看域名的配置文件,如 <code>/home/ecs-user/.acme.sh/*.zanks.link/*.zanks.link.conf</code> 其中的配置项 <code>Le_ReloadCmd</code> ，内容经过Base64编码，解码后查看是否为新的即可。
+需要验证证书是否更新，查看浏览器中的证书日期。</p>
+</div>
+        </div>
+    </div>
+<p>其中 <code>--key-file</code> 的参数修改为 <code>domainname.key</code> 的文件路径，<code>--fullchain-file</code> 的参数修改为 <code>fullchain.cer</code> 的文件路径。</p>
 <p>之后就是修改nginx的配置开启443端口，代码如下：</p>
 
 
