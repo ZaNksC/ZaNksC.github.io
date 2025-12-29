@@ -8,18 +8,18 @@
     <language>zh-cn</language>
     <atom:link href="https://www.zanks.link/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>【Hugo】本站已实现ShortCode展示及用法</title>
-      <link>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</link>
-      <pubDate>Tue, 01 Jul 2025 07:00:00 +0800</pubDate>
-      <guid>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</guid>
-      <description>ShortCode是Hugo最伟大的地方，没有之一，自从用上Hugo之后热衷于让AI给我写ShortCode。AI可能不擅长大型工程，但ShortCode绝对是AI的舒适区了。</description>
-    </item>
-    <item>
       <title>【NZ】： 出发！南半球的 Kiwi 之乡</title>
       <link>https://www.zanks.link/2025/12/29/travel-nz-1/</link>
       <pubDate>Mon, 29 Dec 2025 20:17:39 +0800</pubDate>
       <guid>https://www.zanks.link/2025/12/29/travel-nz-1/</guid>
       <description>出发新西兰！签证、攻略、租车、机酒详细教程，出发前你需要看到全部内容！</description>
+    </item>
+    <item>
+      <title>【Hugo】本站已实现ShortCode展示及用法</title>
+      <link>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</link>
+      <pubDate>Tue, 01 Jul 2025 07:00:00 +0800</pubDate>
+      <guid>https://www.zanks.link/2025/07/01/hugo-shortcode-exp/</guid>
+      <description>ShortCode是Hugo最伟大的地方，没有之一，自从用上Hugo之后热衷于让AI给我写ShortCode。AI可能不擅长大型工程，但ShortCode绝对是AI的舒适区了。</description>
     </item>
     <item>
       <title>【网络】Proxy节点：反代网关</title>
